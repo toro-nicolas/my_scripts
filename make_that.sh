@@ -1,4 +1,4 @@
 #!/bin/bash
 
-gcc "$1" -o a.out
+gcc *.c -o a.out
 ./a.out

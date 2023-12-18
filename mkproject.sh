@@ -64,14 +64,16 @@ find "$template_path" \
 mkdir "$project_path/lib"
 for lib in "$@"; do
   cp -r "$lib_folder/$lib" lib/
+  sed -i "/libs:/a \ $(printf '\t')@make -C./lib/$lib \\" Makefile
 done
 
 # Modification des fichiers du projet
-sed -i "s/\[project-exec\]/$executable_name/g" Makefile
+sed -i "s/\[project-exec\]/$executable_name/g" Makefile .gitignore
 sed -i "s/\[project-name\]/$folder_name/g" Makefile src/main.c
 
 # Création des includes
 mkdir "$project_path/include"
+make libs > /dev/null 2>&1
 
 echo "Projet créé avec succès !"
 exit 0

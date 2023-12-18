@@ -5,9 +5,15 @@
 ** Store libmy functions prototypes
 */
 
+#include <stdlib.h>
 #include <stddef.h>
+#include <stdarg.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <errno.h>
+#include <string.h>
 
-#ifndef    MY_H_
+#ifndef MY_H_
     #define    MY_H_
     #define    ABS(value) ((value < 0) ? - value : value)
 

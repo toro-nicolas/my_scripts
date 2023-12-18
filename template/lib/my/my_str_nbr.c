@@ -2,14 +2,14 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr
 ** File description:
-** Returns the strings convertion of a number (nb)
+** Returns the strings conversion of a number (nb)
 */
 
 #include "my.h"
 
 static char *set_str_nb(int nb, int int_nb, int signe)
 {
-    char nb_str[int_nb + signe];
+    char *nb_str = malloc(sizeof(char) * (int_nb + signe + 1));
     int j = 0;
     int figure_temp = nb;
 
@@ -20,7 +20,7 @@ static char *set_str_nb(int nb, int int_nb, int signe)
         figure_temp = (figure_temp - (figure_temp % 10)) / 10;
     }
     nb_str[j + signe] = '\0';
-    return my_strdup(my_revstr(nb_str));
+    return my_revstr(nb_str);
 }
 
 char *my_str_nbr(int nb)

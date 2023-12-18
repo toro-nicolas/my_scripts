@@ -6,6 +6,8 @@
 ** with a defined size (n)
 */
 
+#include "my.h"
+
 char *my_strncpy(char *dest, char const *src, int n)
 {
     int len = 0;

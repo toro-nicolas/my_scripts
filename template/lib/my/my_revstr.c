@@ -5,6 +5,8 @@
 ** Reverses the characters in a string (str) and returns the string (str)
 */
 
+#include "my.h"
+
 char *my_revstr(char *str)
 {
     int len = 0;

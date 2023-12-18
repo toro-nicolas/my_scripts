@@ -5,7 +5,7 @@
 ** Returns the power (p) of the number (nb)
 */
 
-#include <stddef.h>
+#include "my.h"
 
 size_t my_compute_power_rec_size_t(int nb, int p)
 {

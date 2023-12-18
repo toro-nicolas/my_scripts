@@ -5,7 +5,6 @@
 ** Prints all word in an array (tab)
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 int my_show_word_array(char *const *tab)

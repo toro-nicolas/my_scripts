@@ -6,9 +6,6 @@
 ** in a specific base (base_from) to another base (base_to)
 */
 
-#include <stdlib.h>
-#include <stddef.h>
-#include <stdio.h>
 #include "my.h"
 
 static int is_valid(char c, char const *base)

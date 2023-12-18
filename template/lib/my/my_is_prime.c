@@ -5,6 +5,8 @@
 ** Returns 1 if the number (nb) is prime and 0 otherwise
 */
 
+#include "my.h"
+
 int my_is_prime(int nb)
 {
     int i = 0;

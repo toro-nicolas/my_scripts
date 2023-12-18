@@ -5,7 +5,6 @@
 ** Returns a duplication of a string (src)
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 char *my_strdup(char const *src)
@@ -18,6 +17,6 @@ char *my_strdup(char const *src)
     for (i = 0; i < len_src; i++) {
         result[i] = src[i];
     }
-    result[i + 1] = '\0';
+    result[i] = '\0';
     return result;
 }

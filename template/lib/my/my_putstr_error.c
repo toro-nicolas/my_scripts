@@ -5,7 +5,7 @@
 ** Prints a string (str) in stderr
 */
 
-#include <unistd.h>
+#include "my.h"
 
 int my_putstr_error(char const *str)
 {

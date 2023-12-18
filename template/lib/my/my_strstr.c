@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2023
 ** my_strstr
 ** File description:
-** find the first occurence of a char
+** Search a string (to_find) on another (str)
+** and returns the address of the first occurence
 */
 
 #include "my.h"
@@ -16,5 +17,5 @@ char *my_strstr(char *str, char const *to_find)
             return &str[i];
         }
     }
-        return NULL;
+    return NULL;
 }

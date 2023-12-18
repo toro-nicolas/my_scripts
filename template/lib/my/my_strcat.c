@@ -6,6 +6,8 @@
 ** and returns the destination string (dest)
 */
 
+#include "my.h"
+
 char *my_strcat(char *dest, char const *src)
 {
     int len_dest = 0;

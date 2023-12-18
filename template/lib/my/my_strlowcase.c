@@ -5,6 +5,8 @@
 ** Replaces upcase by lowcase of a string (str) and returns them
 */
 
+#include "my.h"
+
 char *my_strlowcase(char *str)
 {
     int len = 0;

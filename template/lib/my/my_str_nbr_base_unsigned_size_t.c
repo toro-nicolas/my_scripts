@@ -2,17 +2,16 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_base_unsigned
 ** File description:
-** Returns the strings convertion of
+** Returns the strings conversion of
 ** an unsigned number (nbr) in specific base (base)
 */
 
 #include "my.h"
-#include <stddef.h>
 
 static char *put_str_nb(size_t nb, int len_nb,
     char const *base, int base_len)
 {
-    char nb_str[len_nb];
+    char *nb_str = malloc(sizeof(char) * (len_nb + 1));
     size_t figure_temp = nb;
 
     for (int i = 0; i < len_nb; i++) {
@@ -20,7 +19,7 @@ static char *put_str_nb(size_t nb, int len_nb,
         figure_temp = (figure_temp - (figure_temp % base_len)) / base_len;
     }
     nb_str[len_nb] = '\0';
-    return my_strdup(nb_str);
+    return nb_str;
 }
 
 char *my_str_nbr_base_unsigned_size_t(size_t nbr, char const *base)

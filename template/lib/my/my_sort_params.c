@@ -33,7 +33,7 @@ static int check_littlest(char **argv, int j, int littlest_char_index)
         i++;
     }
     return check_equal(my_strlen(argv[littlest_char_index]),
-    my_strlen(argv[j]), j , littlest_char_index);
+    my_strlen(argv[j]), j, littlest_char_index);
 }
 
 static void check_swap(char **argv, int i, int littlest_char_index)

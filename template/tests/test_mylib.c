@@ -7,7 +7,7 @@
 
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"
-#include "my.h"
+#include "../include/my.h"
 
 Test(my_compute_factorial_rec, full_covr)
 {

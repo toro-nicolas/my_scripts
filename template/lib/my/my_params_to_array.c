@@ -5,7 +5,6 @@
 ** Returns a info_params struct of the agrc (ac) and the argv (av)
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 struct info_param *my_params_to_array(int ac, char **av)
@@ -14,7 +13,7 @@ struct info_param *my_params_to_array(int ac, char **av)
     int i = 0;
 
     result = malloc(sizeof(struct info_param) * ac + 1);
-    for ( ; i < ac; i++) {
+    for (; i < ac; i++) {
         result[i].length = my_strlen(av[i]);
         result[i].str = av[i];
         result[i].copy = my_strdup(av[i]);

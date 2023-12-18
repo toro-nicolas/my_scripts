@@ -7,7 +7,7 @@
 
 #include "my.h"
 
-static int index_negative(char const *str, int  index, int index_neg)
+static int index_negative(char const *str, int index, int index_neg)
 {
     if (str[index - 1] == '-')
         index_neg = (-1);

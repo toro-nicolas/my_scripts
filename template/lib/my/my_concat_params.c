@@ -5,7 +5,6 @@
 ** Task02
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 char *my_concat_params(int argc, char **argv)

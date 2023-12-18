@@ -7,7 +7,6 @@
 ** number composed by those digits are display
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 static char *str_number_to_int(int nb, int n)
@@ -23,9 +22,9 @@ static char *str_number_to_int(int nb, int n)
         temp_nb = temp_nb / 10;
     }
     nb_str = malloc(sizeof(char) * n);
-    for ( ; nb_zero < n - len_nb - 1; nb_zero++)
+    for (; nb_zero < n - len_nb - 1; nb_zero++)
         nb_str[nb_zero] = '0';
-    for (int i = 0 ; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         nb_str[n - i - 1 + nb_zero] = 48 + (figure_temp % 10);
         figure_temp = (figure_temp - (figure_temp % 10)) / 10;
     }

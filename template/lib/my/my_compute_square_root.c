@@ -5,6 +5,8 @@
 ** square root of int in iterative
 */
 
+#include "my.h"
+
 int my_compute_square_root(int nb)
 {
     int i = 1;

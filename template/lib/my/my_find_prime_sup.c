@@ -5,6 +5,8 @@
 ** Returns the next prime number starting form a number (nb)
 */
 
+#include "my.h"
+
 static int is_prime(int nb)
 {
     int prime = 1;

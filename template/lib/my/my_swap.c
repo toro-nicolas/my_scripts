@@ -5,6 +5,8 @@
 ** Swap the value of two integer (a and b)
 */
 
+#include "my.h"
+
 void my_swap(int *a, int *b)
 {
     int c;

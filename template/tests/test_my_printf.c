@@ -7,8 +7,7 @@
 
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"
-#include "my.h"
-#include "myformats.h"
+#include "../lib/my/my_printf/myformats.h"
 
 void redirect_all_std(void)
 {

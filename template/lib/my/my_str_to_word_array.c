@@ -5,7 +5,6 @@
 ** splits str into words in a array
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 int my_char_isalpha(char c)
@@ -65,23 +64,33 @@ static char *nbr_sep(char *str)
     return &str[nbr_sep];
 }
 
+static char **initialise_value(char **string, char const *str,
+    int *sep, int *word)
+{
+    char **array_of_word;
+
+    *string = nbr_sep(*string);
+    check_words_and_num(str, sep, word);
+    array_of_word = malloc(sizeof(char *) * ((*word) + 1));
+    return array_of_word;
+}
+
 char **my_str_to_word_array(char const *str)
 {
     int word = 0;
     int sep = 1;
     int nbr_lettre = 0;
     int which_lettre = 0;
-    char **array_of_word;
-    char *string = my_strdup(str);
+    char *string = (char *)str;
+    char **array_of_word = initialise_value(&string, str, &sep, &word);
 
-    string = nbr_sep(string);
-    check_words_and_num(str, &sep, &word);
-    array_of_word = malloc(sizeof(char *) * (word + 1));
     for (int elem = 0; elem < word; elem++) {
         count_letter(string, which_lettre, &nbr_lettre);
         array_of_word[elem] = malloc(sizeof(char) * (nbr_lettre + 1));
-        for (int chara = 0; chara < nbr_lettre; chara++)
-            array_of_word[elem][chara] = string[which_lettre++];
+        for (int chara = 0; chara < nbr_lettre; chara++) {
+            array_of_word[elem][chara] = string[which_lettre];
+            which_lettre++;
+        }
         array_of_word[elem][nbr_lettre] = '\0';
         reset_nbr_letter(string, &which_lettre, &nbr_lettre);
     }

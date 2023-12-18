@@ -6,10 +6,7 @@
 ** in stdout and returns the lenght the printed string
 */
 
-#include <stdarg.h>
-#include "my.h"
-#include "./flags/myflags.h"
-#include "./flags/myformats.h"
+#include "./my_printf/myflags.h"
 
 static void find_format(user_t *user,
     flags_t *flgs, formating_t *formating)
@@ -47,7 +44,7 @@ static void not_a_flag(formating_t *formating, user_t *user)
 static void find_flags(user_t *user, va_list list,
     formating_t *formating, int *index)
 {
-    flags_t flgs = {.str = "dicspouxXeEfFgGaAmbSD%",
+    flags_t flgs = {.str = "dicspouxXeEfFgGaAbSD%",
     .index_flag = 0};
     int copi;
 

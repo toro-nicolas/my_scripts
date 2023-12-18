@@ -5,12 +5,11 @@
 ** Returns the strings convertion of a big unsigned number (nb)
 */
 
-#include <stddef.h>
 #include "my.h"
 
 static char *set_str_nb(size_t nb, int int_nb)
 {
-    char nb_str[int_nb];
+    char *nb_str = malloc(sizeof(char) * (int_nb + 1));
     int j = 0;
     size_t figure_temp = nb;
 
@@ -19,7 +18,7 @@ static char *set_str_nb(size_t nb, int int_nb)
         figure_temp = (figure_temp - (figure_temp % 10)) / 10;
     }
     nb_str[j] = '\0';
-    return my_strdup(my_revstr(nb_str));
+    return my_revstr(nb_str);
 }
 
 char *my_str_nbr_size_t(size_t nb)

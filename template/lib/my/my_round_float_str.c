@@ -5,7 +5,6 @@
 ** Modify a string (float) and round it
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 static void add_number(char *float_nb)

@@ -6,7 +6,6 @@
 ** in a specific base (base_from) to another base (base_to)
 */
 
-#include <stdlib.h>
 #include "my.h"
 
 static char *put_str_nb(int nb, char const *base, int base_len, int negative)

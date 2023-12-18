@@ -5,7 +5,7 @@
 ** Returns the lenghts of array of array (array)
 */
 
-#include <stddef.h>
+#include "my.h"
 
 int my_array_of_array_len(char **array)
 {

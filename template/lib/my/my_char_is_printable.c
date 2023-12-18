@@ -7,7 +7,7 @@
 
 #include "my.h"
 
-int my_char_isprintable(char const c)
+int my_char_is_printable(char const c)
 {
     if (c < 32 || c > 126)
             return 0;

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** day05
+** my_compute_factorial_rec
 ** File description:
-** Task02
+** Returns the factorial value of the number (nb)
 */
 
 #include "my.h"

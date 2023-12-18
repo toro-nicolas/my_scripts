@@ -1,8 +1,9 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_strncpm
+** my_strncmp
 ** File description:
-** return int but comparing only to n elements
+** Returns 0 if the strings (s1 and s2) are identical,
+** otherwise it returns the difference
 */
 
 #include "my.h"
@@ -18,5 +19,5 @@ int my_strncmp(char const *s1, char const *s2, int n)
             return s1[i] - s2[i];
         i++;
     }
-    return s1[i]-s2[i];
+    return s1[i] - s2[i];
 }

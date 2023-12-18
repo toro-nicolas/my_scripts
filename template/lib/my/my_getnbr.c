@@ -2,16 +2,16 @@
 ** EPITECH PROJECT, 2023
 ** my_getnbr
 ** File description:
-** get str in number
+** Returns a int number starting from a char number (str)
 */
 
 #include "my.h"
 
-static int index_negative(char const *str, int index, int index_neg)
+static int index_negative(char const *str, int index)
 {
     if (str[index - 1] == '-')
-        index_neg = (-1);
-    return index_neg;
+       return -1;
+    return 1;
 }
 
 int my_getnbr(char const *str)
@@ -27,7 +27,7 @@ int my_getnbr(char const *str)
         return 0;
     while (str[index] < '0' || str[index] > '9')
         index++;
-    index_neg = index_negative(str, index, index_neg);
+    index_neg = index_negative(str, index);
     while (str[index] >= '0' && str[index] <= '9') {
         convert = convert * 10 + (str[index] - 48);
         index++;

@@ -10,8 +10,9 @@
 
 int my_putstr_sized(char const *str, int size)
 {
-    for (int i = 0; i < size; i++) {
+    if (str == NULL)
+        return 84;
+    for (int i = 0; i < size; i++)
         my_putchar(str[i]);
-    }
     return 0;
 }

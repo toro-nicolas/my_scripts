@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_compute_power_rec_size_t
 ** File description:
-** Returns the power (p) of the number (nb)
+** Returns the power (p) of the number (nb) in size_t
 */
 
 #include "my.h"

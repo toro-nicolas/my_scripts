@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2023
 ** my_str_islower
 ** File description:
-** return 1 if str is only lower cases
+** Returns 1 if the string (str)
+** contains only lowercase alphabetical characters
 */
 
 #include "my.h"

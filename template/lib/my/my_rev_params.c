@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** day07
+** my_rev_params
 ** File description:
-** Task05
+** Prints all the arguments (argc and argv) in reverse order
 */
 
 #include "my.h"

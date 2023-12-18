@@ -1,8 +1,9 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_islower
+** my_str_isupper
 ** File description:
-** return 1 if str is only upper cases
+** Returns 1 if the string (str)
+** contains only uppercase alphabetical characters
 */
 
 #include "my.h"

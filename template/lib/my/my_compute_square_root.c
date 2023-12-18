@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_compute_square_root
 ** File description:
-** square root of int in iterative
+** Returns the root of the number (nb)
 */
 
 #include "my.h"

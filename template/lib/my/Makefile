@@ -9,8 +9,10 @@ NAME    	=	libmy.a
 
 BUILDDIR 	=	../../build
 
-SRCS		=	my_array_of_array_len.c		\
-			my_char_isprintable.c		\
+SRCS		=	my_array_len.c		\
+			my_char_is_alpha.c			\
+			my_char_is_num.c		\
+			my_char_is_printable.c		\
 			my_compute_factorial_rec.c	\
 			my_compute_power_rec.c		\
 			my_compute_power_rec_size_t.c	\
@@ -19,6 +21,7 @@ SRCS		=	my_array_of_array_len.c		\
 			my_convert_base.c		\
 			my_convert_base_unsigned.c	\
 			my_convert_base_size_t.c	\
+			my_find_nbr.c		\
 			my_find_prime_sup.c		\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
@@ -107,5 +110,5 @@ fclean:	clean
 re: 	fclean all
 
 copy:
-	@mv $(NAME) ../$(NAME)
+	@cp $(NAME) ../$(NAME)
 	@cp $(HEADER) ../../include/$(HEADER)

@@ -1,8 +1,9 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_strcmp.c
+** my_strcmp
 ** File description:
-** return 1, 0, -1 if s1 is bigger, equal, smaller
+** Returns 0 if the strings (s1 and s2) are identical,
+** otherwise it returns the difference
 */
 
 #include "my.h"
@@ -15,7 +16,7 @@ int my_strcmp(char const *s1, char const *s2)
         if (s1[i] < s2[i])
             return -1;
         if (s1[i] > s2[i])
-            return s1[i]-s2[i];
+            return s1[i] - s2[i];
         i++;
     }
     return s1[i] - s2[i];

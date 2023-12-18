@@ -80,7 +80,10 @@ int my_putstr_error(char const *str);
 int my_putstr_sized(char const *str, int size);
 size_t my_compute_power_rec_size_t(int nb, int p);
 void my_round_float_str(char *float_nb, char last_char, int i, int enable);
-int my_char_isprintable(char const c);
+int my_char_is_alpha(char const c);
+int my_char_is_num(char const c);
+int my_char_is_printable(char const c);
+int my_find_nbr(char const *str);
 
 char *my_str_nbr(int nb);
 char *my_str_nbr_short(short int nb);

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** day07
+** my_print_params
 ** File description:
-** Task04
+** Prints all the arguments (argc and argv)
 */
 
 #include "my.h"

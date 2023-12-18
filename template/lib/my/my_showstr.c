@@ -8,15 +8,6 @@
 
 #include "my.h"
 
-static int is_printable(char c)
-{
-    if (c >= 32 && c <= 126) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
 static void check_zero_in_hexadecimal(char c)
 {
     if (c < 16)
@@ -28,7 +19,7 @@ int my_showstr(char const *str)
     int len = my_strlen(str);
 
     for (int i = 0; i < len; i++) {
-        if (is_printable(str[i]) == 1) {
+        if (my_char_is_printable(str[i]) == 1) {
             my_putchar(str[i]);
         } else {
             my_putchar('\\');

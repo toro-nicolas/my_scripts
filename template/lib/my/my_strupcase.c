@@ -9,12 +9,7 @@
 
 char *my_strupcase(char *str)
 {
-    int len = 0;
-
-    while (str[len] != '\0') {
-        len = len + 1;
-    }
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] >= 97 && str[i] <= 122) {
             str[i] = str[i] - 32;
         }

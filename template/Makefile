@@ -22,6 +22,7 @@ LDFLAGS 	=	-L./lib/ -lmy
 all: create-build libs $(BUILDDIR) $(NAME)
 
 libs:
+	@make -C./lib/my/
 
 create-build:
 	@mkdir -p $(BUILDDIR)

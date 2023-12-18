@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_isprintable
 ** File description:
-** check if the char in argument is printable
+** Returns 1 if the string (str) contains only printable characters
 */
 
 #include "my.h"

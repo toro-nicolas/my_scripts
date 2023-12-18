@@ -48,5 +48,5 @@ fclean:	clean
 re: 	fclean all
 
 copy:
-	@mv $(NAME) ../$(NAME)
+	@cp $(NAME) ../$(NAME)
 	@cp $(HEADER) ../../include/$(HEADER)

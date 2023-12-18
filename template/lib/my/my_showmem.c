@@ -44,9 +44,8 @@ static void print_hexadecimal_content(char const *str, int size, int line)
     int end_of_line = 0;
 
     for (int i = 16 * line; i < 16 * (line + 1); i++) {
-        if (i != 16 * line && i % 2 == 0) {
+        if (i != 16 * line && i % 2 == 0)
             my_putchar(' ');
-        }
         if (i == size || str[i] == '\b' || end_of_line == 1) {
             check_backslash(str[i], end_of_line);
             end_of_line = 1;
@@ -67,11 +66,10 @@ static void print_string_content(char const *str, int size,
             *error = 1;
             break;
         }
-        if (str[i] >= 32 && str[i] <= 126) {
+        if (str[i] >= 32 && str[i] <= 126)
             my_putchar(str[i]);
-        } else {
+        else
             my_putchar('.');
-        }
     }
 }
 

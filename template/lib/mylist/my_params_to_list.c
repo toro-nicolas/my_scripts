@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_params_to_list
 ** File description:
-** The my_params_to_list.c
+** Creates a linked list from the arguments (argc and argv)
 */
 
 #include "mylist.h"

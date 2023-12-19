@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_sort_list
 ** File description:
-** The my_sort_list.c
+** Sorts a linked list
 */
 
 #include "mylist.h"

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
-** myhunter
+** Libmycsfml
 ** File description:
 ** The header of the csfml functions
 */

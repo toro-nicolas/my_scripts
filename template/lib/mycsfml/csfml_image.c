@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** myhunter
+** csfml_image
 ** File description:
-** The csfml_image.c
+** All the functions related to images in CSFML
 */
 
 #include "mycsfml.h"

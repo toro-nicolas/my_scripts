@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** myhunter
+** csfml_pixel
 ** File description:
-** The csfml_pixel.c
+** All the functions related to pixels in CSFML
 */
 
 #include "mycsfml.h"

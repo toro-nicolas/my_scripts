@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_find_node
 ** File description:
-** The my_find_node.c
+** Finds a node in a linked list and return it
 */
 
 #include "mylist.h"

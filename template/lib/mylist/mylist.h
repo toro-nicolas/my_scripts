@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
-** mylist
+** Libmylist
 ** File description:
 ** The header file of the libmylist
 */

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** myhunter
+** csfml_audio
 ** File description:
-** The csfml_music_sound.c
+** All the functions related to audio in CSFML
 */
 
 #include "mycsfml.h"

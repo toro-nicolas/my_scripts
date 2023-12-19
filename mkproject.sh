@@ -64,7 +64,7 @@ find "$template_path" \
 mkdir "$project_path/lib"
 for lib in "$@"; do
   cp -r "$lib_folder/$lib" lib/
-  sed -i "/libs:/a \ $(printf '\t')@make -C./lib/$lib \\" Makefile
+  sed -i "/libs:/a \ $(printf '\t')@make --no-print-directory -C./lib/$lib \\" Makefile
 done
 
 # Modification des fichiers du projet

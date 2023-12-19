@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_delete_nodes
 ** File description:
-** The my_delete_nodes.c
+** Deletes nodes from a linked list
 */
 
 #include "mylist.h"

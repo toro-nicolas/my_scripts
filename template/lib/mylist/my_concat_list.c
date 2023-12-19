@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_concat_list
 ** File description:
-** The my_concat_list.c
+** Concatenates two linked lists
 */
 
 #include "mylist.h"

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_rev_list
 ** File description:
-** The my_rev_list.c
+** Reverses a linked list
 */
 
 #include "mylist.h"

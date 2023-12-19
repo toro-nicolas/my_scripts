@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_merge
 ** File description:
-** The my_merge.c
+** Merges two linked lists
 */
 
 #include "mylist.h"

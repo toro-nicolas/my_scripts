@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** myradar
+** csfml_rect
 ** File description:
-** The csfml_rect.c
+** All the functions related to rect in CSFML
 */
 
 #include "mycsfml.h"

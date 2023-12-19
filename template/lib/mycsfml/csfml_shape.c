@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** bsmyradar
+** csfml_shape
 ** File description:
-** The csfml_shape.c
+** All the functions related to shape in CSFML
 */
 
 #include "mycsfml.h"

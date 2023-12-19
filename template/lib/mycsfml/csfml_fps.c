@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** bsmyradar
+** csfml_fps
 ** File description:
-** The csfml_fps.c
+** All the functions related to fps in CSFML
 */
 
 #include "mycsfml.h"

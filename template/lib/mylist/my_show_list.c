@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_show_list
 ** File description:
-** The my_show_list.c
+** Shows a linked list
 */
 
 #include "mylist.h"

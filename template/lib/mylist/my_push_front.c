@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_push_front
 ** File description:
-** The my_push_front.c
+** Adds a node at the beginning of a linked list
 */
 
 #include "mylist.h"

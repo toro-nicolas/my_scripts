@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_list_size
 ** File description:
-** The my_list_size.c
+** Returns the size of a linked list
 */
 
 #include "mylist.h"

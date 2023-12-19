@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_push_back
 ** File description:
-** The my_push_back.c
+** Adds a node at the end of a linked list
 */
 
 #include "mylist.h"

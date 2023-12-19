@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** myradar
+** csfml_text
 ** File description:
-** The csfml_text.c
+** All the functions related to text in CSFML
 */
 
 #include "mycsfml.h"

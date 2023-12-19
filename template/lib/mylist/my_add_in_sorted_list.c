@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_add_in_sorted_list
 ** File description:
-** The my_add_in_sorted_list.c
+** Inserts a node in a sorted linked list
 */
 
 #include "mylist.h"

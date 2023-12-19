@@ -7,7 +7,7 @@
 
 NAME		=	unit_tests
 
-SRCS		=	../lib/my/my_array_of_array_len.c	\
+SRCS		=	../lib/my/my_array_len.c	\
 		../lib/my/my_compute_factorial_rec.c	\
 		../lib/my/my_compute_power_rec.c		\
 		../lib/my/my_compute_square_root.c	\
@@ -114,17 +114,21 @@ LDFLAGS 	=	-L../lib/ -lmy
 clean:
 	@rm -rf *.gcda
 	@rm -rf *.gcno
+	@echo -e "\033[1;31mUnit tests deleted.\033[0m"
 
 fclean:	clean
 	@rm -rf $(NAME)
 	@rm -rf ../$(NAME)
 
-lib:
-	@make -C ../lib/my/
+libs:
+	@make --no-print-directory -C ../lib/my/
+	@echo -e "\033[1;33mLibs made.\033[0m"
 
-$(NAME):	lib fclean
+$(NAME):	fclean libs
 	@$(CC) -o $(NAME) $(TESTS) $(SRCS) $(CFLAGS) $(LDFLAGS)
 	@cp $(NAME) ../
+	@echo -e "\033[1;33mUnit tests created.\033[0m"
 
 tests_run: $(NAME)
+	@echo -e "\033[1;32mExecuting unit tests and gcovr...\033[0m"
 	@./$(NAME)

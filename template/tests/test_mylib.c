@@ -125,7 +125,7 @@ Test(my_put_nbr_base, fullcovr, .init = cr_redirect_stdout)
 
 Test(my_putstr_error, full_covr)
 {
-    cr_assert_eq(my_putstr_error("ok"), 0);
+    cr_assert_eq(my_putstr_error("ok"), 84);
 }
 
 Test(my_putstr_sized, full_covr)

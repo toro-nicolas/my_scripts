@@ -1,18 +1,21 @@
 /*
 ** EPITECH PROJECT, 2023
-** my concat list
+** template
 ** File description:
-** concat list
+** The my_concat_list.c
 */
 
 #include "mylist.h"
 
 void my_concat_list(linked_list_t **begin1, linked_list_t *begin2)
 {
-    linked_list_t *node = *begin1;
+    linked_list_t *tmp = *begin1;
 
-    while (node->next != NULL) {
-        node = node->next;
+    if (*begin1 == NULL) {
+        *begin1 = begin2;
+        return;
     }
-    node->next = begin2;
+    for (; tmp->next != NULL; tmp = tmp->next);
+    tmp->next = begin2;
+    begin2->prev = tmp;
 }

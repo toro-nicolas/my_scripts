@@ -87,9 +87,10 @@ HEADER		=	my.h
 CFLAGS		=	-Werror -Wall -Wextra -Wpedantic
 
 all:	my-printf create-build $(BUILDDIR) $(NAME) copy
+	@echo -e "\033[1;33mLibmy compiled.\033[0m"
 
 my-printf:
-	@make -C ./my_printf/
+	@make --no-print-directory -C ./my_printf/
 
 create-build:
 	@mkdir -p $(BUILDDIR)
@@ -103,9 +104,11 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm -rf $(OBJS)
+	@echo -e "\033[1;31mLibmy .o deleted.\033[0m"
 
 fclean:	clean
 	@rm -rf $(NAME)
+	@echo -e "\033[1;31mLibmy cleaned.\033[0m"
 
 re: 	fclean all
 

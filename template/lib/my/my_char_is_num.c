@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** template
+** my_char_is_num
 ** File description:
-** The my_char_is_num.c
+** Returns 1 if the characters (c) is a number or 0 if not
 */
 
 #include "my.h"

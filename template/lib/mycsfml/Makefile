@@ -21,9 +21,15 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mycsfml.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic
+CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -L../ -lmy -I../../include
+CFLAGS		+=	-lcsfml-graphics -lcsfml-system -lcsfml-window -lcsfml-audio
 
-all:	$(BUILDDIR) $(NAME) copy
+all:	my $(BUILDDIR) $(NAME) copy
+	@echo -e "\033[1;33mLibmycsfml compiled.\033[0m"
+
+my:
+	@cp ../my/libmy.a libmy.a
+	@cp ../my/my.h my.h
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
@@ -34,9 +40,11 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm -rf $(OBJS)
+	@echo -e "\033[1;31mLibmycsfml .o deleted.\033[0m"
 
 fclean:	clean
 	@rm -rf $(NAME)
+	@echo -e "\033[1;31mLibmycsfml cleaned.\033[0m"
 
 re: 	fclean all
 

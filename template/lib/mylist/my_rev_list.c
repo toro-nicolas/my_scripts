@@ -1,20 +1,24 @@
 /*
 ** EPITECH PROJECT, 2023
-** rev list
+** template
 ** File description:
-** reverse order of list elements
+** The my_rev_list.c
 */
 
 #include "mylist.h"
 
 void my_rev_list(linked_list_t **begin)
 {
-    linked_list_t *current = *begin;
-    linked_list_t *rev = NULL;
+    linked_list_t *previous_list = NULL;
+    linked_list_t *current_list = *begin;
+    linked_list_t *next_list = NULL;
 
-    while (current != NULL) {
-        push_front(&rev, current->data);
-        current = current->next;
+    while (current_list != NULL) {
+        next_list = current_list->next;
+        current_list->next = previous_list;
+        current_list->prev = next_list;
+        previous_list = current_list;
+        current_list = next_list;
     }
-    *begin = rev;
+    *begin = previous_list;
 }

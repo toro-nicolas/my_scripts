@@ -1,19 +1,17 @@
 /*
 ** EPITECH PROJECT, 2023
-** my list size
+** template
 ** File description:
-** taille de liste*
+** The my_list_size.c
 */
 
 #include "mylist.h"
 
 int my_list_size(linked_list_t const *begin)
 {
-    int size = 0;
+    int nb = 0;
 
-    while (begin != NULL) {
-        size++;
+    for (; begin != NULL; nb++)
         begin = begin->next;
-    }
-    return size;
+    return nb;
 }

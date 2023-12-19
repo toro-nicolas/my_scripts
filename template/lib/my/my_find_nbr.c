@@ -50,7 +50,7 @@ int my_find_nbr(char const *str)
     int error = 0;
 
     while (letter_detected == 0 && error == 0 && i < len) {
-        if (str[i] >='0' && str[i] <= '9')
+        if (str[i] >= '0' && str[i] <= '9')
             result = add_number(&error, &signe, result, str[i]);
         else
             char_to_int(&letter_detected, str[i], &signe);

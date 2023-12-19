@@ -10,7 +10,7 @@
 static int index_negative(char const *str, int index)
 {
     if (str[index - 1] == '-')
-       return -1;
+        return -1;
     return 1;
 }
 

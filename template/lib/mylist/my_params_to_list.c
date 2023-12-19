@@ -1,28 +1,21 @@
 /*
 ** EPITECH PROJECT, 2023
-** my params to linked list
+** template
 ** File description:
-** my params to linked list
+** The my_params_to_list.c
 */
 
 #include "mylist.h"
 
-int push_front(linked_list_t **cabine, void *data)
-{
-    linked_list_t *element;
-
-    element = malloc(sizeof(*element));
-    element->data = data;
-    element->next = *cabine;
-    *cabine = element;
-    return 1;
-}
-
 linked_list_t *my_params_to_list(int ac, char *const *av)
 {
-    linked_list_t *cabine = NULL;
+    linked_list_t *list = malloc(sizeof(linked_list_t));
 
-    for (int i = 0; i < ac; i++)
-        push_front(&cabine, av[i]);
-    return cabine;
+    list->prev = NULL;
+    list->data = my_strdup(av[0]);
+    list->type = STRING;
+    list->next = NULL;
+    for (int arg = 1; arg < ac; arg++)
+        my_push_front(&list, my_strdup(av[arg]), STRING);
+    return list;
 }

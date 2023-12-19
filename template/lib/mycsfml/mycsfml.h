@@ -12,7 +12,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <math.h>
-#include "../../include/my.h"
+#include "my.h"
 
 #ifndef CSFML_H_
     #define CSFML_H_

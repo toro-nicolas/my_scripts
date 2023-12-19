@@ -1,33 +1,29 @@
 /*
 ** EPITECH PROJECT, 2023
-** my concat list
+** template
 ** File description:
-** concat list
+** The my_sort_list.c
 */
 
 #include "mylist.h"
 
-void sorting_l(linked_list_t **ref, linked_list_t **rest,
-    char *temp, int(*cmp) ())
+static void check_swap(linked_list_t **list, int (*cmp) ())
 {
-    if (cmp((*ref)->data, (*rest)->data) > 0) {
-        temp = (*ref)->data;
-        (*ref)->data = (*rest)->data;
-        (*rest)->data = temp;
+    void *tmp;
+
+    if ((*list)->prev != NULL && cmp((*list)->prev->data, (*list)->data) > 0) {
+        tmp = (*list)->prev->data;
+        (*list)->prev->data = (*list)->data;
+        (*list)->data = tmp;
     }
 }
 
 void my_sort_list(linked_list_t **begin, int (*cmp) ())
 {
-    linked_list_t *ref = *begin;
-    linked_list_t *rest = NULL;
-    char *temp = " ";
-
-    for (; ref->next != NULL; ref = ref->next) {
-        for (rest = ref->next; rest != NULL; rest = rest->next) {
-            sorting_l(&ref, &rest, temp, *cmp);
+    for (linked_list_t *list1 = *begin; list1 != NULL; list1 = list1->next) {
+        for (linked_list_t *list2 = (*begin)->next;
+        list2 != NULL; list2 = list2->next) {
+            check_swap(&list2, cmp);
         }
     }
-    for (; (*begin) != NULL; (*begin) = (*begin)->next)
-        my_strput((*begin)->data);
 }

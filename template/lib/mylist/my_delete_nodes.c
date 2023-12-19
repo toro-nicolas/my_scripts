@@ -1,30 +1,37 @@
 /*
 ** EPITECH PROJECT, 2023
-** my delete nodes
+** template
 ** File description:
-** delete node when matching on data_ref
+** The my_delete_nodes.c
 */
 
 #include "mylist.h"
 
-int my_delete_nodes(linked_list_t **begin, void const *data_ref, int(*cmp)())
+static void remove_node(linked_list_t **begin, linked_list_t *tmp)
 {
-    linked_list_t *current = *begin;
-    linked_list_t *prev = NULL;
+    if (tmp->prev != NULL)
+        tmp->prev->next = tmp->next;
+    else
+        *begin = tmp->next;
+    if (tmp->next != NULL)
+        tmp->next->prev = tmp->prev;
+    free(tmp->data);
+    free(tmp);
+}
 
-    if (cmp((*begin)->data, data_ref) == 0)
-        *begin = (*begin)->next;
-    else {
-        while (current != NULL && (cmp((current)->data, data_ref) != 0)) {
-            prev = current;
-            (current) = (current)->next;
+int my_delete_nodes(linked_list_t **begin, void const *data_ref, int (*cmp) ())
+{
+    linked_list_t *tmp = *begin;
+    linked_list_t *next = NULL;
+    int nodes_deleted = 0;
+
+    while (tmp != NULL) {
+        next = tmp->next;
+        if (cmp(tmp->data, data_ref) == 0) {
+            remove_node(begin, tmp);
+            nodes_deleted++;
         }
-        if (current == NULL) {
-            return 1;
-        } else {
-            (prev)->next = (current)->next;
-            free(current);
-        }
+        tmp = next;
     }
-    return 0;
+    return nodes_deleted;
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** Libmy
 ** File description:
-** Store libmy functions prototypes
+** The header file of the libmy
 */
 
 #include <stdlib.h>

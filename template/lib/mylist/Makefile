@@ -9,28 +9,32 @@ NAME    	=	libmylist.a
 
 BUILDDIR 	=	../../build
 
-SRCS		=	my_params_to_list.c	\
-				my_list_size.c		\
-				my_rev_list.c		\
-				my_show_list.c		\
-				my_apply_on_nodes.c	\
-				my_apply_on_matching_nodes.c \
-				my_find_node.c 		\
-				my_delete_nodes.c	\
-				my_concat_list.c	\
-				my_sort_list.c		\
-				my_strput.c		\
-				my_charput.c		\
-				my_nbr_put.c		\
-				my_data_put.c		\
+SRCS		=	my_push_front.c			\
+				my_push_back.c			\
+				my_params_to_list.c		\
+				my_show_list.c			\
+				my_list_size.c			\
+				my_delete_nodes.c		\
+				my_delete_list.c		\
+				my_rev_list.c			\
+				my_find_node.c 			\
+				my_concat_list.c		\
+				my_sort_list.c			\
+				my_add_in_sorted_list.c	\
+				my_merge.c				\
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mylist.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic
+CFLAGS		=	-Werror -Wextra -Wpedantic -L../ -lmy -I../../include
 
-all:	$(BUILDDIR) $(NAME) copy
+all:	my $(BUILDDIR) $(NAME) copy
+	@echo -e "\033[1;33mLibmylist compiled.\033[0m"
+
+my:
+	@cp ../my/libmy.a libmy.a
+	@cp ../my/my.h my.h
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
@@ -41,9 +45,11 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm -rf $(OBJS)
+	@echo -e "\033[1;31mLibmylist .o deleted.\033[0m"
 
 fclean:	clean
 	@rm -rf $(NAME)
+	@echo -e "\033[1;31mLibmylist cleaned.\033[0m"
 
 re: 	fclean all
 

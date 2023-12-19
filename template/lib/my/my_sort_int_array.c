@@ -3,7 +3,7 @@
 ** my_sort_int_array
 ** File description:
 ** Sorts an array (array) with a defined size (size) of integers in ascending
- * order
+** order
 */
 
 #include "my.h"

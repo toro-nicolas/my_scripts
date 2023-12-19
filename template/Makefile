@@ -5,7 +5,7 @@
 ## The main Makefile of our project
 ##
 
-NAME		=	[project-exec]
+NAME		=	a#[project-exec]
 
 BUILDDIR 	=	./build
 SRCDIR		=	./src
@@ -17,12 +17,15 @@ OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 CFLAGS		=	-Werror -Wextra -Wpedantic -g3
 CFLAGS		+=	-I./include/
 
-LDFLAGS 	=	-L./lib/ -lmy
+LDFLAGS 	=	-L./lib/ -lmy -L./lib/ -lmylist
 
 all: create-build libs $(BUILDDIR) $(NAME)
+	@echo -e "\033[1;33m[project-name] compiled.\033[0m"
 
 libs:
-	@make -C./lib/my/
+	@make --no-print-directory -C./lib/my/
+	@make --no-print-directory -C./lib/mylist/
+	@echo -e "\033[1;33mLibs made.\033[0m"
 
 create-build:
 	@mkdir -p $(BUILDDIR)
@@ -35,27 +38,30 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm -rf $(BUILDDIR)
+	@echo -e "\033[1;31mAll .o deleted.\033[0m"
 
 fclean: clean
-	rm -rf ./lib/*.a
-	rm -rf unit_tests*
-	rm -rf tests/unit_tests*
-	rm -rf vgcore*
-	rm -rf *.log
-	rm -rf $(NAME)
+	@rm -rf ./lib/*.a
+	@rm -rf unit_tests*
+	@rm -rf tests/unit_tests*
+	@rm -rf vgcore*
+	@rm -rf *.log
+	@rm -rf $(NAME)
+	@echo -e "\033[1;31mProject cleaned.\033[0m"
 
 re:	fclean all
 
 run: re
+	@echo -e "\033[1;32mRunning project...\033[0m"
 	@./$(NAME)
 
 valgrind: re
 	@valgrind -s ./$(NAME)
 
 # Unit tests Makefile
-unit_tests: re
-	@make unit_tests -C./tests/
+unit_tests:
+	@make unit_tests --no-print-directory -C./tests/
 
-tests_run: re
-	@make tests_run -C./tests/
+tests_run:
+	@make tests_run --no-print-directory -C./tests/
 	@gcovr

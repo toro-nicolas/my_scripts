@@ -23,8 +23,6 @@ all: create-build libs $(BUILDDIR) $(NAME)
 	@echo -e "\033[1;33m[project-name] compiled.\033[0m"
 
 libs:
-	@make --no-print-directory -C./lib/my/
-	@make --no-print-directory -C./lib/mylist/
 	@echo -e "\033[1;33mLibs made.\033[0m"
 
 create-build:

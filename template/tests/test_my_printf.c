@@ -1124,3 +1124,73 @@ Test(my_printf, flag_bigg_prc_zero, .init = redirect_all_std)
     cr_assert_stdout_eq_str("1E+06");
     cr_assert_eq(len, 5);
 }
+
+Test(my_printf, flag_g_prc_x, .init = redirect_all_std)
+{
+    cr_assert(my_printf("%.1g",  123.456));
+}
+
+Test(my_printf, flag_bigg_prc_x, .init = redirect_all_std)
+{
+    cr_assert(my_printf("%.1G",  123.456));
+}
+
+Test(my_printf, flag_a_prc, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.1a", 123.456));
+}
+
+Test(my_printf, flag_a_prc_2, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %a", 0.1));
+}
+
+Test(my_printf, flag_a_prc_3, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.0a", 1));
+}
+
+Test(my_printf, flag_a_prc_4, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.10a", 1.2345679));
+}
+
+Test(my_printf, flag_a_prc_5, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.5a", 999.57835));
+}
+
+Test(my_printf, flag_a_prc_6, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.8a", 138567983.64656757654664965785));
+}
+
+Test(my_printf, flag_biga_prc, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.1A", 123.456));
+}
+
+Test(my_printf, flag_biga_prc_2, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %A", 0.1));
+}
+
+Test(my_printf, flag_biga_prc_3, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.0A", 1));
+}
+
+Test(my_printf, flag_biga_prc_4, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.10A", 1.2345679));
+}
+
+Test(my_printf, flag_biga_prc_5, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.5A", 999.57835));
+}
+
+Test(my_printf, flag_biga_prc_6, .init = redirect_all_std)
+{
+    cr_assert(my_printf("The number is %.8A", 138567983.64656757654664965785));
+}

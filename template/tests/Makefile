@@ -80,7 +80,6 @@ SRCS		=	../lib/my/my_array_len.c	\
                 ../lib/my/my_printf/flag_a.c			\
                 ../lib/my/my_printf/flag_biga.c		\
                 ../lib/my/my_printf/flag_n.c			\
-                ../lib/my/my_printf/flag_m.c			\
                 ../lib/my/my_printf/flag_b.c			\
                 ../lib/my/my_printf/flag_bigs.c		\
                 ../lib/my/my_printf/flag_bigd.c		\

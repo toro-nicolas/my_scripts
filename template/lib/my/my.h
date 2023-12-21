@@ -75,7 +75,7 @@ char *my_convert_base_size_t(char const *nbr,
     char const *base_from, char const *base_to);
 struct info_param *my_params_to_array(int ac, char **av);
 int my_show_param_array(struct info_param const *par);
-int my_array_of_array_len(char **array);
+int my_array_len(char **array);
 int my_putstr_error(char const *str);
 int my_putstr_sized(char const *str, int size);
 size_t my_compute_power_rec_size_t(int nb, int p);

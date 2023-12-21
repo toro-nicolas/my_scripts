@@ -12,7 +12,7 @@ struct info_param *my_params_to_array(int ac, char **av)
     struct info_param *result;
     int i = 0;
 
-    result = malloc(sizeof(struct info_param) * ac + 1);
+    result = malloc(sizeof(struct info_param) * (ac + 1));
     for (; i < ac; i++) {
         result[i].length = my_strlen(av[i]);
         result[i].str = av[i];

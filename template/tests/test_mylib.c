@@ -88,7 +88,7 @@ Test(my_params_to_array, full_covr)
     char *test[] = {"unittests", "coucou"};
 
     cr_assert(my_params_to_array(0, test));
-    //cr_assert(my_params_to_array(1, test));
+    cr_assert(my_params_to_array(1, test));
     //cr_assert(my_params_to_array(2, argv));
 }
 
@@ -403,9 +403,18 @@ Test(my_swap, full_covr)
     cr_assert_eq(b, 5);
 }
 
-Test(my_array_of_array_len, full_covr)
+Test(my_array_len, full_covr)
 {
     char *tab[5] = {"a", "b", "c", "d", NULL};
 
-    cr_assert_eq(my_array_of_array_len(tab), 4);
+    cr_assert_eq(my_array_len(tab), 4);
+}
+
+Test(my, full_covr_for_null_return)
+{
+    cr_assert_eq(my_strlen(NULL), 0);
+    my_strdup(NULL);
+    cr_assert(my_putstr_sized(NULL, 0));
+    cr_assert(my_putstr_error(NULL));
+    cr_assert(my_putstr(NULL));
 }

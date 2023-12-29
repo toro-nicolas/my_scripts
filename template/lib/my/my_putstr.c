@@ -14,7 +14,7 @@ int my_putstr(char const *str)
     if (str == NULL)
         return 84;
     while (str[i] != '\0') {
-        my_putchar(str[i]);
+        write(1, &str[i], 1);
         i = i + 1;
     }
     return 0;

@@ -19,8 +19,8 @@ int rect_is_intersecting(sfIntRect rect1, sfIntRect rect2)
 
 int vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect)
 {
-    if ((vector.x > rect.left && vector.x < rect.left + rect.width) &&
-    (vector.y > rect.top && vector.y < rect.top + rect.height))
+    if ((vector.x >= rect.left && vector.x < rect.left + rect.width) &&
+    (vector.y >= rect.top && vector.y < rect.top + rect.height))
         return 1;
     return 0;
 }

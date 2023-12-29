@@ -10,14 +10,13 @@ NAME		=	[project-exec]
 BUILDDIR 	=	./build
 SRCDIR		=	./src
 
-SRCS        +=  main.c \
+SRCS        +=  main.c
 
 OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -g3
-CFLAGS		+=	-I./include/
+CFLAGS		=	-Werror -Wextra -g3 -I./include/
 
-LDFLAGS 	=	-L./lib/ -lmy -L./lib/ -lmylist
+LDFLAGS 	=	-L./lib/ -lmylist -lmycsfml -lmy
 
 all: create-build libs $(BUILDDIR) $(NAME)
 	@echo -e "\033[1;33m[project-name] compiled.\033[0m"
@@ -33,6 +32,9 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.c
 
 $(NAME): $(OBJS)
 	@$(CC) $(OBJS) $(CFLAGS) $(LDFLAGS) -o $(NAME)
+	@rm -rf ./lib/my/*.a
+	@rm -rf ./lib/mylist/*.a
+	@rm -rf ./lib/mycsfml/*.a
 
 clean:
 	@rm -rf $(BUILDDIR)

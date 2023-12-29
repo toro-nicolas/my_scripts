@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
-** myhunter
+** Libmycsfml
 ** File description:
 ** The header of the csfml functions
 */
@@ -12,7 +12,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <math.h>
-#include "../../include/my.h"
+#include "my.h"
 
 #ifndef CSFML_H_
     #define CSFML_H_
@@ -102,6 +102,7 @@ int is_intersecting_circles(sfCircleShape *c1, sfCircleShape *c2);
 
 /* FPS functions */
 void print_framerate(void);
+int get_fps(void);
 
 /* Rect functions */
 int rect_is_intersecting(sfIntRect rect1, sfIntRect rect2);

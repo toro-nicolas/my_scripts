@@ -102,6 +102,7 @@ int is_intersecting_circles(sfCircleShape *c1, sfCircleShape *c2);
 
 /* FPS functions */
 void print_framerate(void);
+int get_fps(void);
 
 /* Rect functions */
 int rect_is_intersecting(sfIntRect rect1, sfIntRect rect2);

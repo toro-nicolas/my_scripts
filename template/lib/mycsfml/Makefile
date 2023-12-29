@@ -21,7 +21,7 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mycsfml.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -L../ -lmy -I../../include
+CFLAGS		=	-Werror -Wextra -Wpedantic -L./ -lmy -I../../include
 CFLAGS		+=	-lcsfml-graphics -lcsfml-system -lcsfml-window -lcsfml-audio
 
 all:	my $(BUILDDIR) $(NAME) copy

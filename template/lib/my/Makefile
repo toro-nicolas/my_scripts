@@ -25,6 +25,7 @@ SRCS		=	my_array_len.c		\
 			my_find_prime_sup.c		\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
+			my_getnbr_float.c		\
 			my_isneg.c			\
 			my_is_prime.c			\
 			my_params_to_array.c		\

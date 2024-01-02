@@ -17,11 +17,15 @@ int rect_is_intersecting(sfIntRect rect1, sfIntRect rect2)
     return 0;
 }
 
-int vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect)
+/*int vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect)
 {
     if ((vector.x >= rect.left && vector.x < rect.left + rect.width) &&
     (vector.y >= rect.top && vector.y < rect.top + rect.height))
         return 1;
+    return 0;
+}*/
+int vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect)
+{
     return 0;
 }
 

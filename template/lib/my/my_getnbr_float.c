@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** template
 ** File description:
-** The my_getnbr_float.c
+** Returns a float number starting from a string number (str)
 */
 
 #include "my.h"

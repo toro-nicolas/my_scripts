@@ -85,6 +85,7 @@ int my_char_is_num(char const c);
 int my_char_is_printable(char const c);
 int my_find_nbr(char const *str);
 float my_getnbr_float(char const *str);
+char **my_str_to_word_array_select(char const *str, char const *separator);
 
 char *my_str_nbr(int nb);
 char *my_str_nbr_short(short int nb);

@@ -65,6 +65,7 @@ SRCS		=	my_array_len.c		\
 			my_str_nbr_long_long.c		\
 			my_str_nbr_size_t.c		\
 			my_str_to_word_array.c		\
+			my_str_to_word_array_select.c	\
 			my_strcapitalize.c              \
 			my_strcat.c                     \
 			my_strcmp.c                     \

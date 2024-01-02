@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_getnbr
 ** File description:
-** Returns a int number starting from a char number (str)
+** Returns a int number starting from a string number (str)
 */
 
 #include "my.h"

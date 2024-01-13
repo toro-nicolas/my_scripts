@@ -22,7 +22,7 @@ SRCS		=	../lib/my/my_array_len.c	\
 		../lib/my/my_params_to_array.c		\
 		../lib/my/my_print_combn.c		\
 		../lib/my/my_print_params.c		\
-		../lib/my/my_put_nbr.c			\
+		../lib/my/my_putnbr.c			\
 		../lib/my/my_putchar.c			\
 		../lib/my/my_putnbr_base.c		\
 		../lib/my/my_putstr.c			\

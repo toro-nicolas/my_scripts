@@ -13,7 +13,6 @@ Test(my_compute_factorial_rec, full_covr)
 {
     cr_assert_eq(my_compute_factorial_rec(3), 6);
     cr_assert_eq(my_compute_factorial_rec(15), 0);
-  
 }
 
 Test(my_compute_power_rec, full_covr)
@@ -105,19 +104,19 @@ Test(my_print_params, full_covr, .init = cr_redirect_stdout)
     cr_assert_stdout_eq_str("unit_tests\ncoucou\n");
 }
 
-Test(my_put_nbr, fullcovr, .init = cr_redirect_stdout)
+Test(my_putnbr, fullcovr, .init = cr_redirect_stdout)
 {
-    my_put_nbr(-2400934);
+    my_putnbr(-2400934);
     cr_assert_stdout_eq_str("-2400934");
 }
 
-Test(my_put_nbr, fullcovr_2, .init = cr_redirect_stdout)
+Test(my_putnbr, fullcovr_2, .init = cr_redirect_stdout)
 {
-    my_put_nbr(-2147483648);
+    my_putnbr(-2147483648);
     cr_assert_stdout_eq_str("-2147483648");
 }
 
-Test(my_put_nbr_base, fullcovr, .init = cr_redirect_stdout)
+Test(my_putnbr_base, fullcovr, .init = cr_redirect_stdout)
 {
     my_putnbr_base(-10, "0123456789");
     cr_assert_stdout_eq_str("-10"); 

@@ -20,7 +20,7 @@ static void put_str_nb(int nb, int len_nb)
     my_putstr(nb_str);
 }
 
-int my_put_nbr(int nb)
+int my_putnbr(int nb)
 {
     int len_nb = 1;
     int temp_nb = nb;

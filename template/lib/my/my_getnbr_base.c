@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_getnbr_base
 ** File description:
-** Returns a int number starting from a string number (str)
+** Returns an int number starting from a string number (str)
 ** in the requested base (base)
 */
 

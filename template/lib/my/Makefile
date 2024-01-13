@@ -23,6 +23,7 @@ SRCS		=	my_array_len.c		\
 			my_convert_base_size_t.c	\
 			my_find_nbr.c		\
 			my_find_prime_sup.c		\
+			my_free_word_array.c			\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
 			my_getnbr_float.c		\
@@ -31,7 +32,7 @@ SRCS		=	my_array_len.c		\
 			my_params_to_array.c		\
 			my_print_combn.c		\
 			my_print_params.c		\
-			my_put_nbr.c			\
+			my_putnbr.c			\
 			my_putchar.c			\
 			my_putnbr_base.c		\
 			my_putstr.c			\
@@ -46,6 +47,8 @@ SRCS		=	my_array_len.c		\
 			my_showstr.c			\
 			my_sort_int_array.c		\
 			my_sort_params.c		\
+			my_strict_getnbr.c		\
+			my_strict_getnbr_float.c		\
 			my_str_isalpha.c		\
 			my_str_islower.c		\
 			my_str_isnum.c			\

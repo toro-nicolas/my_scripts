@@ -12,6 +12,12 @@
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <time.h>
+#include <dirent.h>
+#include <signal.h>
 
 #ifndef MY_H_
     #define    MY_H_
@@ -24,10 +30,11 @@ struct info_param {
     char **word_array;
 };
 
+/* Basics libmy functions */
 int my_printf(char const *format, ...);
 void my_putchar(char c);
 int my_isneg(int nb);
-int my_put_nbr(int nb);
+int my_putnbr(int nb);
 void my_swap(int *a, int *b);
 int my_putstr(char const *str);
 int my_strlen(char const *str);
@@ -56,6 +63,7 @@ int my_showmem(char const *str, int size);
 char *my_strcat(char *dest, char const *src);
 char *my_strncat(char *dest, char const *src, int nb);
 
+/* Advanced libmy functions */
 int my_print_combn(int n);
 int my_compute_factorial_rec(int nb);
 int my_putnbr_base(int nbr, char const *base);
@@ -85,8 +93,12 @@ int my_char_is_num(char const c);
 int my_char_is_printable(char const c);
 int my_find_nbr(char const *str);
 float my_getnbr_float(char const *str);
+int my_strict_getnbr(char const *number);
+float my_strict_getnbr_float(char const *str);
 char **my_str_to_word_array_select(char const *str, char const *separator);
+void my_free_word_array(char **array);
 
+/* my_str_nbr functions */
 char *my_str_nbr(int nb);
 char *my_str_nbr_short(short int nb);
 char *my_str_nbr_short_short(signed char nb);
@@ -97,7 +109,6 @@ char *my_str_nbr_base_unsigned_short_short(unsigned char nbr,
 char *my_str_nbr_base_unsigned_size_t(size_t nbr, char const *base);
 char *my_str_nbr_base_unsigned_long(unsigned long nbr, char const *base);
 char *my_str_nbr_base_long_long_int(long long int nbr, char const *base);
-
 char *my_str_nbr_unsigned(unsigned int nb);
 char *my_str_nbr_unsigned_long(unsigned long int nb);
 char *my_str_nbr_long_long(long long nb);

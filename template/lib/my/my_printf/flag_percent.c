@@ -9,8 +9,6 @@
 
 int flag_percent(va_list liste, formating_t *formating)
 {
-    char str_finale[2] = "%\0";
-
-    my_putstr(str_finale);
-    return my_strlen(str_finale);
+    write(1, "%", 1);
+    return 1;
 }

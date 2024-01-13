@@ -89,6 +89,5 @@ int flag_bige(va_list list, formating_t *formating)
     char *temp = my_get_str_float_scientific(temp_double, formating);
 
     format_it_double(temp, formating, temp_double);
-    my_putstr(temp);
-    return my_strlen(temp);
+    return my_putstr(temp);
 }

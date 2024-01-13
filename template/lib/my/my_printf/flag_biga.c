@@ -182,6 +182,5 @@ int flag_biga(va_list list, formating_t *formating)
     char *convert_base = my_get_str_float_hexa(temp_double, formating);
 
     format_it_double(convert_base, formating, temp_double);
-    my_putstr(convert_base);
-    return my_strlen(convert_base);
+    return my_putstr(convert_base);
 }

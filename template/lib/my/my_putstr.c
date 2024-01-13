@@ -17,5 +17,5 @@ int my_putstr(char const *str)
         write(1, &str[i], 1);
         i = i + 1;
     }
-    return 0;
+    return i;
 }

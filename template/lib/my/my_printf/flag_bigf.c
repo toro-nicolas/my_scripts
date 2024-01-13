@@ -27,6 +27,5 @@ int flag_bigf(va_list list, formating_t *formating)
 {
     char *temp = my_get_str_float(va_arg(list, double), formating);
 
-    my_putstr(temp);
-    return my_strlen(temp);
+    return my_putstr(temp);
 }

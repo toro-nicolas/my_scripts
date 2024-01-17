@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2023
-** B-CPE-110 : Secured
+** Libmyhashtable
 ** File description:
-** hashtable.h
+** The header file of the libmyhashtable
 */
 
 #include "my.h"

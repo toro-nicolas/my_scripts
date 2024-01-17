@@ -13,8 +13,7 @@ SRCS		=	my_calloc.c		\
 			my_free.c		\
 			my_malloc.c		\
 			my_memchr.c		\
-			my_memcmp.c		\
-			my_memcmp.c		\
+			my_memcpy.c		\
 			my_memcmp.c		\
 			my_memmove.c		\
 			my_memset.c		\

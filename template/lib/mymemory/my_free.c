@@ -9,5 +9,7 @@
 
 void my_free(void)
 {
-    return;
+    my_malloc(0, 0);
+    my_calloc(0, 0, 0);
+    my_realloc(NULL, 0, 0);
 }

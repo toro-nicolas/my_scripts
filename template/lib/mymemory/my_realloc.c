@@ -7,7 +7,20 @@
 
 #include "mymemory.h"
 
-void *my_realloc(void *pointer, size_t size)
+void *my_realloc(void *pointer, size_t size, int type)
 {
+    static linked_list_t *list = NULL;
+    void *ptr;
+
+    if (type == 1) {
+        ptr = malloc(size);
+        if (ptr == NULL)
+            return NULL;
+        my_memcpy(ptr, pointer, size);
+        my_push_front(&list, ptr, VOID);
+        return ptr;
+    }
+    if (type == 0)
+        my_delete_list(&list);
     return NULL;
 }

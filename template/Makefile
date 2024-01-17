@@ -16,7 +16,7 @@ OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 CFLAGS		=	-Werror -Wextra -g3 -I./include/
 
-LDFLAGS 	=	-L./lib/ -lmyhashtable -lmycsfml -lmylist -lmy
+LDFLAGS 	=	-L./lib/ -lmymemory -lmyhashtable -lmycsfml -lmylist -lmy
 
 all: create-build libs $(BUILDDIR) $(NAME)
 	@echo -e "\033[1;33m[project-name] compiled.\033[0m"
@@ -26,6 +26,7 @@ libs:
 	@make --no-print-directory -C./lib/mylist
 	@make --no-print-directory -C./lib/mycsfml
 	@make --no-print-directory -C./lib/myhashtable
+	@make --no-print-directory -C./lib/mymemory
 	@echo -e "\033[1;33mLibs made.\033[0m"
 
 create-build:
@@ -40,6 +41,7 @@ $(NAME): $(OBJS)
 	@rm -rf ./lib/mylist/*.a
 	@rm -rf ./lib/mycsfml/*.a
 	@rm -rf ./lib/myhashtable/*.a
+	@rm -rf ./lib/mymemory/*.a
 
 clean:
 	@rm -rf $(BUILDDIR)

@@ -10,12 +10,12 @@ NAME    	=	libmyhashtable.a
 BUILDDIR 	=	../../build
 
 SRCS		=	hash.c			\
-				create_table.c	\
-				destroy_table.c	\
-				insert.c		\
-				delete.c		\
-				search.c		\
-				dump.c			\
+			create_table.c		\
+			destroy_table.c		\
+			insert.c		\
+			delete.c		\
+			search.c		\
+			dump.c			\
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 

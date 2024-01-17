@@ -12,7 +12,7 @@ void *my_calloc(size_t element_count, size_t element_size, int type)
     static linked_list_t *list = NULL;
     void *ptr;
 
-    if (type == 1) {
+    if (type == 1 && element_count > 0 && element_size > 0) {
         ptr = malloc(element_count * element_size);
         if (ptr == NULL)
             return NULL;

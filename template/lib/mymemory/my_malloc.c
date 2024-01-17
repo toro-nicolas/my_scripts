@@ -12,7 +12,7 @@ void *my_malloc(size_t size, int type)
     static linked_list_t *list = NULL;
     void *ptr;
 
-    if (type == 1) {
+    if (type == 1 && size > 0) {
         ptr = malloc(size);
         if (ptr == NULL)
             return NULL;

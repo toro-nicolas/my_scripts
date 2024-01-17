@@ -7,7 +7,13 @@
 
 #include "mymemory.h"
 
-void *my_memcpy(void *destination, const void *source, size_t size)
+int my_memcmp(const void *pointer1, const void *pointer2, size_t size)
 {
-    return NULL;
+    if (pointer1 == NULL || pointer2 == NULL)
+        return 0;
+    for (size_t index = 0; index < size; index++) {
+        if (((char *)pointer1)[index] != ((char *)pointer2)[index])
+            return ((char *)pointer1)[index] - ((char *)pointer2)[index];
+    }
+    return 0;
 }

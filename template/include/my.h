@@ -97,6 +97,7 @@ int my_strict_getnbr(char const *number);
 float my_strict_getnbr_float(char const *str);
 char **my_str_to_word_array_select(char const *str, char const *separator);
 void my_free_word_array(char **array);
+int my_find_prime_inf(int nb);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

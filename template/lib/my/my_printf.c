@@ -33,7 +33,7 @@ static void not_a_flag(formating_t *formating, user_t *user)
     user->total_len = user->total_len + 1;
     if (my_strcmp(formating->final_format, "\0") != 0)
         user->total_len = user->total_len +
-                          my_putstr_fd(formating->final_format, formating->fd);
+        my_putstr_fd(formating->final_format, formating->fd);
     if (formating->flag != '\0') {
         write(formating->fd, &formating->flag, 1);
         user->total_len = user->total_len + 1;

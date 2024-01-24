@@ -15,7 +15,7 @@
     #define PRECISION "."
     #define NUMBERS "0123456789"
 
-typedef struct formating {
+typedef struct formating_s {
     int fd;
     int id_ft;
     int id_wd;
@@ -31,17 +31,18 @@ typedef struct formating {
     char flag;
 } formating_t;
 
-typedef struct flags {
+typedef struct flags_s {
     char *str;
     int index_flag;
 } flags_t;
 
-typedef struct user {
+typedef struct user_s {
     char const *str;
     int total_len;
     int i;
 } user_t;
 
+/* Find functions */
 formating_t *find_first(user_t *user, int *i,
     formating_t *formating);
 formating_t *find_width(user_t *user, int *i,
@@ -53,16 +54,17 @@ formating_t *find_numbers(user_t *user, int *i,
 formating_t *find_specifier(user_t *user, int *i,
     formating_t *formating);
 
-void format_first(struct user *, struct flags *,
-    struct formating *, int *i);
+/* Format functions */
+void format_first(user_t *user, flags_t *flgs,
+    formating_t *formating, int *copy);
 void format_width(user_t *user, flags_t *flgs,
-    formating_t *formating, int *i);
+    formating_t *formating, int *copy);
 void format_precision(user_t *user, flags_t *flgs,
-    formating_t *formating, int *i);
+    formating_t *formating, int *copy);
 void format_numbers(user_t *user, flags_t *flgs,
-    formating_t *formating, int *i);
+    formating_t *formating, int *copy);
 void format_specifier(user_t *user, flags_t *flgs,
-    formating_t *formating, int *i);
+    formating_t *formating, int *copy);
 void my_show_formating(formating_t *formating);
 
 void format_plus_double(char *str_finale, formating_t *formating, double nb);
@@ -106,7 +108,35 @@ void format_zero_str(char *str_finale, formating_t *formating);
 void format_it_str(char *str_finale,
     formating_t *formating);
 
+/* Specify functions */
 char *specify_it_int(formating_t *formating, size_t temp);
 char *specify_it_base(formating_t *formating, size_t temp, char *);
+
+/* Flag functions */
+int flag_c(va_list list, formating_t *);
+int flag_s(va_list list, formating_t *);
+int flag_d(va_list list, formating_t *);
+int flag_i(va_list list, formating_t *);
+int flag_p(va_list list, formating_t *);
+int flag_o(va_list list, formating_t *);
+int flag_u(va_list list, formating_t *);
+int flag_x(va_list list, formating_t *);
+int flag_bigx(va_list list, formating_t *);
+int flag_e(va_list list, formating_t *);
+int flag_bige(va_list list, formating_t *);
+int flag_f(va_list list, formating_t *);
+int flag_bigf(va_list list, formating_t *);
+int flag_g(va_list list, formating_t *);
+int flag_bigg(va_list list, formating_t *);
+int flag_a(va_list list, formating_t *);
+int flag_biga(va_list list, formating_t *);
+int flag_n(va_list list, formating_t *, int len);
+int flag_m(va_list list, formating_t *);
+int flag_b(va_list list, formating_t *);
+int flag_bigs(va_list list, formating_t *);
+int flag_bigd(va_list list, formating_t *);
+int flag_percent(va_list list, formating_t *);
+
+extern int (*FLAGS[])(va_list, formating_t *);
 
 #endif /* MYFORMATS_H_ */

@@ -413,7 +413,7 @@ Test(my, full_covr_for_null_return)
 {
     cr_assert_eq(my_strlen(NULL), 0);
     my_strdup(NULL);
-    cr_assert(my_putstr_sized(NULL, 0));
+    cr_assert_eq(my_putstr_sized(NULL, 0), 0);
     cr_assert(my_putstr_error(NULL));
-    cr_assert(my_putstr(NULL));
+    cr_assert_eq(my_putstr(NULL), 0);
 }

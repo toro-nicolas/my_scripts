@@ -6,7 +6,7 @@
 ** in a file descriptor (fd) and returns the length the printed string
 */
 
-#include "./my_printf/myflags.h"
+#include "./my_printf/myformats.h"
 
 static void find_format(user_t *user,
     flags_t *flgs, formating_t *formating)
@@ -29,15 +29,14 @@ static void find_format(user_t *user,
 
 static void not_a_flag(formating_t *formating, user_t *user)
 {
-    my_putchar('%');
-    (user->total_len) += 1;
-    if (my_strcmp(formating->final_format, "\0") != 0) {
-        my_putstr(formating->final_format);
-        (user->total_len) += my_strlen(formating->final_format);
-    }
+    write(formating->fd, "%", 1);
+    user->total_len = user->total_len + 1;
+    if (my_strcmp(formating->final_format, "\0") != 0)
+        user->total_len = user->total_len +
+            my_putstr_fd(formating->final_format, formating->fd);
     if (formating->flag != '\0') {
-        my_putchar(formating->flag);
-        (user->total_len) += 1;
+        write(formating->fd, &formating->flag, 1);
+        user->total_len = user->total_len + 1;
     }
 }
 
@@ -75,7 +74,7 @@ static void select_display(int fd, user_t *user, va_list *liste)
         user->total_len += FLAGS[index_flag](*liste, &formating);
     if (user->str[user->i] != '%' && user->str[user->i] != '\0'
         && (user->str[user->i] != formating.flag)) {
-        my_putchar(user->str[user->i]);
+        write(fd, &user->str[user->i], 1);
         (user->total_len)++;
     }
 }

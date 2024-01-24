@@ -30,6 +30,7 @@ SRCS		=	flag_c.c			\
 			flag_bigs.c			\
 			flag_bigd.c			\
 			flag_percent.c			\
+			flags.c				\
 			find_format.c 			\
 			get_format.c			\
 			my_show_formating.c 		\

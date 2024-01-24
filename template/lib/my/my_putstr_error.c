@@ -9,13 +9,8 @@
 
 int my_putstr_error(char const *str)
 {
-    int i = 0;
-
     if (str == NULL)
         return 84;
-    while (str[i] != '\0') {
-        write(2, &str[i], 1);
-        i = i + 1;
-    }
+    write(2, str, my_strlen(str));
     return 84;
 }

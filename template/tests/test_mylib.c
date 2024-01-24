@@ -129,7 +129,7 @@ Test(my_putstr_error, full_covr)
 
 Test(my_putstr_sized, full_covr)
 {
-    cr_assert_eq(my_putstr_sized("ok", 2), 0);
+    cr_assert_eq(my_putstr_sized("ok", 2), 2);
 }
 
 Test(my_rev_params, full_covr, .init = cr_redirect_stdout)

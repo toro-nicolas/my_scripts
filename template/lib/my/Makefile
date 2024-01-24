@@ -24,6 +24,7 @@ SRCS		=	my_array_len.c		\
 			my_find_nbr.c		\
 			my_find_prime_sup.c		\
 			my_find_prime_inf.c		\
+			my_fprintf.c			\
 			my_free_word_array.c			\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
@@ -38,6 +39,7 @@ SRCS		=	my_array_len.c		\
 			my_putnbr_base.c		\
 			my_putstr.c			\
 			my_putstr_error.c		\
+			my_putstr_fd.c			\
 			my_putstr_sized.c		\
 			my_rev_params.c			\
 			my_revstr.c			\

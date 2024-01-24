@@ -14,5 +14,5 @@ int flag_d(va_list list, formating_t *formating)
 
     precise_it_int(str_finale, formating, temp);
     format_it_int(str_finale, formating, temp);
-    return my_putstr(str_finale);
+    return my_putstr_fd(str_finale, formating->fd);
 }

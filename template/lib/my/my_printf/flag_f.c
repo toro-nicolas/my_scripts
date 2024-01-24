@@ -27,5 +27,5 @@ int flag_f(va_list list, formating_t *formating)
     double temp_nb = va_arg(list, double);
     char *temp = my_get_str_float(temp_nb, formating);
 
-    return my_putstr(temp);
+    return my_putstr_fd(temp, formating->fd);
 }

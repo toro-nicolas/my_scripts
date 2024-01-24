@@ -17,5 +17,5 @@ int flag_p(va_list list, formating_t *formating)
     my_strcat(address_hexa, "x0");
     my_revstr(address_hexa);
     format_it_int(address_hexa, formating, temp);
-    return my_putstr(address_hexa);
+    return my_putstr_fd(address_hexa, formating->fd);
 }

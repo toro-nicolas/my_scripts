@@ -34,6 +34,8 @@ int flag_bigs(va_list list, formating_t *);
 int flag_bigd(va_list list, formating_t *);
 int flag_percent(va_list list, formating_t *);
 
+extern int (*FLAGS[])(va_list, formating_t *);
+
 int (*FLAGS[])(va_list, formating_t *) = {
     &flag_d,
     &flag_i,

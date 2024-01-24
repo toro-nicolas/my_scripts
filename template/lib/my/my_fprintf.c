@@ -1,15 +1,15 @@
 /*
-** EPITECH PROJECT, 2024
-** my_printf
+** EPITECH PROJECT, 2023
+** my_fprintf
 ** File description:
-** Prints a string (format) with possible flags and format
-** in stdout and returns the length the printed string
+** Write a string (format) with possible flags and format
+** in a file descriptor (fd) and returns the length the printed string
 */
 
 #include "./my_printf/myflags.h"
 
 static void find_format(user_t *user,
-                        flags_t *flgs, formating_t *formating)
+    flags_t *flgs, formating_t *formating)
 {
     int copy = user->i + 1;
 
@@ -42,7 +42,7 @@ static void not_a_flag(formating_t *formating, user_t *user)
 }
 
 static void find_flags(user_t *user, va_list list,
-                       formating_t *formating, int *index)
+    formating_t *formating, int *index)
 {
     flags_t flgs = {.str = "dicspouxXeEfFgGaAbSD%", .index_flag = 0};
     int copi;
@@ -80,15 +80,14 @@ static void select_display(int fd, user_t *user, va_list *liste)
     }
 }
 
-int my_printf(char const *format, ...)
+int my_fprintf(int fd, char const *format, ...)
 {
     va_list liste;
     user_t user = {.str = format, .total_len = 0};
 
     va_start(liste, format);
     for (user.i = 0; user.i < my_strlen(user.str); (user.i)++)
-        select_display(1, &user, &liste);
+        select_display(fd, &user, &liste);
     va_end(liste);
     return user.total_len;
 }
-

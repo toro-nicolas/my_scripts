@@ -22,6 +22,15 @@
 #ifndef MY_H_
     #define    MY_H_
     #define    ABS(value) ((value < 0) ? - value : value)
+    #define    MAX_INT 2147483647
+    #define    MIN_INT -2147483648
+    #define    MAX_LONG 9223372036854775807
+    #define    MIN_LONG -9223372036854775808
+    #define    MAX_SHORT 32767
+    #define    MIN_SHORT -32768
+    #define    MAX_SHORT_SHORT 127
+    #define    MIN_SHORT_SHORT -128
+    #define    MAX_SIZE_T 18446744073709551615
 
 struct info_param {
     int length;
@@ -31,7 +40,6 @@ struct info_param {
 };
 
 /* Basics libmy functions */
-int my_printf(char const *format, ...);
 void my_putchar(char c);
 int my_isneg(int nb);
 int my_putnbr(int nb);
@@ -86,8 +94,11 @@ int my_show_param_array(struct info_param const *par);
 int my_array_len(char **array);
 int my_putstr_error(char const *str);
 int my_putstr_sized(char const *str, int size);
+int my_putstr_fd(char const *str, int fd);
 size_t my_compute_power_rec_size_t(int nb, int p);
 void my_round_float_str(char *float_nb, char last_char, int i, int enable);
+int my_printf(char const *format, ...);
+int my_fprintf(int fd, char const *format, ...);
 int my_char_is_alpha(char const c);
 int my_char_is_num(char const c);
 int my_char_is_printable(char const c);

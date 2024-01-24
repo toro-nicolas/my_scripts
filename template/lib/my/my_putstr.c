@@ -9,13 +9,11 @@
 
 int my_putstr(char const *str)
 {
-    int i = 0;
+    int len;
 
     if (str == NULL)
         return 84;
-    while (str[i] != '\0') {
-        write(1, &str[i], 1);
-        i = i + 1;
-    }
-    return i;
+    len = my_strlen(str);
+    write(1, str, len);
+    return len;
 }

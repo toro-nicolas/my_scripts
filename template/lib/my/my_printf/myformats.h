@@ -16,6 +16,7 @@
     #define NUMBERS "0123456789"
 
 typedef struct formating {
+    int fd;
     int id_ft;
     int id_wd;
     int id_prc;

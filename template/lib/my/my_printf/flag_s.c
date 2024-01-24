@@ -14,5 +14,5 @@ int flag_s(va_list list, formating_t *formating)
 
     my_strcat(temp2, temp);
     format_it_str(temp2, formating);
-    return my_putstr(temp2);
+    return my_putstr_fd(temp2, formating->fd);
 }

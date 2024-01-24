@@ -20,5 +20,5 @@ int flag_bigx(va_list list, formating_t *formating)
         my_revstr(convert_base);
     }
     format_it_int(convert_base, formating, temp);
-    return my_putstr(convert_base);
+    return my_putstr_fd(convert_base, formating->fd);
 }

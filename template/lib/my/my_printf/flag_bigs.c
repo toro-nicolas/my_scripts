@@ -11,12 +11,11 @@ int flag_bigs(va_list list, formating_t *formating)
 {
     char **temp = va_arg(list, char **);
     int len = 0;
-    int index_temp = 0;
 
-    my_show_word_array(temp);
-    while (temp[index_temp] != NULL) {
-        len = len + my_strlen(temp[index_temp]) + 1;
-        index_temp = index_temp + 1;
+    for (int index = 0; temp[index] != NULL; index++) {
+        len = len + my_putstr_fd(temp[index], 1);
+        my_putchar('\n');
+        len = len + 1;
     }
     return len;
 }

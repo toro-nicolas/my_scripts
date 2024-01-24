@@ -9,6 +9,6 @@
 
 int flag_percent(va_list liste, formating_t *formating)
 {
-    write(1, "%", 1);
+    write(formating->fd, "%", 1);
     return 1;
 }

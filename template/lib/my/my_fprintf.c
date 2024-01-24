@@ -43,7 +43,7 @@ static void not_a_flag(formating_t *formating, user_t *user)
 static void find_flags(user_t *user, va_list list,
     formating_t *formating, int *index)
 {
-    flags_t flgs = {.str = "dicspouxXeEfFgGaAbSD%", .index_flag = 0};
+    flags_t flgs = {.str = "dicspouxXeEfFgGaAbSD%m", .index_flag = 0};
     int copi;
 
     find_format(user, &flgs, formating);

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_printf
 ** File description:
-** The header of all formats
+** The header of all formats and flags
 */
 
 #include "../my.h"

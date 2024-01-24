@@ -28,5 +28,6 @@ int (*FLAGS[])(va_list, formating_t *) = {
     &flag_b,
     &flag_bigs,
     &flag_bigd,
-    &flag_percent
+    &flag_percent,
+    &flag_m
 };

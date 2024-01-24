@@ -15,5 +15,5 @@
 }*/
 int flag_m(va_list list, formating_t *formating)
 {
-    return 0;
+    return my_putstr_fd(my_strerror(errno), formating->fd);
 }

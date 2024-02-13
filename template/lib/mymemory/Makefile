@@ -12,6 +12,8 @@ BUILDDIR 	=	../../build
 SRCS		=	my_calloc.c		\
 			my_free.c		\
 			my_malloc.c		\
+			my_malloc_strdup.c		\
+			my_malloc_strdup_word_array.c	\
 			my_memchr.c		\
 			my_memcpy.c		\
 			my_memcmp.c		\

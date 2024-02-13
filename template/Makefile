@@ -58,13 +58,6 @@ fclean: clean
 
 re:	fclean all
 
-run: re
-	@echo -e "\033[1;32mRunning project...\033[0m"
-	@./$(NAME)
-
-valgrind: re
-	@valgrind -s ./$(NAME)
-
 # Unit tests Makefile
 unit_tests:
 	@make unit_tests --no-print-directory -C./tests/

@@ -77,6 +77,7 @@ SRCS		=	my_array_len.c		\
 			my_strcmp.c                     \
 			my_strcpy.c                     \
 			my_strdup.c			\
+			my_strdup_word_array.c		\
 			my_strerror.c			\
 			my_strlen.c			\
 			my_strlowcase.c			\

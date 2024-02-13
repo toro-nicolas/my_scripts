@@ -32,7 +32,7 @@ Test(my_compute_square_root, full_covr)
 Test(my_concat_params, full_covr)
 {
     int argc = 4;
-    char *argv[] = { "unit_tests","coucou", "ça", "va"};
+    char *argv[] = {"unit_tests", "coucou", "ça", "va"};
 
     cr_assert(my_concat_params(argc, argv));
 }
@@ -210,7 +210,7 @@ Test(my_sort_params, full_covr)
     cr_assert_str_eq(argv1[2], "coucou");
     cr_assert_str_eq(argv2[0], "coucoulL");
     cr_assert_str_eq(argv3[2], "unit_tests");
-} //Sa trie mais à l'envers -> à fix
+} //ça tri mais à l'envers -> à fix
 
 Test(my_str_is_alpha, full_covr)
 {
@@ -256,7 +256,6 @@ Test(my_str_is_upper, full_covr)
 
 Test(my_str_nbr, full_covr)
 {
-
     cr_assert_str_eq(my_str_nbr(-12), "-12");
 }
 
@@ -381,7 +380,7 @@ Test(my_strstr, full_covr)
 {
     char str[7] = "cbbcbb\0";
     char src[4] = "cbb\0";
-    
+
     cr_assert(my_strstr(str, src));
     cr_assert(my_strstr(str, ""));
     cr_assert_eq(my_strstr(str, "la"), 0);
@@ -390,6 +389,7 @@ Test(my_strstr, full_covr)
 Test(my_strupcase, full_covr)
 {
     char str[30] = "couCou";
+
     cr_assert(my_strupcase(str));
 }
 

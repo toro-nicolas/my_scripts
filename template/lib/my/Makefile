@@ -29,8 +29,9 @@ SRCS		=	my_array_len.c		\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
 			my_getnbr_float.c		\
-			my_isneg.c			\
 			my_is_prime.c			\
+			my_isneg.c			\
+			my_nbrlen.c			\
 			my_params_to_array.c		\
 			my_print_combn.c		\
 			my_print_params.c		\
@@ -50,6 +51,7 @@ SRCS		=	my_array_len.c		\
 			my_showstr.c			\
 			my_sort_int_array.c		\
 			my_sort_params.c		\
+			my_strict_find_nbr.c		\
 			my_strict_getnbr.c		\
 			my_strict_getnbr_float.c		\
 			my_str_isalpha.c		\

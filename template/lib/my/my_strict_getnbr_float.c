@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_strict_getnbr_float
 ** File description:
-** Returns a float number starting from a string number (str) and -1.0 if the
+** Returns a float number starting from a string number (number) and -1.0 if the
 ** string is not an exact positive number
 */
 

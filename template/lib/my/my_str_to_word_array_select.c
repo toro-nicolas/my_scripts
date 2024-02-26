@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_to_word_array
+** my_str_to_word_array_select
 ** File description:
 ** Returns an array of words delimited by a list of separator (separator)
 ** from a string (str)

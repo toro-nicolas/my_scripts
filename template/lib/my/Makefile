@@ -86,6 +86,7 @@ SRCS		=	my_array_len.c		\
 			my_strncpy.c			\
 			my_strstr.c			\
 			my_strupcase.c			\
+			my_super_array.c		\
 			my_swap.c			\
 			my_printf.c			\
 

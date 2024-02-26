@@ -14,6 +14,8 @@ char *my_strcat(char *dest, char const *src)
     int len_src = my_strlen(src);
     int i = 0;
 
+    if (dest == NULL || src == NULL)
+        return NULL;
     for (i = 0; i <= len_src; i++)
         dest[len_dest + i] = src[i];
     dest[len_dest + i + 1] = '\0';

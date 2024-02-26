@@ -15,6 +15,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <time.h>
 #include <dirent.h>
 #include <signal.h>
@@ -107,9 +108,11 @@ float my_getnbr_float(char const *str);
 int my_strict_getnbr(char const *number);
 float my_strict_getnbr_float(char const *str);
 char **my_str_to_word_array_select(char const *str, char const *separator);
+char **my_super_array(char *str, char *sep);
 void my_free_word_array(char **array);
 int my_find_prime_inf(int nb);
 const char *my_strerror(int error);
+char **my_strdup_word_array(char **array);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

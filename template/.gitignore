@@ -2,7 +2,8 @@
 .gitignore
 
 # Temporary files
-/temp
+./temp
+./tmp
 *~
 '#*#'
 .#*

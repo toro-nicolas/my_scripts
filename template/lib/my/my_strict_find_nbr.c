@@ -8,7 +8,7 @@
 
 #include "my.h"
 
-int my_strict_getnbr(char const *number)
+int my_strict_find_nbr(char const *number)
 {
     int nb = 0;
     int start = 0;
@@ -25,4 +25,3 @@ int my_strict_getnbr(char const *number)
     }
     return nb;
 }
-

@@ -11,12 +11,12 @@
 int my_strict_find_nbr(char const *number)
 {
     int nb = -1;
-    int start = 0;
+    int start = -1;
 
     if (number[0] == '\0')
         return -1;
     for (int index = 0; number[index] != '\0'; index++) {
-        if (number[index] >= '1' && number[index] <= '9') {
+        if (start == -1 && number[index] >= '1' && number[index] <= '9') {
             start = index;
             nb = 0;
         }

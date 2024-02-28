@@ -10,15 +10,17 @@
 
 int my_strict_find_nbr(char const *number)
 {
-    int nb = 0;
+    int nb = -1;
     int start = 0;
 
     if (number[0] == '\0')
         return -1;
     for (int index = 0; number[index] != '\0'; index++) {
-        if (number[index] != '0')
+        if (number[index] >= '1' && number[index] <= '9') {
             start = index;
-        if (nb < 0 || number[index] < '0' || number[index] > '9' ||
+            nb = 0;
+        }
+        if (nb < -1 || number[index] < '0' || number[index] > '9' ||
         (index > start + 8 && number[start] != '1' && number[start] != '2'))
             return nb;
         nb = nb * 10 + (number[index] - 48);

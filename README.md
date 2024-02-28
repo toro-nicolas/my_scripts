@@ -18,3 +18,4 @@ It allows me to perform many actions with a single command.
 **push_that.sh <ins>[message]</ins>**: Push all the files in the repositorie    
 **style_that.sh**: Execute the coding-style-checker in the folder and display the errors    
 **update_lib.sh <ins>[lib1 lib2 ...]</ins>**: Update the libs in a C project    
+**valgrind.sh <ins>[files]</ins>**: Use a maximized valgrind with a program    

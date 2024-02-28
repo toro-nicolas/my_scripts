@@ -14,3 +14,4 @@ echo -e "\e[33;1mmy_cat \e[33;4m[files]\e[0m\e[33;1m:\e[0m Display the files con
 echo -e "\e[33;1mpush_that.sh \e[33;4m[message]\e[0m\e[33;1m:\e[0m Push all the files in the repositorie"
 echo -e "\e[33;1mstyle_that.sh:\e[0m Execute the coding-style-checker in the folder and display the errors"
 echo -e "\e[33;1mupdate_lib.sh \e[33;4m[lib1 lib2 ...]\e[0m\e[33;1m:\e[0m Update the libs in a C project"
+echo -e "\e[33;1mvalgrind.sh \e[33;4m[files]\e[0m\e[33;1m:\e[0m Use a maximized valgrind with a program"

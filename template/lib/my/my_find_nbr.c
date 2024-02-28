@@ -2,11 +2,11 @@
 ** EPITECH PROJECT, 2023
 ** my_find_nbr
 ** File description:
-** Find the first number (nb) in a string
+** Find the first number (number) in a string
 */
 
 #include "my.h"
-
+/*
 static int add_number(int *error, int *signe, int result, char c)
 {
     if ((*signe == 1 && (size_t)((result * 10) + (c - 48)) >= 2147483648) ||
@@ -57,4 +57,24 @@ int my_find_nbr(char const *str)
         i++;
     }
     return check_result(result, &error, &signe);
+}*/
+int my_find_nbr(char const *number)
+{
+    int nb = -1;
+    int start = -1;
+
+    if (number[0] == '\0')
+        return -1;
+    for (int index = 0; number[index] != '\0'; index++) {
+        if (start == -1 && number[index] >= '1' && number[index] <= '9') {
+            start = index;
+            nb = 0;
+        }
+        if (number[index] < '0' || number[index] > '9')
+            return nb;
+        nb = nb * 10 + (number[index] - 48);
+    }
+    if (start == -1)
+        return -1;
+    return nb;
 }

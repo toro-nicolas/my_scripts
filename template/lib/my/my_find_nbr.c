@@ -66,15 +66,15 @@ int my_find_nbr(char const *number)
     if (number[0] == '\0')
         return -1;
     for (int index = 0; number[index] != '\0'; index++) {
-        if (start == -1 && number[index] >= '1' && number[index] <= '9') {
-            start = index;
+        if (number[index] >= '0' && start == -1 && number[index] <= '9')
             nb = 0;
-        }
+        if (start == -1 && number[index] >= '1' && number[index] <= '9')
+            start = index;
         if (number[index] < '0' || number[index] > '9')
             return nb;
         nb = nb * 10 + (number[index] - 48);
     }
-    if (start == -1)
+    if (start == -1 && nb == -1)
         return -1;
     return nb;
 }

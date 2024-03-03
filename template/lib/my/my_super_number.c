@@ -19,6 +19,7 @@ static char not_a_number(char c)
 static char check_end(char *number, number_settings_t *settings,
     int i, int start)
 {
+    my_errno = 0;
     if ((!settings->letter_before && not_a_number(number[i]) && start == -1)
     || (!settings->letter_after && not_a_number(number[i]) && start != -1)
     || (!settings->letter_after && (number[i] == '-' || number[i] == '+')
@@ -30,7 +31,8 @@ static char check_end(char *number, number_settings_t *settings,
         my_errno = 1;
         return 1;
     }
-    my_errno = 0;
+    if (settings->letter_after && not_a_number(number[i]) && start != -1)
+        return 1;
     return 0;
 }
 

@@ -33,12 +33,26 @@
     #define    MIN_SHORT_SHORT -128
     #define    MAX_SIZE_T 18446744073709551615
 
+extern int my_errno;
+
+typedef enum my_bool {
+    FALSE = 0,
+    TRUE = 1
+} my_bool_t;
+
 struct info_param {
     int length;
     char *str;
     char *copy;
     char **word_array;
 };
+
+typedef struct number_settings_s {
+    my_bool_t multiple_signe;
+    my_bool_t letter_before;
+    my_bool_t letter_after;
+    my_bool_t overflow;
+} number_settings_t;
 
 /* Basics libmy functions */
 void my_putchar(char c);
@@ -115,6 +129,7 @@ void my_free_word_array(char **array);
 int my_find_prime_inf(int nb);
 const char *my_strerror(int error);
 char **my_strdup_word_array(char **array);
+int my_super_number(char *number, number_settings_t settings);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

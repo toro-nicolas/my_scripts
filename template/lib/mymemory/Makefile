@@ -25,7 +25,8 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mymemory.h
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -L./ -lmylist -lmy -I../../include
+CFLAGS		=	-Werror -Wextra -Wpedantic -g3
+CFLAGS		+=	-L./ -lmylist -lmy -I../../include
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmymemory compiled.\033[0m"

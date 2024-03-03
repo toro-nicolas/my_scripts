@@ -89,6 +89,7 @@ SRCS		=	my_array_len.c		\
 			my_strstr.c			\
 			my_strupcase.c			\
 			my_super_array.c		\
+			my_super_number.c		\
 			my_swap.c			\
 			my_printf.c			\
 
@@ -97,7 +98,7 @@ OBJS		+=	$(wildcard ../../build/*.o)
 
 HEADER		=	my.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic
+CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -g3
 
 all:	my-printf create-build $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmy compiled.\033[0m"

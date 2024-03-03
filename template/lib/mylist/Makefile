@@ -27,7 +27,7 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mylist.h
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -L./ -lmy -I../../include
+CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmylist compiled.\033[0m"

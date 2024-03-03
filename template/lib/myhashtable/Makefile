@@ -21,7 +21,7 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	myhashtable.h
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -L./ -lmy -I../../include
+CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmyhashtable compiled.\033[0m"

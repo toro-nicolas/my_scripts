@@ -42,7 +42,7 @@ static void reset_nbr_letter(char const *str,
 {
     for (; str[*which_lettre] != '\0'
     && my_char_is_not_a_separator(str + *which_lettre, separator) == 0;
-        *which_lettre = *which_lettre + 1);
+        *which_lettre = *which_lettre + my_strlen(separator));
     *nbr_lettre = 0;
 }
 

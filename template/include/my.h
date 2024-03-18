@@ -22,7 +22,11 @@
 
 #ifndef MY_H_
     #define    MY_H_
+
     #define    ABS(value) ((value < 0) ? - value : value)
+    #define    MAX(a, b) ((a > b) ? a : b)
+    #define    MIN(a, b) ((a < b) ? a : b)
+
     #define    MAX_INT 2147483647
     #define    MIN_INT -2147483648
     #define    MAX_LONG 9223372036854775807
@@ -32,6 +36,11 @@
     #define    MAX_SHORT_SHORT 127
     #define    MIN_SHORT_SHORT -128
     #define    MAX_SIZE_T 18446744073709551615
+
+    #define    STR2ARRAY(str) my_str_to_word_array(str)
+    #define    STR2ARRAY_SEP(str, sep) my_str_to_word_array_select(str, sep)
+    #define    STR2ARRAY_STR(str, sep) my_str_to_word_array_string(str, sep)
+
 
 extern int my_errno;
 
@@ -106,7 +115,7 @@ char *my_convert_base_size_t(char const *nbr,
     char const *base_from, char const *base_to);
 struct info_param *my_params_to_array(int ac, char **av);
 int my_show_param_array(struct info_param const *par);
-int my_array_len(char **array);
+int my_array_len(void **array);
 int my_putstr_error(char const *str);
 int my_putstr_sized(char const *str, int size);
 int my_putstr_fd(char const *str, int fd);
@@ -124,6 +133,7 @@ int my_strict_find_nbr(char const *number);
 int my_strict_getnbr(char const *number);
 float my_strict_getnbr_float(char const *str);
 char **my_str_to_word_array_select(char const *str, char const *separator);
+char **my_str_to_word_array_string(char const *str, char const *separator);
 char **my_super_array(char *str, char *sep);
 void my_free_word_array(char **array);
 int my_find_prime_inf(int nb);

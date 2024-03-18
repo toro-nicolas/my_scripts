@@ -10,7 +10,7 @@ NAME		=	[project-exec]
 BUILDDIR 	=	./build
 SRCDIR		=	./src
 
-SRCS        +=  main.c
+SRCS		+=	main.c
 
 OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 

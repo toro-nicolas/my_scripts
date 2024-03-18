@@ -21,7 +21,9 @@ SRCS		=	my_push_front.c			\
 				my_concat_list.c		\
 				my_sort_list.c			\
 				my_add_in_sorted_list.c	\
-				my_merge.c				\
+				my_merge_list.c			\
+				my_pop_list.c			\
+				my_list_to_array.c		\
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 

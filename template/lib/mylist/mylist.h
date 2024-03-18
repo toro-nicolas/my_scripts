@@ -27,7 +27,8 @@ typedef enum type {
     CHAR,
     STRING,
     ARRAY_OF_STRING,
-    VOID
+    VOID,
+    UNKNOWN
 } type_t;
 
 typedef struct linked_list {
@@ -52,7 +53,8 @@ void my_concat_list(linked_list_t **begin1, linked_list_t *begin2);
 void my_sort_list(linked_list_t **begin, int (*cmp) ());
 void my_add_in_sorted_list(linked_list_t **begin,
     void *data, int (*cmp) ());
-void my_merge(linked_list_t **begin1,
+void my_merge_list(linked_list_t **begin1,
     linked_list_t *begin2, int (*cmp) ());
+linked_list_t *my_pop_list(linked_list_t **begin);
 
 #endif

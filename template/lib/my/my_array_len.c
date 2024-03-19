@@ -11,6 +11,8 @@ int my_array_len(void **array)
 {
     int len = 0;
 
+    if (array == NULL)
+        return 0;
     while (array[len] != NULL)
         len = len + 1;
     return len;

@@ -406,7 +406,7 @@ Test(my_array_len, full_covr)
 {
     char *tab[5] = {"a", "b", "c", "d", NULL};
 
-    cr_assert_eq(my_array_len(tab), 4);
+    cr_assert_eq(my_array_len((void **)tab), 4);
 }
 
 Test(my, full_covr_for_null_return)

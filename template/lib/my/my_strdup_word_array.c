@@ -13,7 +13,7 @@ char **my_strdup_word_array(char **array)
     int i = 0;
 
     if (array == NULL)
-        return (NULL);
+        return NULL;
     new_array = malloc(sizeof(char *) * (my_array_len((void **)array) + 1));
     for (; array[i] != NULL; i++)
         new_array[i] = my_strdup(array[i]);

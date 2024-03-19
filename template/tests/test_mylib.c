@@ -321,6 +321,8 @@ Test(my_strcat, full_covr)
     char src[5] = "caca\0";
 
     cr_assert(my_strcat(str, src));
+    my_strcat(NULL, src);
+    my_strcat(str, NULL);
 }
 
 Test(my_strcmp, full_covr)
@@ -331,6 +333,9 @@ Test(my_strcmp, full_covr)
     cr_assert_eq(my_strcmp(str, str), 0);
     cr_assert_eq(my_strcmp(str, src), 1);
     cr_assert_eq(my_strcmp(src, str), -1);
+    cr_assert_eq(my_strcmp(NULL, NULL), 0);
+    cr_assert_eq(my_strcmp(NULL, src), -99);
+    cr_assert_eq(my_strcmp(str, NULL), 99);
 }
 
 Test(my_strcpy, full_covr)
@@ -350,7 +355,9 @@ Test(my_strncmp, full_covr)
     cr_assert_eq(my_strncmp(str, str, 6), 0);
     cr_assert_eq(my_strncmp(src, str, 6), -1);
     cr_assert_eq(my_strncmp(str, src, 6), 1);
-    
+    cr_assert_eq(my_strncmp(NULL, NULL, 6), 0);
+    cr_assert_eq(my_strncmp(NULL, src, 6), -99);
+    cr_assert_eq(my_strncmp(str, NULL, 6), 99);
 }
 
 Test(my_strncat, full_covr)
@@ -359,6 +366,8 @@ Test(my_strncat, full_covr)
     char src[5] = "caca\0";
 
     cr_assert(my_strncat(str, src, 2));
+    my_strncat(NULL, src, 2);
+    my_strncat(str, NULL, 2);
 }
 
 Test(my_strlowcase, full_covr)
@@ -407,6 +416,7 @@ Test(my_array_len, full_covr)
     char *tab[5] = {"a", "b", "c", "d", NULL};
 
     cr_assert_eq(my_array_len((void **)tab), 4);
+    cr_assert_eq(my_array_len((void **)NULL), 0);
 }
 
 Test(my, full_covr_for_null_return)

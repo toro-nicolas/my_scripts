@@ -169,6 +169,13 @@ Test(my_printf, multiple_flag_s, .init = redirect_all_std)
     cr_assert_eq(len, 11);
 }
 
+Test(my_printf, invalid_flag_s, .init = redirect_all_std)
+{
+    int len = my_printf("hello %s", NULL);
+    cr_assert_stdout_eq_str("hello ");
+    cr_assert_eq(len, 6);
+}
+
 Test(my_printf, format_flag_s_1, .init = redirect_all_std)
 {
     int len = my_printf("hello %2s", "world");

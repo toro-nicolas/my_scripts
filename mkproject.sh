@@ -17,6 +17,8 @@ git_link=$1
 module_name=$3
 folder_name=$4
 executable_name=$5
+git_ref="${git_link/git@github.com:/}"
+git_ref="${git_ref/.git/}"
 
 # Vérification des noms de librairies
 lib_folder="/home/nicolastoro/my_scripts/template/lib"
@@ -68,8 +70,10 @@ for lib in "$@"; do
 done
 
 # Modification des fichiers du projet
-sed -i "s/\[project-exec\]/$executable_name/g" Makefile .gitignore
-sed -i "s/\[project-name\]/$folder_name/g" Makefile src/main.c
+sed -i "s/\[project-exec\]/$executable_name/g" Makefile .gitignore .github/workflows/action.yml
+sed -i "s/\[project-name\]/$folder_name/g" Makefile src/main.c .github/workflows/action.yml
+sed -i "s#\[git\]#$git_link#g" Makefile .github/workflows/action.yml
+sed -i "s#\[git-ref\]#$git_ref#g" .github/workflows/action.yml
 
 # Création des includes
 mkdir "$project_path/include"

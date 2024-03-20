@@ -1,0 +1,77 @@
+name: [project-name]
+
+on: [push, pull_request]
+
+env:
+  MIRROR_URL: [git]
+  EXECUTABLE: [project-exec]
+
+jobs:
+  check_coding_style:
+    runs-on: ubuntu-latest
+    if: |
+      startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
+      github.repository != '[git-ref]'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Check coding style
+        run:
+          docker run --rm --security-opt "label:disable" -i -v "$(pwd)":"/mnt/delivery" -v "$(pwd)":"/mnt/reports" ghcr.io/epitech/coding-style-checker:latest "/mnt/delivery" "/mnt/reports" ;
+          cat coding-style-reports.log;
+          .github/workflows/display_coding_style
+
+  check_program_compilation:
+    runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
+    if: |
+      startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
+      github.repository != '[git-ref]'
+    needs: check_coding_style
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Launch "make"
+        run: make
+        timeout-minutes: 2
+      - name: Launch "make fclean"
+        run: make fclean
+      - name: Check program compilation
+        run: |
+          make
+          .github/workflows/check_program_compilation ${{ env.EXECUTABLE }}
+
+  check_unit_tests:
+    runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
+    if: |
+      startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
+      github.repository != '[git-ref]'
+    needs: check_program_compilation
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Launch "make tests_run"
+        run: make tests_run
+        timeout-minutes: 2
+
+  push_to_mirror:
+    runs-on: ubuntu-latest
+    if: |
+      startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
+      github.repository != '[git-ref]'
+    needs: check_unit_tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 0
+      - name: Mirroring Repository
+        uses: pixta-dev/repository-mirroring-action@v1.1.1
+        with:
+          target_repo_url:
+            ${{ env.MIRROR_URL }}
+          ssh_private_key:
+            ${{ secrets.GIT_SSH_PRIVATE_KEY }}

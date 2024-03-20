@@ -54,5 +54,8 @@ done
 make libs > /dev/null 2>&1 || handle_error "Impossible de mettre à jour les libs avec \"make libs\""
 echo "Les librairies ont été mises à jour avec succès !"
 
+cp -r /home/nicolastoro/my_scripts/template/tests/* ./tests/
+echo "Les tests ont été copiés avec succès !"
+
 # Sortie avec code 0 (pas d'erreur)
 exit 0

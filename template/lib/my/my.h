@@ -41,13 +41,17 @@
     #define    STR2ARRAY_SEP(str, sep) my_str_to_word_array_select(str, sep)
     #define    STR2ARRAY_STR(str, sep) my_str_to_word_array_string(str, sep)
 
+    #define    FREE_AND_NULL(ptr) free(ptr) && (ptr = NULL)
+    #define    FREE(ptr) (ptr != NULL) ? FREE_AND_NULL(ptr) : NULL
 
-extern int my_errno;
+    #define    STR_CONTAINS(str, find) (my_strstr(str, find) != NULL) ? 1 : 0
 
 typedef enum my_bool {
     FALSE = 0,
     TRUE = 1
 } my_bool_t;
+
+extern int my_errno;
 
 struct info_param {
     int length;

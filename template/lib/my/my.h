@@ -41,8 +41,7 @@
     #define    STR2ARRAY_SEP(str, sep) my_str_to_word_array_select(str, sep)
     #define    STR2ARRAY_STR(str, sep) my_str_to_word_array_string(str, sep)
 
-    #define    FREE_AND_NULL(ptr) free(ptr) && (ptr = NULL)
-    #define    FREE(ptr) (ptr != NULL) ? FREE_AND_NULL(ptr) : NULL
+    #define    FREE(ptr) my_free_ptr(ptr)
 
     #define    STR_CONTAINS(str, find) (my_strstr(str, find) != NULL) ? 1 : 0
 
@@ -144,6 +143,7 @@ int my_find_prime_inf(int nb);
 const char *my_strerror(int error);
 char **my_strdup_word_array(char **array);
 int my_super_number(char *number, number_settings_t settings);
+void my_free_ptr(void *ptr);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

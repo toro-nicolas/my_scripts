@@ -16,8 +16,8 @@ static void remove_hashtable_entry(hashtable_entry_t **begin,
         *begin = tmp->next;
     if (tmp->next != NULL)
         tmp->next->prev = tmp->prev;
-    free(tmp->value);
-    free(tmp);
+    FREE(tmp->value);
+    FREE(tmp);
 }
 
 int search_delete_in_hashtable_entry(hashtable_entry_t **entry, int key)

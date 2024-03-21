@@ -26,7 +26,7 @@ framebuffer_t *framebuffer_create(unsigned int width,
 
 void framebuffer_destroy(framebuffer_t *framebuffer)
 {
-    free(framebuffer->pixels);
+    FREE(framebuffer->pixels);
 }
 
 void framebuffer_draw(sfRenderWindow *window,

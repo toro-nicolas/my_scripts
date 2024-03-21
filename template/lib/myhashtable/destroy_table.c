@@ -14,8 +14,8 @@ static void delete_hashtable_entry(hashtable_entry_t **begin)
 
     while (tmp != NULL) {
         next = tmp->next;
-        free(tmp->value);
-        free(tmp);
+        FREE(tmp->value);
+        FREE(tmp);
         tmp = next;
     }
     *begin = NULL;
@@ -27,6 +27,6 @@ void delete_hashtable(hashtable_t *ht)
         return;
     for (int index = 0; index < ht->len; index++)
         delete_hashtable_entry(&ht->table[index]);
-    free(ht->table);
-    free(ht);
+    FREE(ht->table);
+    FREE(ht);
 }

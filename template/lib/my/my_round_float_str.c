@@ -18,7 +18,7 @@ static void add_number(char *float_nb)
         float_nb[1] = float_nb[0];
         float_nb[0] = '-';
     }
-    free(temp_float_str);
+    FREE(temp_float_str);
 }
 
 void my_round_float_str(char *float_nb, char last_char, int i, int enable)

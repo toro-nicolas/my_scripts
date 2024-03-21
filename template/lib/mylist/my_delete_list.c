@@ -15,8 +15,8 @@ void my_delete_list(linked_list_t **begin)
     while (tmp != NULL) {
         next = tmp->next;
         if (tmp->data != NULL && tmp->type != UNKNOWN)
-            free(tmp->data);
-        free(tmp);
+            FREE(tmp->data);
+        FREE(tmp);
         tmp = next;
     }
     *begin = NULL;

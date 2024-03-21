@@ -12,6 +12,6 @@ void my_free_word_array(char **array)
     if (array == NULL)
         return;
     for (int i = 0; array[i] != NULL; i++)
-        free(array[i]);
-    free(array);
+        FREE(array[i]);
+    FREE(array);
 }

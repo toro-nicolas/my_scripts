@@ -41,13 +41,16 @@
     #define    STR2ARRAY_SEP(str, sep) my_str_to_word_array_select(str, sep)
     #define    STR2ARRAY_STR(str, sep) my_str_to_word_array_string(str, sep)
 
+    #define    FREE(ptr) my_free_ptr(ptr)
 
-extern int my_errno;
+    #define    STR_CONTAINS(str, find) (my_strstr(str, find) != NULL) ? 1 : 0
 
 typedef enum my_bool {
     FALSE = 0,
     TRUE = 1
 } my_bool_t;
+
+extern int my_errno;
 
 struct info_param {
     int length;
@@ -140,6 +143,7 @@ int my_find_prime_inf(int nb);
 const char *my_strerror(int error);
 char **my_strdup_word_array(char **array);
 int my_super_number(char *number, number_settings_t settings);
+void my_free_ptr(void *ptr);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

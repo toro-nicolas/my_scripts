@@ -32,7 +32,7 @@ int ht_insert(hashtable_t *ht, char *key, char *value)
     for (hashtable_entry_t *tmp = ht->table[index];
     tmp != NULL; tmp = tmp->next) {
         if (tmp->key == hashed_key) {
-            free(tmp->value);
+            FREE(tmp->value);
             tmp->value = my_strdup(value);
             return 0;
         }

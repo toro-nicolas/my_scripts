@@ -172,7 +172,7 @@ static char *my_get_str_float_hexa(double nb, formating_t *formating)
     precise_it_a(float_nb, formating, decimal_part, detected);
     my_strcat(float_nb, my_get_exposant(converted_nb,
         my_get_sign(converted_nb)));
-    free(decimal_part);
+    FREE(decimal_part);
     return float_nb;
 }
 

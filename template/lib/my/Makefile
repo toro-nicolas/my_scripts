@@ -52,6 +52,7 @@ SRCS		=	my_array_len.c		\
 			my_showstr.c			\
 			my_sort_int_array.c		\
 			my_sort_params.c		\
+			my_str_contains.c		\
 			my_strict_find_nbr.c		\
 			my_strict_getnbr.c		\
 			my_strict_getnbr_float.c		\

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_free_ptr
 ** File description:
-** The my_free_ptr.c
+** Free a pointer (ptr) and set it to NULL
 */
 
 #include "my.h"

@@ -7,23 +7,11 @@ env:
   EXECUTABLE: [project-exec]
 
 jobs:
-  check_banned_functions:
-    runs-on: ubuntu-latest
-    if: |
-      startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
-      github.repository != '[git-ref]'
-    steps:
-        - name: Checkout
-          uses: actions/checkout@v4.1.1
-        - name: Check banned functions
-          run: |
-            .github/workflows/check_banned_functions [project-exec] .github/workflows/authorized_functions.txt
   check_coding_style:
     runs-on: ubuntu-latest
     if: |
       startsWith(github.ref, 'refs/heads/ga-ignore-') == false &&
       github.repository != '[git-ref]'
-    needs: check_banned_functions
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -47,6 +35,8 @@ jobs:
       - name: Launch "make"
         run: make
         timeout-minutes: 2
+      - name: Check banned functions
+        run: .github/workflows/check_banned_functions mysh .github/workflows/authorized_functions.txt
       - name: Launch "make fclean"
         run: make fclean
       - name: Check program compilation

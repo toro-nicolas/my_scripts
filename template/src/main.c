@@ -4,6 +4,11 @@
 ** File description:
 ** The main file of the project
 */
+/**
+ * @file main.c
+ * @brief The main file of the project
+ * @author Nicolas TORO
+ */
 
 #include "../include/mymemory.h"
 

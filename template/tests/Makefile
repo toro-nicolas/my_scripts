@@ -102,7 +102,7 @@ SRCS		=	../lib/my/my_array_len.c	\
 		../lib/my/my_printf.c				\
 
 TESTS		=	test_my_printf.c	\
-				test_mylib.c		\
+				test_my_lib.c		\
 
 CFLAGS		=	-Werror -Wextra -Wpedantic
 CFLAGS		+=	-I../include/

@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** test lib
+** test_my_lib
 ** File description:
-** test each function of lib
+** Unit tests for each function of the my lib
 */
+/**
+ * @file test_my_lib.c
+ * @brief Unit tests for each function of the my lib
+ * @author Nicolas TORO
+ */
 
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"

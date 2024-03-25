@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>template:  Fichier source de lib/mycsfml/mycsfml.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">template
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_10aeada6c059375d998fcc176673aa96.html">mycsfml</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">mycsfml.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="lib_2mycsfml_2mycsfml_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2023</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** Libmycsfml</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** The header of the csfml functions</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;SFML/Graphics.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;SFML/Audio.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;SFML/System.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="lib_2mycsfml_2my_8h.html">my.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef CSFML_H_</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">    #define CSFML_H_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/* Pixels functions */</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structframebuffer__s.html">framebuffer_s</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    sfUint8 *<a class="code hl_variable" href="structframebuffer__s.html#afe084338b7307e8b03360c92ada7b7a2">pixels</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structframebuffer__s.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">width</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structframebuffer__s.html#ab2e78c61905b4419fcc7b4cfc500fe85">height</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="lib_2mycsfml_2mycsfml_8h.html#aabd49c65e764cf54ca803960c13ec736">   25</a></span>} <a class="code hl_typedef" href="include_2mycsfml_8h.html#aabd49c65e764cf54ca803960c13ec736">framebuffer_t</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_struct" href="structframebuffer__s.html">framebuffer_t</a> *<a class="code hl_function" href="include_2mycsfml_8h.html#ac75747145d6a6e82121aaa11beac432e">framebuffer_create</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a86f6cec3d49bd36216686d9b3c57781c">framebuffer_destroy</a>(<a class="code hl_struct" href="structframebuffer__s.html">framebuffer_t</a> *framebuffer);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a4c2d633b0c4f8e396a60c51e89e689a7">framebuffer_draw</a>(sfRenderWindow *window,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="structframebuffer__s.html">framebuffer_t</a> *framebuffer);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a1c4fae44a2acf90d08b752caeaa6b2fd">my_put_pixel</a>(<a class="code hl_struct" href="structframebuffer__s.html">framebuffer_t</a> *framebuffer,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y, sfColor color);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a9cfd67d8127f9f1ce8790a5064a9e5ae">draw_square</a>(<a class="code hl_struct" href="structframebuffer__s.html">framebuffer_t</a> *framebuffer, sfVector2u position,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size, sfColor color);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/* Images functions */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structsprite__s.html">sprite_s</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="structsprite__s.html#af993bf542d3537edb15accc11e00759e">file</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    sfIntRect *<a class="code hl_variable" href="structsprite__s.html#abcb57bba090d189a2df42c0c2917c21b">rect</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    sfVector2f *<a class="code hl_variable" href="structsprite__s.html#a17b0007008194cd8527524d381f94255">scale</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    sfColor *<a class="code hl_variable" href="structsprite__s.html#a5df923def835d2c1eaaf5dad161f591e">color</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structsprite__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rotation</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    sfVector2f *<a class="code hl_variable" href="structsprite__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">origin</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="lib_2mycsfml_2mycsfml_8h.html#a5371414b10358aeda7c6bcec8196342f">   45</a></span>} <a class="code hl_typedef" href="include_2mycsfml_8h.html#a5371414b10358aeda7c6bcec8196342f">sprite_t</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#aadaaf7a9d4891b110e62be7387dfd4c0">image_draw</a>(sfRenderWindow* window, <span class="keywordtype">char</span> *file,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a0dc260e66df706ca4301fc01b1ae50d3">image_draw_from_rect</a>(sfRenderWindow* window, <span class="keywordtype">char</span> *file, sfIntRect *rect);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#ac062306464d98263f83791d1c7578e7a">move_rect</a>(sfIntRect *rect, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> max_value);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a2170824e8d5f06dd36972f102b3856ee">move_rect_from_start</a>(sfIntRect *rect, <span class="keywordtype">int</span> start, <span class="keywordtype">int</span> offset,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> sprite_numbers);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>sfSprite *<a class="code hl_function" href="include_2mycsfml_8h.html#a19b2c3b47aa80e1482bdb57c12c5dcbb">create_sf_sprite</a>(<a class="code hl_struct" href="structsprite__s.html">sprite_t</a> *sprite_box, sfTexture *texture,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    sfVector2f position);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/* Text functions */</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtext__s.html">text_s</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="structtext__s.html#a479fffc6c8db2b437b1cca3c819f6079">text</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="structtext__s.html#abf309d4914db61651221d5db57c8f78c">font</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structtext__s.html#a439227feff9d7f55384e8780cfc2eb82">size</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structtext__s.html#a815a3aaa00cfa4ac5d589d897364a1cf">lineSpacing</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structtext__s.html#a9761d2b7f76a13372219fbbaf41fdb2b">letterSpacing</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    sfColor <a class="code hl_variable" href="structtext__s.html#a5541683434a97a0952d7259c9b8a907c">color</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structtext__s.html#a64f0fa92b6d2e9fbdbafb8c9b8373010">outlineColor_size</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    sfColor <a class="code hl_variable" href="structtext__s.html#a81be42d12fff664489f8a3dc6b49370d">outlineColor</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structtext__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rotation</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    sfUint32 <a class="code hl_variable" href="structtext__s.html#afc74f5b757e5f73ddd29e51c11b24bd3">style</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="lib_2mycsfml_2mycsfml_8h.html#a00af485b0d66726362db14ff8d6e285e">   68</a></span>} <a class="code hl_typedef" href="include_2mycsfml_8h.html#a00af485b0d66726362db14ff8d6e285e">text_t</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a4535237aca5b350fc16513fe05507c8a">draw_text</a>(sfRenderWindow* window, <a class="code hl_struct" href="structtext__s.html">text_t</a> *text_box, sfVector2f position);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>sfText *<a class="code hl_function" href="include_2mycsfml_8h.html#a1b53be17e3425ebd1652948a4263c399">create_sf_text</a>(<a class="code hl_struct" href="structtext__s.html">text_t</a> *text_box, sfVector2f position);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/* Music and sound functions */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a0661b873a25eb4a4b35c6c7c053d2b7a">play_sound_with_sleep</a>(<span class="keywordtype">char</span> *file, <span class="keywordtype">float</span> volume);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/* Shape functions */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structcircle__shape__s.html">circle_shape_s</a> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    sfVector2f *<a class="code hl_variable" href="structcircle__shape__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">origin</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    sfVector2f *<a class="code hl_variable" href="structcircle__shape__s.html#a17b0007008194cd8527524d381f94255">scale</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    sfColor *<a class="code hl_variable" href="structcircle__shape__s.html#a7ee2ac354b74af300a05a77a54279791">fill_color</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    sfColor *<a class="code hl_variable" href="structcircle__shape__s.html#a4ed894f0e1fd7ec4ab3ad6a53dfb8690">outline_color</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structcircle__shape__s.html#a28a03f81750fe0b7515c1b6f64efbbe1">outline_thickness</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structcircle__shape__s.html#a5050a760c11da521cd4aee6336f6529f">radius</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structcircle__shape__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rotation</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="lib_2mycsfml_2mycsfml_8h.html#af8a7e1e2a0e43f215491c4a327e876df">   85</a></span>} <a class="code hl_typedef" href="include_2mycsfml_8h.html#af8a7e1e2a0e43f215491c4a327e876df">circle_shape_t</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structrectangle__shape__s.html">rectangle_shape_s</a> {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    sfVector2f *<a class="code hl_variable" href="structrectangle__shape__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">origin</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    sfVector2f *<a class="code hl_variable" href="structrectangle__shape__s.html#a17b0007008194cd8527524d381f94255">scale</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    sfColor *<a class="code hl_variable" href="structrectangle__shape__s.html#a7ee2ac354b74af300a05a77a54279791">fill_color</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    sfColor *<a class="code hl_variable" href="structrectangle__shape__s.html#a4ed894f0e1fd7ec4ab3ad6a53dfb8690">outline_color</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structrectangle__shape__s.html#a28a03f81750fe0b7515c1b6f64efbbe1">outline_thickness</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    sfVector2f *<a class="code hl_variable" href="structrectangle__shape__s.html#a2a54e248c48bd80504192dfabfa09457">size</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structrectangle__shape__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rotation</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="lib_2mycsfml_2mycsfml_8h.html#aa1dacaf33284d14ec9fd429dae3b4bf8">   95</a></span>} <a class="code hl_typedef" href="include_2mycsfml_8h.html#aa1dacaf33284d14ec9fd429dae3b4bf8">rectangle_shape_t</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>sfCircleShape *<a class="code hl_function" href="include_2mycsfml_8h.html#a6b27961780ec0280699871df7336d83e">create_circle_shape</a>(<a class="code hl_struct" href="structcircle__shape__s.html">circle_shape_t</a> *circle_shape,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    sfVector2f position);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>sfRectangleShape *<a class="code hl_function" href="include_2mycsfml_8h.html#a04777a2b5d368c8e7ccaa63f2a181b49">create_rectangle_shape</a>(<a class="code hl_struct" href="structrectangle__shape__s.html">rectangle_shape_t</a> *rectangle_shape,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    sfVector2f position);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#aedeb17bc3522af0204f9c07dcca0d974">is_intersecting_circles</a>(sfCircleShape *c1, sfCircleShape *c2);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/* FPS functions */</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">void</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a506972dfe22aa260c986a93428262a03">print_framerate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#ac4db337edf3502a748e653cb454feba3">get_fps</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">/* Rect functions */</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a38d26e06a5cdf5078ef24b6925616e8b">rect_is_intersecting</a>(sfIntRect rect1, sfIntRect rect2);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#ac2c0a8920ec9bf1cc7913dfc990a8f73">vector_is_intersecting_rect</a>(sfVector2f vector, sfIntRect rect);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#adf7f803731debb9f4190fe9bbb303f4d">rect_is_intersecting_circle</a>(sfIntRect rect, sfVector2f circle,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">float</span> radius);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a6f2f9664621c30818bc410cdeaccc84b">rect_is_in_rect</a>(sfIntRect rect1, sfIntRect rect2);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keywordtype">int</span> <a class="code hl_function" href="include_2mycsfml_8h.html#a6f6b242c189b0f6ded74b3c5152b673d">vector_is_in_rect</a>(sfVector2f vector, sfIntRect rect);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif </span><span class="comment">/* CSFML_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a00af485b0d66726362db14ff8d6e285e"><div class="ttname"><a href="include_2mycsfml_8h.html#a00af485b0d66726362db14ff8d6e285e">text_t</a></div><div class="ttdeci">struct text_s text_t</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a04777a2b5d368c8e7ccaa63f2a181b49"><div class="ttname"><a href="include_2mycsfml_8h.html#a04777a2b5d368c8e7ccaa63f2a181b49">create_rectangle_shape</a></div><div class="ttdeci">sfRectangleShape * create_rectangle_shape(rectangle_shape_t *rectangle_shape, sfVector2f position)</div><div class="ttdef"><b>Definition</b> csfml_shape.c:62</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a0661b873a25eb4a4b35c6c7c053d2b7a"><div class="ttname"><a href="include_2mycsfml_8h.html#a0661b873a25eb4a4b35c6c7c053d2b7a">play_sound_with_sleep</a></div><div class="ttdeci">void play_sound_with_sleep(char *file, float volume)</div><div class="ttdef"><b>Definition</b> csfml_audio.c:10</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a0dc260e66df706ca4301fc01b1ae50d3"><div class="ttname"><a href="include_2mycsfml_8h.html#a0dc260e66df706ca4301fc01b1ae50d3">image_draw_from_rect</a></div><div class="ttdeci">void image_draw_from_rect(sfRenderWindow *window, char *file, sfIntRect *rect)</div><div class="ttdef"><b>Definition</b> csfml_image.c:30</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a19b2c3b47aa80e1482bdb57c12c5dcbb"><div class="ttname"><a href="include_2mycsfml_8h.html#a19b2c3b47aa80e1482bdb57c12c5dcbb">create_sf_sprite</a></div><div class="ttdeci">sfSprite * create_sf_sprite(sprite_t *sprite_box, sfTexture *texture, sfVector2f position)</div><div class="ttdef"><b>Definition</b> csfml_image.c:79</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a1b53be17e3425ebd1652948a4263c399"><div class="ttname"><a href="include_2mycsfml_8h.html#a1b53be17e3425ebd1652948a4263c399">create_sf_text</a></div><div class="ttdeci">sfText * create_sf_text(text_t *text_box, sfVector2f position)</div><div class="ttdef"><b>Definition</b> csfml_text.c:43</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a1c4fae44a2acf90d08b752caeaa6b2fd"><div class="ttname"><a href="include_2mycsfml_8h.html#a1c4fae44a2acf90d08b752caeaa6b2fd">my_put_pixel</a></div><div class="ttdeci">void my_put_pixel(framebuffer_t *framebuffer, unsigned int x, unsigned int y, sfColor color)</div><div class="ttdef"><b>Definition</b> csfml_pixel.c:49</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a2170824e8d5f06dd36972f102b3856ee"><div class="ttname"><a href="include_2mycsfml_8h.html#a2170824e8d5f06dd36972f102b3856ee">move_rect_from_start</a></div><div class="ttdeci">void move_rect_from_start(sfIntRect *rect, int start, int offset, int sprite_numbers)</div><div class="ttdef"><b>Definition</b> csfml_image.c:55</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a38d26e06a5cdf5078ef24b6925616e8b"><div class="ttname"><a href="include_2mycsfml_8h.html#a38d26e06a5cdf5078ef24b6925616e8b">rect_is_intersecting</a></div><div class="ttdeci">int rect_is_intersecting(sfIntRect rect1, sfIntRect rect2)</div><div class="ttdef"><b>Definition</b> csfml_rect.c:10</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a4535237aca5b350fc16513fe05507c8a"><div class="ttname"><a href="include_2mycsfml_8h.html#a4535237aca5b350fc16513fe05507c8a">draw_text</a></div><div class="ttdeci">void draw_text(sfRenderWindow *window, text_t *text_box, sfVector2f position)</div><div class="ttdef"><b>Definition</b> csfml_text.c:28</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a4c2d633b0c4f8e396a60c51e89e689a7"><div class="ttname"><a href="include_2mycsfml_8h.html#a4c2d633b0c4f8e396a60c51e89e689a7">framebuffer_draw</a></div><div class="ttdeci">void framebuffer_draw(sfRenderWindow *window, framebuffer_t *framebuffer)</div><div class="ttdef"><b>Definition</b> csfml_pixel.c:32</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a506972dfe22aa260c986a93428262a03"><div class="ttname"><a href="include_2mycsfml_8h.html#a506972dfe22aa260c986a93428262a03">print_framerate</a></div><div class="ttdeci">void print_framerate(void)</div><div class="ttdef"><b>Definition</b> csfml_fps.c:10</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a5371414b10358aeda7c6bcec8196342f"><div class="ttname"><a href="include_2mycsfml_8h.html#a5371414b10358aeda7c6bcec8196342f">sprite_t</a></div><div class="ttdeci">struct sprite_s sprite_t</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a6b27961780ec0280699871df7336d83e"><div class="ttname"><a href="include_2mycsfml_8h.html#a6b27961780ec0280699871df7336d83e">create_circle_shape</a></div><div class="ttdeci">sfCircleShape * create_circle_shape(circle_shape_t *circle_shape, sfVector2f position)</div><div class="ttdef"><b>Definition</b> csfml_shape.c:30</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a6f2f9664621c30818bc410cdeaccc84b"><div class="ttname"><a href="include_2mycsfml_8h.html#a6f2f9664621c30818bc410cdeaccc84b">rect_is_in_rect</a></div><div class="ttdeci">int rect_is_in_rect(sfIntRect rect1, sfIntRect rect2)</div><div class="ttdef"><b>Definition</b> csfml_rect.c:55</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a6f6b242c189b0f6ded74b3c5152b673d"><div class="ttname"><a href="include_2mycsfml_8h.html#a6f6b242c189b0f6ded74b3c5152b673d">vector_is_in_rect</a></div><div class="ttdeci">int vector_is_in_rect(sfVector2f vector, sfIntRect rect)</div><div class="ttdef"><b>Definition</b> csfml_rect.c:69</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a86f6cec3d49bd36216686d9b3c57781c"><div class="ttname"><a href="include_2mycsfml_8h.html#a86f6cec3d49bd36216686d9b3c57781c">framebuffer_destroy</a></div><div class="ttdeci">void framebuffer_destroy(framebuffer_t *framebuffer)</div><div class="ttdef"><b>Definition</b> csfml_pixel.c:27</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_a9cfd67d8127f9f1ce8790a5064a9e5ae"><div class="ttname"><a href="include_2mycsfml_8h.html#a9cfd67d8127f9f1ce8790a5064a9e5ae">draw_square</a></div><div class="ttdeci">void draw_square(framebuffer_t *framebuffer, sfVector2u position, unsigned int size, sfColor color)</div><div class="ttdef"><b>Definition</b> csfml_pixel.c:58</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_aa1dacaf33284d14ec9fd429dae3b4bf8"><div class="ttname"><a href="include_2mycsfml_8h.html#aa1dacaf33284d14ec9fd429dae3b4bf8">rectangle_shape_t</a></div><div class="ttdeci">struct rectangle_shape_s rectangle_shape_t</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_aabd49c65e764cf54ca803960c13ec736"><div class="ttname"><a href="include_2mycsfml_8h.html#aabd49c65e764cf54ca803960c13ec736">framebuffer_t</a></div><div class="ttdeci">struct framebuffer_s framebuffer_t</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_aadaaf7a9d4891b110e62be7387dfd4c0"><div class="ttname"><a href="include_2mycsfml_8h.html#aadaaf7a9d4891b110e62be7387dfd4c0">image_draw</a></div><div class="ttdeci">void image_draw(sfRenderWindow *window, char *file, unsigned int width, unsigned int height)</div><div class="ttdef"><b>Definition</b> csfml_image.c:10</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_ac062306464d98263f83791d1c7578e7a"><div class="ttname"><a href="include_2mycsfml_8h.html#ac062306464d98263f83791d1c7578e7a">move_rect</a></div><div class="ttdeci">void move_rect(sfIntRect *rect, int offset, int max_value)</div><div class="ttdef"><b>Definition</b> csfml_image.c:46</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_ac2c0a8920ec9bf1cc7913dfc990a8f73"><div class="ttname"><a href="include_2mycsfml_8h.html#ac2c0a8920ec9bf1cc7913dfc990a8f73">vector_is_intersecting_rect</a></div><div class="ttdeci">int vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect)</div><div class="ttdef"><b>Definition</b> csfml_rect.c:27</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_ac4db337edf3502a748e653cb454feba3"><div class="ttname"><a href="include_2mycsfml_8h.html#ac4db337edf3502a748e653cb454feba3">get_fps</a></div><div class="ttdeci">int get_fps(void)</div><div class="ttdef"><b>Definition</b> csfml_fps.c:28</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_ac75747145d6a6e82121aaa11beac432e"><div class="ttname"><a href="include_2mycsfml_8h.html#ac75747145d6a6e82121aaa11beac432e">framebuffer_create</a></div><div class="ttdeci">framebuffer_t * framebuffer_create(unsigned int width, unsigned int height)</div><div class="ttdef"><b>Definition</b> csfml_pixel.c:10</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_adf7f803731debb9f4190fe9bbb303f4d"><div class="ttname"><a href="include_2mycsfml_8h.html#adf7f803731debb9f4190fe9bbb303f4d">rect_is_intersecting_circle</a></div><div class="ttdeci">int rect_is_intersecting_circle(sfIntRect rect, sfVector2f circle, float radius)</div><div class="ttdef"><b>Definition</b> csfml_rect.c:32</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_aedeb17bc3522af0204f9c07dcca0d974"><div class="ttname"><a href="include_2mycsfml_8h.html#aedeb17bc3522af0204f9c07dcca0d974">is_intersecting_circles</a></div><div class="ttdeci">int is_intersecting_circles(sfCircleShape *c1, sfCircleShape *c2)</div><div class="ttdef"><b>Definition</b> csfml_shape.c:72</div></div>
+<div class="ttc" id="ainclude_2mycsfml_8h_html_af8a7e1e2a0e43f215491c4a327e876df"><div class="ttname"><a href="include_2mycsfml_8h.html#af8a7e1e2a0e43f215491c4a327e876df">circle_shape_t</a></div><div class="ttdeci">struct circle_shape_s circle_shape_t</div></div>
+<div class="ttc" id="alib_2mycsfml_2my_8h_html"><div class="ttname"><a href="lib_2mycsfml_2my_8h.html">my.h</a></div></div>
+<div class="ttc" id="astructcircle__shape__s_html"><div class="ttname"><a href="structcircle__shape__s.html">circle_shape_s</a></div><div class="ttdef"><b>Definition</b> mycsfml.h:77</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a0ceb79e199bf42e8b04c4a31ef8e9282"><div class="ttname"><a href="structcircle__shape__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">circle_shape_s::origin</a></div><div class="ttdeci">sfVector2f * origin</div><div class="ttdef"><b>Definition</b> mycsfml.h:78</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a17b0007008194cd8527524d381f94255"><div class="ttname"><a href="structcircle__shape__s.html#a17b0007008194cd8527524d381f94255">circle_shape_s::scale</a></div><div class="ttdeci">sfVector2f * scale</div><div class="ttdef"><b>Definition</b> mycsfml.h:79</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a1fc5a0e5fca1a310e6bfa125bf80042e"><div class="ttname"><a href="structcircle__shape__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">circle_shape_s::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdef"><b>Definition</b> mycsfml.h:84</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a28a03f81750fe0b7515c1b6f64efbbe1"><div class="ttname"><a href="structcircle__shape__s.html#a28a03f81750fe0b7515c1b6f64efbbe1">circle_shape_s::outline_thickness</a></div><div class="ttdeci">float outline_thickness</div><div class="ttdef"><b>Definition</b> mycsfml.h:82</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a4ed894f0e1fd7ec4ab3ad6a53dfb8690"><div class="ttname"><a href="structcircle__shape__s.html#a4ed894f0e1fd7ec4ab3ad6a53dfb8690">circle_shape_s::outline_color</a></div><div class="ttdeci">sfColor * outline_color</div><div class="ttdef"><b>Definition</b> mycsfml.h:81</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a5050a760c11da521cd4aee6336f6529f"><div class="ttname"><a href="structcircle__shape__s.html#a5050a760c11da521cd4aee6336f6529f">circle_shape_s::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition</b> mycsfml.h:83</div></div>
+<div class="ttc" id="astructcircle__shape__s_html_a7ee2ac354b74af300a05a77a54279791"><div class="ttname"><a href="structcircle__shape__s.html#a7ee2ac354b74af300a05a77a54279791">circle_shape_s::fill_color</a></div><div class="ttdeci">sfColor * fill_color</div><div class="ttdef"><b>Definition</b> mycsfml.h:80</div></div>
+<div class="ttc" id="astructframebuffer__s_html"><div class="ttname"><a href="structframebuffer__s.html">framebuffer_s</a></div><div class="ttdef"><b>Definition</b> mycsfml.h:21</div></div>
+<div class="ttc" id="astructframebuffer__s_html_ab2e78c61905b4419fcc7b4cfc500fe85"><div class="ttname"><a href="structframebuffer__s.html#ab2e78c61905b4419fcc7b4cfc500fe85">framebuffer_s::height</a></div><div class="ttdeci">unsigned int height</div><div class="ttdef"><b>Definition</b> mycsfml.h:24</div></div>
+<div class="ttc" id="astructframebuffer__s_html_aca34d28e3d8bcbcadb8edb4e3af24f8c"><div class="ttname"><a href="structframebuffer__s.html#aca34d28e3d8bcbcadb8edb4e3af24f8c">framebuffer_s::width</a></div><div class="ttdeci">unsigned int width</div><div class="ttdef"><b>Definition</b> mycsfml.h:23</div></div>
+<div class="ttc" id="astructframebuffer__s_html_afe084338b7307e8b03360c92ada7b7a2"><div class="ttname"><a href="structframebuffer__s.html#afe084338b7307e8b03360c92ada7b7a2">framebuffer_s::pixels</a></div><div class="ttdeci">sfUint8 * pixels</div><div class="ttdef"><b>Definition</b> mycsfml.h:22</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html"><div class="ttname"><a href="structrectangle__shape__s.html">rectangle_shape_s</a></div><div class="ttdef"><b>Definition</b> mycsfml.h:87</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a0ceb79e199bf42e8b04c4a31ef8e9282"><div class="ttname"><a href="structrectangle__shape__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">rectangle_shape_s::origin</a></div><div class="ttdeci">sfVector2f * origin</div><div class="ttdef"><b>Definition</b> mycsfml.h:88</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a17b0007008194cd8527524d381f94255"><div class="ttname"><a href="structrectangle__shape__s.html#a17b0007008194cd8527524d381f94255">rectangle_shape_s::scale</a></div><div class="ttdeci">sfVector2f * scale</div><div class="ttdef"><b>Definition</b> mycsfml.h:89</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a1fc5a0e5fca1a310e6bfa125bf80042e"><div class="ttname"><a href="structrectangle__shape__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">rectangle_shape_s::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdef"><b>Definition</b> mycsfml.h:94</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a28a03f81750fe0b7515c1b6f64efbbe1"><div class="ttname"><a href="structrectangle__shape__s.html#a28a03f81750fe0b7515c1b6f64efbbe1">rectangle_shape_s::outline_thickness</a></div><div class="ttdeci">float outline_thickness</div><div class="ttdef"><b>Definition</b> mycsfml.h:92</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a2a54e248c48bd80504192dfabfa09457"><div class="ttname"><a href="structrectangle__shape__s.html#a2a54e248c48bd80504192dfabfa09457">rectangle_shape_s::size</a></div><div class="ttdeci">sfVector2f * size</div><div class="ttdef"><b>Definition</b> mycsfml.h:93</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a4ed894f0e1fd7ec4ab3ad6a53dfb8690"><div class="ttname"><a href="structrectangle__shape__s.html#a4ed894f0e1fd7ec4ab3ad6a53dfb8690">rectangle_shape_s::outline_color</a></div><div class="ttdeci">sfColor * outline_color</div><div class="ttdef"><b>Definition</b> mycsfml.h:91</div></div>
+<div class="ttc" id="astructrectangle__shape__s_html_a7ee2ac354b74af300a05a77a54279791"><div class="ttname"><a href="structrectangle__shape__s.html#a7ee2ac354b74af300a05a77a54279791">rectangle_shape_s::fill_color</a></div><div class="ttdeci">sfColor * fill_color</div><div class="ttdef"><b>Definition</b> mycsfml.h:90</div></div>
+<div class="ttc" id="astructsprite__s_html"><div class="ttname"><a href="structsprite__s.html">sprite_s</a></div><div class="ttdef"><b>Definition</b> mycsfml.h:38</div></div>
+<div class="ttc" id="astructsprite__s_html_a0ceb79e199bf42e8b04c4a31ef8e9282"><div class="ttname"><a href="structsprite__s.html#a0ceb79e199bf42e8b04c4a31ef8e9282">sprite_s::origin</a></div><div class="ttdeci">sfVector2f * origin</div><div class="ttdef"><b>Definition</b> mycsfml.h:44</div></div>
+<div class="ttc" id="astructsprite__s_html_a17b0007008194cd8527524d381f94255"><div class="ttname"><a href="structsprite__s.html#a17b0007008194cd8527524d381f94255">sprite_s::scale</a></div><div class="ttdeci">sfVector2f * scale</div><div class="ttdef"><b>Definition</b> mycsfml.h:41</div></div>
+<div class="ttc" id="astructsprite__s_html_a1fc5a0e5fca1a310e6bfa125bf80042e"><div class="ttname"><a href="structsprite__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">sprite_s::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdef"><b>Definition</b> mycsfml.h:43</div></div>
+<div class="ttc" id="astructsprite__s_html_a5df923def835d2c1eaaf5dad161f591e"><div class="ttname"><a href="structsprite__s.html#a5df923def835d2c1eaaf5dad161f591e">sprite_s::color</a></div><div class="ttdeci">sfColor * color</div><div class="ttdef"><b>Definition</b> mycsfml.h:42</div></div>
+<div class="ttc" id="astructsprite__s_html_abcb57bba090d189a2df42c0c2917c21b"><div class="ttname"><a href="structsprite__s.html#abcb57bba090d189a2df42c0c2917c21b">sprite_s::rect</a></div><div class="ttdeci">sfIntRect * rect</div><div class="ttdef"><b>Definition</b> mycsfml.h:40</div></div>
+<div class="ttc" id="astructsprite__s_html_af993bf542d3537edb15accc11e00759e"><div class="ttname"><a href="structsprite__s.html#af993bf542d3537edb15accc11e00759e">sprite_s::file</a></div><div class="ttdeci">char * file</div><div class="ttdef"><b>Definition</b> mycsfml.h:39</div></div>
+<div class="ttc" id="astructtext__s_html"><div class="ttname"><a href="structtext__s.html">text_s</a></div><div class="ttdef"><b>Definition</b> mycsfml.h:57</div></div>
+<div class="ttc" id="astructtext__s_html_a1fc5a0e5fca1a310e6bfa125bf80042e"><div class="ttname"><a href="structtext__s.html#a1fc5a0e5fca1a310e6bfa125bf80042e">text_s::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdef"><b>Definition</b> mycsfml.h:66</div></div>
+<div class="ttc" id="astructtext__s_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="structtext__s.html#a439227feff9d7f55384e8780cfc2eb82">text_s::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition</b> mycsfml.h:60</div></div>
+<div class="ttc" id="astructtext__s_html_a479fffc6c8db2b437b1cca3c819f6079"><div class="ttname"><a href="structtext__s.html#a479fffc6c8db2b437b1cca3c819f6079">text_s::text</a></div><div class="ttdeci">char * text</div><div class="ttdef"><b>Definition</b> mycsfml.h:58</div></div>
+<div class="ttc" id="astructtext__s_html_a5541683434a97a0952d7259c9b8a907c"><div class="ttname"><a href="structtext__s.html#a5541683434a97a0952d7259c9b8a907c">text_s::color</a></div><div class="ttdeci">sfColor color</div><div class="ttdef"><b>Definition</b> mycsfml.h:63</div></div>
+<div class="ttc" id="astructtext__s_html_a64f0fa92b6d2e9fbdbafb8c9b8373010"><div class="ttname"><a href="structtext__s.html#a64f0fa92b6d2e9fbdbafb8c9b8373010">text_s::outlineColor_size</a></div><div class="ttdeci">float outlineColor_size</div><div class="ttdef"><b>Definition</b> mycsfml.h:64</div></div>
+<div class="ttc" id="astructtext__s_html_a815a3aaa00cfa4ac5d589d897364a1cf"><div class="ttname"><a href="structtext__s.html#a815a3aaa00cfa4ac5d589d897364a1cf">text_s::lineSpacing</a></div><div class="ttdeci">float lineSpacing</div><div class="ttdef"><b>Definition</b> mycsfml.h:61</div></div>
+<div class="ttc" id="astructtext__s_html_a81be42d12fff664489f8a3dc6b49370d"><div class="ttname"><a href="structtext__s.html#a81be42d12fff664489f8a3dc6b49370d">text_s::outlineColor</a></div><div class="ttdeci">sfColor outlineColor</div><div class="ttdef"><b>Definition</b> mycsfml.h:65</div></div>
+<div class="ttc" id="astructtext__s_html_a9761d2b7f76a13372219fbbaf41fdb2b"><div class="ttname"><a href="structtext__s.html#a9761d2b7f76a13372219fbbaf41fdb2b">text_s::letterSpacing</a></div><div class="ttdeci">float letterSpacing</div><div class="ttdef"><b>Definition</b> mycsfml.h:62</div></div>
+<div class="ttc" id="astructtext__s_html_abf309d4914db61651221d5db57c8f78c"><div class="ttname"><a href="structtext__s.html#abf309d4914db61651221d5db57c8f78c">text_s::font</a></div><div class="ttdeci">char * font</div><div class="ttdef"><b>Definition</b> mycsfml.h:59</div></div>
+<div class="ttc" id="astructtext__s_html_afc74f5b757e5f73ddd29e51c11b24bd3"><div class="ttname"><a href="structtext__s.html#afc74f5b757e5f73ddd29e51c11b24bd3">text_s::style</a></div><div class="ttdeci">sfUint32 style</div><div class="ttdef"><b>Definition</b> mycsfml.h:67</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

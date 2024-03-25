@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['vector_5fis_5fin_5frect_0',['vector_is_in_rect',['../include_2mycsfml_8h.html#a6f6b242c189b0f6ded74b3c5152b673d',1,'vector_is_in_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c'],['../csfml__rect_8c.html#a6f6b242c189b0f6ded74b3c5152b673d',1,'vector_is_in_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c'],['../lib_2mycsfml_2mycsfml_8h.html#a6f6b242c189b0f6ded74b3c5152b673d',1,'vector_is_in_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c']]],
+  ['vector_5fis_5fintersecting_5frect_1',['vector_is_intersecting_rect',['../include_2mycsfml_8h.html#ac2c0a8920ec9bf1cc7913dfc990a8f73',1,'vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c'],['../csfml__rect_8c.html#ac2c0a8920ec9bf1cc7913dfc990a8f73',1,'vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c'],['../lib_2mycsfml_2mycsfml_8h.html#ac2c0a8920ec9bf1cc7913dfc990a8f73',1,'vector_is_intersecting_rect(sfVector2f vector, sfIntRect rect):&#160;csfml_rect.c']]]
+];

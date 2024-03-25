@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_printf
+** test_my_printf
 ** File description:
-** The test file for the unit tetes
+** Unit tests for each functionality of the my_printf
 */
+/**
+ * @file test_my_printf.c
+ * @brief Unit tests for each function of the my_printf
+ * @author Nicolas TORO
+ */
 
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"

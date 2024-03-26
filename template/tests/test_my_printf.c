@@ -12,7 +12,7 @@
 
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"
-#include "../lib/my/my_printf/myformats.h"
+#include "../lib/my/my_printf/myprintf.h"
 
 void redirect_all_std(void)
 {

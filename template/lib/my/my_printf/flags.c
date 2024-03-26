@@ -4,8 +4,13 @@
 ** File description:
 ** The flags.c
 */
+/**
+ * @file flags.c
+ * @brief The file containing the flags function
+ * @author Nicolas TORO
+*/
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int (*FLAGS[])(va_list, formating_t *) = {
     &flag_d,

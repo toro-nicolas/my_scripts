@@ -11,7 +11,7 @@
  * @author Nicolas TORO
  */
 
-#include "./my_printf/myformats.h"
+#include "./my_printf/myprintf.h"
 
 static void find_format(user_t *user,
     flags_t *flgs, formating_t *formating)

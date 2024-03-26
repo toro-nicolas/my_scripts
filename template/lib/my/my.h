@@ -162,6 +162,7 @@ void *my_free_ptr(void *ptr);
 int my_str_contains(char *str, char *char_list);
 int my_char_is(char c, const char *char_list);
 int my_str_is(char *str, const char *char_list);
+int my_putstr_fd_free(char *str, int fd);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

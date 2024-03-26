@@ -4,11 +4,16 @@
 ** File description:
 ** The header of all formats and flags
 */
+/**
+ * @file myprintf.h
+ * @brief The file containing the header of all formats and flags
+ * @author Nicolas TORO
+ */
 
 #include "../my.h"
 
-#ifndef MYFORMATS_H_
-    #define MYFORMATS_H_
+#ifndef MYPRINTF_H_
+    #define MYPRINTF_H_
 
     #define FORMATAGE "-+ #0"
     #define WIDTH "0123456789"
@@ -55,15 +60,15 @@ formating_t *find_specifier(user_t *user, int *i,
     formating_t *formating);
 
 /* Format functions */
-void format_first(user_t *user, flags_t *flgs,
+void format_first(user_t *user, flags_t *flags,
     formating_t *formating, int *copy);
-void format_width(user_t *user, flags_t *flgs,
+void format_width(user_t *user, flags_t *flags,
     formating_t *formating, int *copy);
-void format_precision(user_t *user, flags_t *flgs,
+void format_precision(user_t *user, flags_t *flags,
     formating_t *formating, int *copy);
-void format_numbers(user_t *user, flags_t *flgs,
+void format_numbers(user_t *user, flags_t *flags,
     formating_t *formating, int *copy);
-void format_specifier(user_t *user, flags_t *flgs,
+void format_specifier(user_t *user, flags_t *flags,
     formating_t *formating, int *copy);
 void my_show_formating(formating_t *formating);
 
@@ -139,4 +144,4 @@ int flag_percent(va_list list, formating_t *);
 
 extern int (*FLAGS[])(va_list, formating_t *);
 
-#endif /* MYFORMATS_H_ */
+#endif /* MYPRINTF_H_ */

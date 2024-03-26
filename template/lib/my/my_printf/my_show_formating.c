@@ -4,8 +4,13 @@
 ** File description:
 ** Prints a formating structure (formating) in stdout
 */
+/**
+ * @file my_show_formating.c
+ * @brief The file containing the my_show_formating function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void my_show_formating(formating_t *formating)
 {

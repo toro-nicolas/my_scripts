@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %E (a double)
 */
+/**
+ * @file flag_bige.c
+ * @brief The file containing the flag_bige function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static char *my_get_str_float(double nb, formating_t *formating)
 {
@@ -19,7 +24,7 @@ static char *my_get_str_float(double nb, formating_t *formating)
     }
     my_strcat(str_finale, my_str_nbr_long_long(partie_entiere));
     precise_it_double(str_finale, formating, partie_d);
-    return my_strdup(str_finale);
+    return str_finale;
 }
 
 static char *my_get_power(int exposant)
@@ -74,13 +79,13 @@ static char *my_get_str_float_scientific(double nb, formating_t *formating)
     if (nb == 0.0) {
         my_strcat(float_nb, my_get_str_float(temp_nb_double, formating));
         my_strcat(float_nb, "E+00\0");
-        return my_strdup(float_nb);
+        return float_nb;
     }
     condition(nb, &exposant, &temp_nb_double, &temp_nb);
     my_strcat(float_nb, my_get_str_float(temp_nb_double, formating));
     my_strcat(float_nb, "E");
     my_strcat(float_nb, my_get_power(exposant));
-    return my_strdup(float_nb);
+    return float_nb;
 }
 
 int flag_bige(va_list list, formating_t *formating)
@@ -89,5 +94,5 @@ int flag_bige(va_list list, formating_t *formating)
     char *temp = my_get_str_float_scientific(temp_double, formating);
 
     format_it_double(temp, formating, temp_double);
-    return my_putstr_fd(temp, formating->fd);
+    return my_putstr_fd_free(temp, formating->fd);
 }

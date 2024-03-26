@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for apply format to a double
 */
+/**
+ * @file format_it_double.c
+ * @brief The file containing the format_it_double function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void format_it_double(char *str_finale,
     formating_t *formating, double nb)

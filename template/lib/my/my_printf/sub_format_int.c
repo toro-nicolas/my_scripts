@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for format an int
 */
+/**
+ * @file sub_format_int.c
+ * @brief The functions for format an int
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static void do_next(char *str_finale, formating_t *formating, double nb)
 {

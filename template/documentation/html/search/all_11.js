@@ -7,5 +7,5 @@ var searchData=
   ['unsigned_5fshort_4',['UNSIGNED_SHORT',['../include_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabf575f3e209328664139bf243ab54bb6',1,'UNSIGNED_SHORT:&#160;mylist.h'],['../lib_2mylist_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabf575f3e209328664139bf243ab54bb6',1,'UNSIGNED_SHORT:&#160;mylist.h'],['../lib_2mymemory_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabf575f3e209328664139bf243ab54bb6',1,'UNSIGNED_SHORT:&#160;mylist.h']]],
   ['unsigned_5fshort_5fshort_5',['UNSIGNED_SHORT_SHORT',['../include_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2da3c8a600d6b4829f0324088f76989df09',1,'UNSIGNED_SHORT_SHORT:&#160;mylist.h'],['../lib_2mylist_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2da3c8a600d6b4829f0324088f76989df09',1,'UNSIGNED_SHORT_SHORT:&#160;mylist.h'],['../lib_2mymemory_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2da3c8a600d6b4829f0324088f76989df09',1,'UNSIGNED_SHORT_SHORT:&#160;mylist.h']]],
   ['user_5fs_6',['user_s',['../structuser__s.html',1,'']]],
-  ['user_5ft_7',['user_t',['../myformats_8h.html#aafaf9b42595b32c3a5ec11b913ba11a7',1,'myformats.h']]]
+  ['user_5ft_7',['user_t',['../myprintf_8h.html#aafaf9b42595b32c3a5ec11b913ba11a7',1,'myprintf.h']]]
 ];

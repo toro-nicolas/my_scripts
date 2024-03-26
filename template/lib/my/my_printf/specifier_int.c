@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for apply an specifier on an int
 */
+/**
+ * @file specifier_int.c
+ * @brief The file containing the specifier_int function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static char *select_long_long(size_t temp)
 {

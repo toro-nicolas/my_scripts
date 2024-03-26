@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %A (a double in hexadecimal)
 */
+/**
+ * @file flag_biga.c
+ * @brief The file containing the flag_biga function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static char *my_get_exposant_neg(int *nbr, char *converted_nb,
     char *exposant_temp)
@@ -23,7 +28,7 @@ static char *my_get_exposant_neg(int *nbr, char *converted_nb,
             "0123456789")) - 0x400;
     }
     signe[1] = '\0';
-    return my_strdup(signe);
+    return signe;
 }
 
 static char *my_get_exposant_pos(int *nbr, char *converted_nb,
@@ -42,7 +47,7 @@ static char *my_get_exposant_pos(int *nbr, char *converted_nb,
             "0123456789")) - 0xC00;
     }
     signe[1] = '\0';
-    return my_strdup(signe);
+    return signe;
 }
 
 static char *my_get_exposant(char *converted_nb, char *signe)
@@ -182,5 +187,5 @@ int flag_biga(va_list list, formating_t *formating)
     char *convert_base = my_get_str_float_hexa(temp_double, formating);
 
     format_it_double(convert_base, formating, temp_double);
-    return my_putstr_fd(convert_base, formating->fd);
+    return my_putstr_fd_free(convert_base, formating->fd);
 }

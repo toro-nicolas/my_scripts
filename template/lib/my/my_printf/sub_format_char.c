@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for format a char
 */
+/**
+ * @file sub_format_char.c
+ * @brief The file containing the sub_format_char functions
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static void do_next_char(char *str_finale,
     formating_t *formating, char c)

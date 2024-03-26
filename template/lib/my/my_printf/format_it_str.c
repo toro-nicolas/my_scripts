@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for apply format to a string
 */
+/**
+ * @file format_it_str.c
+ * @brief The file containing the format_it_str function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void format_it_str(char *str_finale,
     formating_t *formating)

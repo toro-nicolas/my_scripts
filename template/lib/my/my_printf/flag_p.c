@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print %p (an address in hexadecimal)
 */
+/**
+ * @file flag_p.c
+ * @brief The file containing the flag_p function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_p(va_list list, formating_t *formating)
 {
@@ -17,5 +22,5 @@ int flag_p(va_list list, formating_t *formating)
     my_strcat(address_hexa, "x0");
     my_revstr(address_hexa);
     format_it_int(address_hexa, formating, temp);
-    return my_putstr_fd(address_hexa, formating->fd);
+    return my_putstr_fd_free(address_hexa, formating->fd);
 }

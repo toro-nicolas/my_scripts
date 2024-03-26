@@ -7,5 +7,5 @@ var searchData=
   ['next_5fchara_4',['next_chara',['../structformating__s.html#ae842380e4eac5fadc5b48729512f4d50',1,'formating_s']]],
   ['number_5fsettings_5fs_5',['number_settings_s',['../structnumber__settings__s.html',1,'']]],
   ['number_5fsettings_5ft_6',['number_settings_t',['../include_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h'],['../lib_2my_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h'],['../lib_2mycsfml_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h'],['../lib_2myhashtable_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h'],['../lib_2mylist_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h'],['../lib_2mymemory_2my_8h.html#aed3ead406403a2bee1110d01dda52052',1,'number_settings_t:&#160;my.h']]],
-  ['numbers_7',['NUMBERS',['../myformats_8h.html#a52c6eed29863def7303121b65975e83b',1,'myformats.h']]]
+  ['numbers_7',['NUMBERS',['../myprintf_8h.html#a52c6eed29863def7303121b65975e83b',1,'myprintf.h']]]
 ];

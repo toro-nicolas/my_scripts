@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for precise a double
 */
+/**
+ * @file precise_it_double.c
+ * @brief The file containing the precise_it_double function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void precise_it_double(char *str_finale,
     formating_t *formating, double partie_d)

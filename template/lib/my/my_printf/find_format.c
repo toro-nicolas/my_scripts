@@ -4,8 +4,13 @@
 ** File description:
 ** The file that contains functions for find all format
 */
+/**
+ * @file find_format.c
+ * @brief The file that contains functions for find all format
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 formating_t *find_specifier(user_t *user,
     int *i, formating_t *formating)

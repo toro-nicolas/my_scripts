@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for apply format to an int
 */
+/**
+ * @file format_it_int.c
+ * @brief The file containing the format_it_int function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void format_it_int(char *str_finale, formating_t *formating, size_t nb)
 {

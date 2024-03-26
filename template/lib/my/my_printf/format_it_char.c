@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for apply format to a char
 */
+/**
+ * @file format_it_char.c
+ * @brief The file containing the format_it_char function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void format_it_char(char *str_finale,
     formating_t *formating, char c)

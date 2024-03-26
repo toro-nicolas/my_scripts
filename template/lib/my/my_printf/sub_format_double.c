@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for format a double
 */
+/**
+ * @file sub_format_double.c
+ * @brief The file containing the sub_format_double functions
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static void do_next(char *str_finale, formating_t *formating, double nb)
 {

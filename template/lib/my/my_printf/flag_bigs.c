@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %S (an array of string)
 */
+/**
+ * @file flag_bigs.c
+ * @brief The file containing the flag_bigs function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_bigs(va_list list, formating_t *formating)
 {

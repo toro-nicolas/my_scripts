@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for get the format
 */
+/**
+ * @file get_format.c
+ * @brief The file containing the get_format function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static void check_operator(formating_t *formating)
 {
@@ -16,10 +21,10 @@ static void check_operator(formating_t *formating)
     }
 }
 
-void format_first(user_t *user, flags_t *flgs,
+void format_first(user_t *user, flags_t *flags,
     formating_t *formating, int *copy)
 {
-    for (; user->str[*copy - 1] != flgs->str[flgs->index_flag]; (*copy)++) {
+    for (; user->str[*copy - 1] != flags->str[flags->index_flag]; (*copy)++) {
         find_first(user, copy, formating);
         if (formating->id_ft != -1) {
             check_operator(formating);
@@ -28,10 +33,10 @@ void format_first(user_t *user, flags_t *flgs,
     }
 }
 
-void format_width(user_t *user, flags_t *flgs,
+void format_width(user_t *user, flags_t *flags,
     formating_t *formating, int *copy)
 {
-    for (; user->str[*copy - 1] != flgs->str[flgs->index_flag]; (*copy)++) {
+    for (; user->str[*copy - 1] != flags->str[flags->index_flag]; (*copy)++) {
         find_width(user, copy, formating);
         if (formating->id_wd != -1) {
             (formating->nb_format) += my_strlen(my_str_nbr(formating->id_wd));
@@ -40,10 +45,10 @@ void format_width(user_t *user, flags_t *flgs,
     }
 }
 
-void format_precision(user_t *user, flags_t *flgs,
+void format_precision(user_t *user, flags_t *flags,
     formating_t *formating, int *copy)
 {
-    for (; user->str[*copy - 1] != flgs->str[flgs->index_flag]; (*copy)++) {
+    for (; user->str[*copy - 1] != flags->str[flags->index_flag]; (*copy)++) {
         find_precision(user, copy, formating);
         if (formating->id_prc != -1) {
             formating->nb_format += 1;
@@ -52,10 +57,10 @@ void format_precision(user_t *user, flags_t *flgs,
     }
 }
 
-void format_numbers(user_t *user, flags_t *flgs,
+void format_numbers(user_t *user, flags_t *flags,
     formating_t *formating, int *copy)
 {
-    for (; user->str[*copy - 1] != flgs->str[flgs->index_flag]; (*copy)++) {
+    for (; user->str[*copy - 1] != flags->str[flags->index_flag]; (*copy)++) {
         find_numbers(user, copy, formating);
         if (formating->id_nb != -1) {
             (formating->nb_format) += my_strlen(my_str_nbr(formating->id_nb));
@@ -64,7 +69,7 @@ void format_numbers(user_t *user, flags_t *flgs,
     }
 }
 
-void format_specifier(user_t *user, flags_t *flgs,
+void format_specifier(user_t *user, flags_t *flags,
     formating_t *formating, int *copy)
 {
     find_specifier(user, copy, formating);

@@ -4,8 +4,13 @@
 ** File description:
 ** The functions for precise an int
 */
+/**
+ * @file precise_it_int.c
+ * @brief The file containing the precise_it_int function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 void precise_it_int(char *str_finale,
     formating_t *formating, size_t nb)

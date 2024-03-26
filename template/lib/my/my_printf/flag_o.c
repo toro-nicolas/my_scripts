@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %o (an int in octal)
 */
+/**
+ * @file flag_o.c
+ * @brief The file containing the flag_o function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_o(va_list list, formating_t *formating)
 {
@@ -19,5 +24,5 @@ int flag_o(va_list list, formating_t *formating)
         my_revstr(convert_base);
     }
     format_it_int(convert_base, formating, temp);
-    return my_putstr_fd(convert_base, formating->fd);
+    return my_putstr_fd_free(convert_base, formating->fd);
 }

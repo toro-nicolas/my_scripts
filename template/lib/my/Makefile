@@ -36,12 +36,14 @@ SRCS		=	my_array_len.c		\
 			my_params_to_array.c		\
 			my_print_combn.c		\
 			my_print_params.c		\
+			my_printf.c			\
 			my_putnbr.c			\
 			my_putchar.c			\
 			my_putnbr_base.c		\
 			my_putstr.c			\
 			my_putstr_error.c		\
 			my_putstr_fd.c			\
+			my_putstr_fd_free.c		\
 			my_putstr_sized.c		\
 			my_rev_params.c			\
 			my_revstr.c			\
@@ -94,7 +96,6 @@ SRCS		=	my_array_len.c		\
 			my_super_array.c		\
 			my_super_number.c		\
 			my_swap.c			\
-			my_printf.c			\
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 OBJS		+=	$(wildcard ../../build/*.o)

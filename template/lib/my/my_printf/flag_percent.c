@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print %%
 */
+/**
+ * @file flag_percent.c
+ * @brief The file containing the flag_percent function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_percent(va_list liste, formating_t *formating)
 {

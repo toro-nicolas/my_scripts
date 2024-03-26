@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %g (a double)
 */
+/**
+ * @file flag_g.c
+ * @brief The file containing the flag_g function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static int check_precision(int precision, int nb)
 {
@@ -72,7 +77,7 @@ static char *my_get_str_float(double nb, formating_t *formating)
             float_nb[i] = '\0';
     }
     my_strcat(float_nb, "\0");
-    return my_strdup(float_nb);
+    return float_nb;
 }
 
 static char *my_get_power(int index_nb)
@@ -128,7 +133,7 @@ static char *my_get_str_float_scientific(double nb, formating_t *formating)
     my_strcat(float_nb, my_get_str_float(temp_nb_double, formating));
     my_strcat(float_nb, "e");
     my_strcat(float_nb, my_get_power(index_nb));
-    return my_strdup(float_nb);
+    return float_nb;
 }
 
 static int my_get_index(double nb)
@@ -156,9 +161,11 @@ int flag_g(va_list list, formating_t *formating)
     double temp_double = va_arg(list, double);
     int index = ABS(my_get_index(temp_double));
     char *temp;
+    int free = 1;
 
     if (temp_double == 0.0) {
         temp = "0";
+        free = 0;
     } else if (index - 3 < 4 && (index <= formating->id_nb ||
         formating->id_nb == -1)) {
         temp = my_get_str_float(temp_double, formating);
@@ -166,5 +173,7 @@ int flag_g(va_list list, formating_t *formating)
         temp = my_get_str_float_scientific(temp_double, formating);
     }
     format_it_double(temp, formating, temp_double);
+    if (free)
+        return my_putstr_fd_free(temp, formating->fd);
     return my_putstr_fd(temp, formating->fd);
 }

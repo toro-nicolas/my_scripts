@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %n (store a int)
 */
+/**
+ * @file flag_n.c
+ * @brief The file containing the flag_n function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 static void signed_char(va_list list, int len)
 {

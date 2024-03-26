@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %i (an int)
 */
+/**
+ * @file flag_i.c
+ * @brief The file containing the flag_i function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_i(va_list list, formating_t *formating)
 {
@@ -14,5 +19,5 @@ int flag_i(va_list list, formating_t *formating)
 
     precise_it_int(str_finale, formating, temp);
     format_it_int(str_finale, formating, temp);
-    return my_putstr_fd(str_finale, formating->fd);
+    return my_putstr_fd_free(str_finale, formating->fd);
 }

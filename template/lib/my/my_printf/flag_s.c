@@ -4,8 +4,13 @@
 ** File description:
 ** Flag to print a %s (a string)
 */
+/**
+ * @file flag_s.c
+ * @brief The file containing the flag_s function
+ * @author Nicolas TORO
+ */
 
-#include "myformats.h"
+#include "myprintf.h"
 
 int flag_s(va_list list, formating_t *formating)
 {

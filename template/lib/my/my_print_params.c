@@ -4,6 +4,11 @@
 ** File description:
 ** Prints all the arguments (argc and argv)
 */
+/**
+ * @file my_print_params.c
+ * @brief The file containing the my_print_params function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

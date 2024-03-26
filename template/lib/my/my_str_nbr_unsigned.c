@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the strings convertion of an unsigned number (nb)
 */
+/**
+ * @file my_str_nbr_unsigned.c
+ * @brief The file containing the my_str_nbr_unsigned function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

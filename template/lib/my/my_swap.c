@@ -4,6 +4,11 @@
 ** File description:
 ** Swap the value of two integer (a and b)
 */
+/**
+ * @file my_swap.c
+ * @brief The file containing the my_swap function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -41,7 +41,7 @@ typedef struct linked_list {
 void my_push_front(linked_list_t **begin, void *data, type_t type);
 void my_push_back(linked_list_t **begin, void *data, type_t type);
 linked_list_t *my_params_to_list(int ac, char *const *av);
-void my_show_list(linked_list_t *liste);
+void my_show_list(linked_list_t *list);
 int my_list_size(linked_list_t const *begin);
 int my_delete_nodes(linked_list_t **begin,
     void const *data_ref, int (*cmp) ());

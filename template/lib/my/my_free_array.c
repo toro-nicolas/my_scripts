@@ -1,13 +1,18 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_free_array
 ** File description:
 ** Free an array of words (array)
 */
+/**
+ * @file my_free_array.c
+ * @brief The file containing the my_free_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 
-void my_free_word_array(char **array)
+void my_free_array(void **array)
 {
     if (array == NULL)
         return;

@@ -5,6 +5,11 @@
 ** Prints 'P' if the number (n) is positive
 ** or 'N' if the number (n) is negative
 */
+/**
+ * @file my_isneg.c
+ * @brief The file containing the my_isneg function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

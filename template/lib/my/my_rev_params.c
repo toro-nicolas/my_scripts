@@ -4,6 +4,11 @@
 ** File description:
 ** Prints all the arguments (argc and argv) in reverse order
 */
+/**
+ * @file my_rev_params.c
+ * @brief The file containing the my_rev_params function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

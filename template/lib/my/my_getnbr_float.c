@@ -4,6 +4,11 @@
 ** File description:
 ** Returns a float number starting from a string number (str)
 */
+/**
+ * @file my_getnbr_float.c
+ * @brief The file containing the my_getnbr_float function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

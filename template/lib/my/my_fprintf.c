@@ -5,6 +5,11 @@
 ** Write a string (format) with possible flags and format
 ** in a file descriptor (fd) and returns the length the printed string
 */
+/**
+ * @file my_fprintf.c
+ * @brief The file containing the my_fprintf function
+ * @author Nicolas TORO
+ */
 
 #include "./my_printf/myformats.h"
 

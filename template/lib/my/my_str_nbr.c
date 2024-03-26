@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the strings conversion of a number (nb)
 */
+/**
+ * @file my_str_nbr.c
+ * @brief The file containing the my_str_nbr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Prints a string (str) in stderr
 */
+/**
+ * @file my_putstr_error.c
+ * @brief The file containing the my_putstr_error function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

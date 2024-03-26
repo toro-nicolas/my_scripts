@@ -4,6 +4,11 @@
 ** File description:
 ** Returns 1 if the characters (c) is alphabetical or 0 if not
 */
+/**
+ * @file my_char_is_alpha.c
+ * @brief The file containing the my_char_is_alpha function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

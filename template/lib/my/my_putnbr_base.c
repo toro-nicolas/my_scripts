@@ -4,6 +4,11 @@
 ** File description:
 ** Prints a number (nb) in the requested base (base) in stdout
 */
+/**
+ * @file my_putnbr_base.c
+ * @brief The file containing the my_putnbr_base function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Returns 1 if the string (str) contains only printable characters
 */
+/**
+ * @file my_str_isprintable.c
+ * @brief The file containing the my_str_isprintable function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

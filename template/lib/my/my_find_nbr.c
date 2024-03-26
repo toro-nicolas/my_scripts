@@ -4,6 +4,11 @@
 ** File description:
 ** Find the first number (number) in a string
 */
+/**
+ * @file my_find_nbr.c
+ * @brief The file containing the my_find_nbr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 /*

@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_convert_base_unsigned_size_t
+** my_convert_base_size_t
 ** File description:
-** Returns the result of the conversion of number (nbr)
+** Returns the result of the conversion of a size_t (nbr)
 ** in a specific base (base_from) to another base (base_to)
+*/
+/**
+ * @file my_convert_base_size_t.c
+ * @brief The file containing the my_convert_base_size_t function
+ * @author Nicolas TORO
 */
 
 #include "my.h"

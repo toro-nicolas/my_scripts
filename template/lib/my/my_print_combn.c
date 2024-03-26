@@ -6,6 +6,11 @@
 ** All digits in the number are different and only the smallest
 ** number composed by those digits are display
 */
+/**
+ * @file my_print_combn.c
+ * @brief The file containing the my_print_combn function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

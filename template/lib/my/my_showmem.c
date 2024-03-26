@@ -4,6 +4,11 @@
 ** File description:
 ** Prints a memory dump of a string (str) with a defined size
 */
+/**
+ * @file my_showmem.c
+ * @brief The file containing the my_showmem function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

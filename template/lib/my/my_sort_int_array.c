@@ -5,6 +5,11 @@
 ** Sorts an array (array) with a defined size (size) of integers in ascending
 ** order
 */
+/**
+ * @file my_sort_int_array.c
+ * @brief The file containing the my_sort_int_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

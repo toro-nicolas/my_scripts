@@ -4,6 +4,11 @@
 ** File description:
 ** Prints all word in an array (tab)
 */
+/**
+ * @file my_show_word_array.c
+ * @brief The file containing the my_show_word_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

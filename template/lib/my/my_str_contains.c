@@ -5,6 +5,11 @@
 ** Returns 1 if the string (str) contains at least one character from the
 ** char list (char_list), 0 otherwise
 */
+/**
+ * @file my_str_contains.c
+ * @brief The file containing the my_str_contains function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

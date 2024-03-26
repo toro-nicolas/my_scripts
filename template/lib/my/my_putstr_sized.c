@@ -5,6 +5,11 @@
 ** Write a string (str) in stdout with a defined size (size)
 ** and returns the length of the printed string
 */
+/**
+ * @file my_putstr_sized.c
+ * @brief The file containing the my_putstr_sized function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Copy a string (src) and paste it on another string (dest)
 */
+/**
+ * @file my_strcpy.c
+ * @brief The file containing the my_strcpy function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

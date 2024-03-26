@@ -1,10 +1,15 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_nbr_base_unsigned
+** my_str_nbr_base_unsigned_size_t
 ** File description:
 ** Returns the strings conversion of
-** an unsigned number (nbr) in specific base (base)
+** an unsigned size_t number (nbr) in specific base (base)
 */
+/**
+ * @file my_str_nbr_base_unsigned_size_t.c
+ * @brief The file containing the my_str_nbr_base_unsigned_size_t function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

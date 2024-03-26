@@ -4,6 +4,11 @@
 ** File description:
 ** Returns 1 if the string (str) contains only numerical characters
 */
+/**
+ * @file my_str_isnum.c
+ * @brief The file containing the my_str_isnum function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

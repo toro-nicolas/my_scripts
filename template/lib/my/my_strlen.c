@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the length of a string (str)
 */
+/**
+ * @file my_strlen.c
+ * @brief The file containing the my_strlen function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

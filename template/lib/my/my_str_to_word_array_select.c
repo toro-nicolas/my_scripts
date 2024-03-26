@@ -5,6 +5,11 @@
 ** Returns an array of words delimited by a list of separator (separator)
 ** from a string (str)
 */
+/**
+ * @file my_str_to_word_array_select.c
+ * @brief The file containing the my_str_to_word_array_select function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -5,6 +5,11 @@
 ** Returns an int number starting from a string number (number) and -1 if the
 ** string is not an exact positive number
 */
+/**
+ * @file my_strict_find_nbr.c
+ * @brief The file containing the my_strict_find_nbr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

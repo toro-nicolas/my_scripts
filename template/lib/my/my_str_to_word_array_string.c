@@ -1,10 +1,15 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_to_word_array_select
+** my_str_to_word_array_string
 ** File description:
 ** Returns an array of words delimited by a separator (separator)
 ** from a string (str)
 */
+/**
+ * @file my_str_to_word_array_string.c
+ * @brief The file containing the my_str_to_word_array_string function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

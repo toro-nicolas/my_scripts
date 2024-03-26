@@ -4,6 +4,11 @@
 ** File description:
 ** Modify a string (float) and round it
 */
+/**
+ * @file my_round_float_str.c
+ * @brief The file containing the my_round_float_str function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

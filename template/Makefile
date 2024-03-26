@@ -5,7 +5,7 @@
 ## The main Makefile of our project
 ##
 
-NAME		=	[project-exec]
+NAME		=	a#[project-exec]
 
 BUILDDIR 	=	./build
 SRCDIR		=	./src
@@ -14,7 +14,9 @@ SRCS		+=	main.c
 
 OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
-CFLAGS		=	-Werror -Wextra -g3 -I./include/
+CFLAGS		=	-Werror -Wextra -I./include/
+DEBUGFLAGS	=	-g3
+OPTIMIZEFLAGS	=	-O3
 
 LDFLAGS 	=	-L./lib/ -lmymemory -lmyhashtable -lmycsfml -lmylist -lmy
 
@@ -33,10 +35,14 @@ create-build:
 	@mkdir -p $(BUILDDIR)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) $(LDFLAGS) -c $< -o $@
+
+debug: CFLAGS += $(DEBUGFLAGS)
+debug: OPTIMIZEFLAGS =
+debug: all
 
 $(NAME): $(OBJS)
-	@$(CC) $(OBJS) $(CFLAGS) $(LDFLAGS) -o $(NAME)
+	@$(CC) $(OBJS) $(CFLAGS) $(OPTIMIZEFLAGS) $(LDFLAGS) -o $(NAME)
 	@rm -rf ./lib/my/*.a
 	@rm -rf ./lib/mylist/*.a
 	@rm -rf ./lib/mycsfml/*.a

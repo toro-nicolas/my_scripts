@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the strings convertion of a long unsigned number (nb)
 */
+/**
+ * @file my_str_nbr_unsigned_long.c
+ * @brief The file containing the my_str_nbr_unsigned_long function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -1,10 +1,15 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_nbr_base_unsigned
+** my_str_nbr_base_unsigned_long
 ** File description:
 ** Returns the strings conversion of
-** an unsigned number (nbr) in specific base (base)
+** an unsigned long number (nbr) in specific base (base)
 */
+/**
+ * @file my_str_nbr_base_unsigned_long.c
+ * @brief The file containing the my_str_nbr_base_unsigned_long function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

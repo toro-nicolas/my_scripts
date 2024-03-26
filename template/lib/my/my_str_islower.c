@@ -5,6 +5,11 @@
 ** Returns 1 if the string (str)
 ** contains only lowercase alphabetical characters
 */
+/**
+ * @file my_str_islower.c
+ * @brief The file containing the my_str_islower function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

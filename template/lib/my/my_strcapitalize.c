@@ -4,6 +4,11 @@
 ** File description:
 ** Capitalizes the first letter of each word in a string (str)
 */
+/**
+ * @file my_strcapitalize.c
+ * @brief The file containing the my_strcapitalize function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

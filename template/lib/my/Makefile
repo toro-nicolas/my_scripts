@@ -26,7 +26,7 @@ SRCS		=	my_array_len.c		\
 			my_find_prime_inf.c		\
 			my_fprintf.c			\
 			my_free_ptr.c			\
-			my_free_word_array.c			\
+			my_free_array.c			\
 			my_getnbr.c			\
 			my_getnbr_base.c		\
 			my_getnbr_float.c		\

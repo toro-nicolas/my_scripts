@@ -5,6 +5,11 @@
 ** Prints a string (str) but replaces
 ** non-printable characters with their hexadecimal number
 */
+/**
+ * @file my_showstr.c
+ * @brief The file containing the my_showstr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

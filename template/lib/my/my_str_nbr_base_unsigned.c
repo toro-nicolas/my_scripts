@@ -5,6 +5,11 @@
 ** Returns the strings conversion of
 ** an unsigned number (nbr) in specific base (base)
 */
+/**
+ * @file my_str_nbr_base_unsigned.c
+ * @brief The file containing the my_str_nbr_base_unsigned function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

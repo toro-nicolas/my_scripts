@@ -5,6 +5,11 @@
 ** Write a string (str) in a file descriptor (fd)
 ** and returns the length of the printed string
 */
+/**
+ * @file my_putstr_fd.c
+ * @brief The file containing the my_putstr_fd function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

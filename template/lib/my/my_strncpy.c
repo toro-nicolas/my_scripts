@@ -5,6 +5,11 @@
 ** Copy a string (src) and paste it on another string (dest)
 ** with a defined size (n)
 */
+/**
+ * @file my_strncpy.c
+ * @brief The file containing the my_strncpy function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -5,6 +5,11 @@
 ** Concatenates a string (dest) with another string (src)
 ** with a defined size (n) and returns the destination string (dest)
 */
+/**
+ * @file my_strncat.c
+ * @brief The file containing the my_strncat function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

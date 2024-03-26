@@ -5,6 +5,11 @@
 ** Returns a float number starting from a string number (str) and -1.0 if the
 ** string is not an exact positive number
 */
+/**
+ * @file my_strict_getnbr_float.c
+ * @brief The file containing the my_strict_getnbr_float function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

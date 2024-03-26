@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_str_nbr_long_long
+** my_str_nbr_short
 ** File description:
-** Returns the strings conversion of a long long number (nb)
+** Returns the strings conversion of a short number (nb)
 */
+/**
+ * @file my_str_nbr_short.c
+ * @brief The file containing the my_str_nbr_short function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Returns an array of words from a string (str)
 */
+/**
+ * @file my_str_to_word_array.c
+ * @brief The file containing the my_str_to_word_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

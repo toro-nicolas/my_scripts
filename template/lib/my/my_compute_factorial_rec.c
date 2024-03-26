@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the factorial value of the number (nb)
 */
+/**
+ * @file my_compute_factorial_rec.c
+ * @brief The file containing the my_compute_factorial_rec function
+ * @author Nicolas TORO
+*/
 
 #include "my.h"
 

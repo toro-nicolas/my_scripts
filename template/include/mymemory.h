@@ -10,6 +10,10 @@
 #ifndef MYMEMORY_H_
     #define MYMEMORY_H_
 
+    #define CALLOC(elt_count, elt_size) my_calloc(elt_count, elt_size, 1)
+    #define MALLOC(size) my_malloc(size, 1)
+    #define REALLOC(ptr, size) my_realloc(ptr, size, 1)
+
 void *my_calloc(size_t element_count, size_t element_size, int type);
 void my_free(void);
 void *my_malloc(size_t size, int type);

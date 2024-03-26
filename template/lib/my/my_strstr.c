@@ -5,6 +5,11 @@
 ** Search a string (to_find) on another (str)
 ** and returns the address of the first occurence
 */
+/**
+ * @file my_strstr.c
+ * @brief The file containing the my_strstr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

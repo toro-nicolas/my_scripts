@@ -4,6 +4,11 @@
 ** File description:
 ** Returns a duplication of a string (src)
 */
+/**
+ * @file my_strdup.c
+ * @brief The file containing the my_strdup function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

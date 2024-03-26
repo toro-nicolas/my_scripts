@@ -2,9 +2,14 @@
 ** EPITECH PROJECT, 2023
 ** my_convert_base
 ** File description:
-** Returns the result of the conversion of number (nbr)
+** Returns the result of the conversion of a number (nbr)
 ** in a specific base (base_from) to another base (base_to)
 */
+/**
+ * @file my_convert_base.c
+ * @brief The file containing the my_convert_base function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

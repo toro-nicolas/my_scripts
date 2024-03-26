@@ -5,6 +5,11 @@
 ** Returns 1 if the string (str)
 ** contains only uppercase alphabetical characters
 */
+/**
+ * @file my_str_isupper.c
+ * @brief The file containing the my_str_isupper function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the power (p) of the number (nb) in size_t
 */
+/**
+ * @file my_compute_power_rec_size_t.c
+ * @brief The file containing the my_compute_power_rec_size_t function
+ * @author Nicolas TORO
+*/
 
 #include "my.h"
 

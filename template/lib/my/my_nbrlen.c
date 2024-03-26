@@ -4,6 +4,11 @@
 ** File description:
 ** Return the length of a number (nb)
 */
+/**
+ * @file my_nbrlen.c
+ * @brief The file containing the my_nbrlen function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

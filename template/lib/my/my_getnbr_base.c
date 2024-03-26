@@ -5,6 +5,11 @@
 ** Returns an int number starting from a string number (str)
 ** in the requested base (base)
 */
+/**
+ * @file my_getnbr_base.c
+ * @brief The file containing the my_getnbr_base function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

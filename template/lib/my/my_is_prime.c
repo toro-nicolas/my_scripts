@@ -4,6 +4,11 @@
 ** File description:
 ** Returns 1 if the number (nb) is prime and 0 otherwise
 */
+/**
+ * @file my_is_prime.c
+ * @brief The file containing the my_is_prime function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

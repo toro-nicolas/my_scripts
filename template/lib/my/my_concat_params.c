@@ -4,6 +4,11 @@
 ** File description:
 ** Returns a string with all the arguments (argc and argv) concatenated
 */
+/**
+ * @file my_concat_params.c
+ * @brief The file containing the my_concat_params function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

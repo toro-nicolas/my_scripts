@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the lengths of an array (array) which finish with a NULL value
 */
+/**
+ * @file my_array_len.c
+ * @brief The file containing the my_array_len function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

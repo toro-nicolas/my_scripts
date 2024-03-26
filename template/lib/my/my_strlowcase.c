@@ -4,6 +4,11 @@
 ** File description:
 ** Replaces upcase by lowcase of a string (str) and returns them
 */
+/**
+ * @file my_strlowcase.c
+ * @brief The file containing the my_strlowcase function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

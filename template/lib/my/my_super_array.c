@@ -5,6 +5,11 @@
 ** Returns an array of words delimited by a list of separator (separator)
 ** from a string (str)
 */
+/**
+ * @file my_super_array.c
+ * @brief The file containing the my_super_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

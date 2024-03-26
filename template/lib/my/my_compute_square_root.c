@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the root of the number (nb)
 */
+/**
+ * @file my_compute_square_root.c
+ * @brief The file containing the my_compute_square_root function
+ * @author Nicolas TORO
+*/
 
 #include "my.h"
 

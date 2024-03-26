@@ -5,6 +5,11 @@
 ** Prints the name, the length and word array of
 ** each element of an array (par) of the info_param struct
 */
+/**
+ * @file my_show_param_array.c
+ * @brief The file containing the my_show_param_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

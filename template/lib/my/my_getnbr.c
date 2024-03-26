@@ -4,11 +4,18 @@
 ** File description:
 ** Returns an int number starting from a string number (str)
 */
+/**
+ * @file my_getnbr.c
+ * @brief The file containing the my_getnbr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 
 static int index_negative(char const *str, int index)
 {
+    if (index == 0)
+        return 1;
     if (str[index - 1] == '-')
         return -1;
     return 1;

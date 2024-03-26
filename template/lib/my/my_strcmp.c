@@ -5,6 +5,11 @@
 ** Returns 0 if the strings (s1 and s2) are identical,
 ** otherwise it returns the difference
 */
+/**
+ * @file my_strcmp.c
+ * @brief The file containing the my_strcmp function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

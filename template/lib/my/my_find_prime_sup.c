@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the next prime number starting form a number (nb)
 */
+/**
+ * @file my_find_prime_sup.c
+ * @brief The file containing the my_find_prime_sup function
+ * @author Nicolas TORO
+*/
 
 #include "my.h"
 

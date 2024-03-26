@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the strings conversion of a long long number (nb)
 */
+/**
+ * @file my_str_nbr_long_long.c
+ * @brief The file containing the my_str_nbr_long_long function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

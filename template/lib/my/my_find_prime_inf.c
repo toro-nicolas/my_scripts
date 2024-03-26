@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the previous prime number starting form a number (nb)
 */
+/**
+ * @file my_find_prime_inf.c
+ * @brief The file containing the my_find_prime_inf function
+ * @author Nicolas TORO
+*/
 
 #include "my.h"
 

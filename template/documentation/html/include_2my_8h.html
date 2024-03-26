@@ -98,6 +98,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Référence du fichier my.h</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The header file of the libmy.  
+<a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
@@ -154,10 +157,14 @@ Macros</h2></td></tr>
 <tr class="separator:a8956b0148e38946f89c96cca14ddacc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd468abd581c991be80f86dfa3c18abe" id="r_abd468abd581c991be80f86dfa3c18abe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd468abd581c991be80f86dfa3c18abe">STR2ARRAY_STR</a>(str,  sep)&#160;&#160;&#160;<a class="el" href="#ab3d4553c16132d2a442640369e608a0e">my_str_to_word_array_string</a>(str, sep)</td></tr>
 <tr class="separator:abd468abd581c991be80f86dfa3c18abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105949c59c998e38aad80266afac92bf" id="r_a105949c59c998e38aad80266afac92bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a105949c59c998e38aad80266afac92bf">FREE</a>(ptr)&#160;&#160;&#160;<a class="el" href="#a5b3f1695ec120de69a9f1312c5969dc7">my_free_ptr</a>(ptr)</td></tr>
+<tr class="memitem:a105949c59c998e38aad80266afac92bf" id="r_a105949c59c998e38aad80266afac92bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a105949c59c998e38aad80266afac92bf">FREE</a>(ptr)&#160;&#160;&#160;ptr = <a class="el" href="#a9ee248793cda13367ba0ee61b4463228">my_free_ptr</a>(ptr)</td></tr>
 <tr class="separator:a105949c59c998e38aad80266afac92bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197c22bcd714edc4c556629900a3e4f2" id="r_a197c22bcd714edc4c556629900a3e4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197c22bcd714edc4c556629900a3e4f2">FREE_WORD_ARRAY</a>(ptr)&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((char **)ptr)</td></tr>
+<tr class="separator:a197c22bcd714edc4c556629900a3e4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8042a334f38e2649db392333bd2e834" id="r_aa8042a334f38e2649db392333bd2e834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8042a334f38e2649db392333bd2e834">STR_CONTAINS</a>(str,  find)&#160;&#160;&#160;(<a class="el" href="#a61919d57c190026e8dd6fa1ea51b756a">my_strstr</a>(str, find) != NULL) ? 1 : 0</td></tr>
 <tr class="separator:aa8042a334f38e2649db392333bd2e834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e95dc1eb9d6ce16f515e77beeadd58" id="r_a58e95dc1eb9d6ce16f515e77beeadd58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58e95dc1eb9d6ce16f515e77beeadd58">NB</a>&#160;&#160;&#160;<a class="el" href="#aed3ead406403a2bee1110d01dda52052">number_settings_t</a></td></tr>
+<tr class="separator:a58e95dc1eb9d6ce16f515e77beeadd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Définitions de type</h2></td></tr>
@@ -176,6 +183,7 @@ Définitions de type</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:ac4de74d04dc6e263345755eb62676802" id="r_ac4de74d04dc6e263345755eb62676802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4de74d04dc6e263345755eb62676802">my_putchar</a> (char c)</td></tr>
+<tr class="memdesc:ac4de74d04dc6e263345755eb62676802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a character.  <br /></td></tr>
 <tr class="separator:ac4de74d04dc6e263345755eb62676802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36cc7e65c30e675f65b778abfaa16e9" id="r_ad36cc7e65c30e675f65b778abfaa16e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad36cc7e65c30e675f65b778abfaa16e9">my_isneg</a> (int nb)</td></tr>
 <tr class="separator:ad36cc7e65c30e675f65b778abfaa16e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,8 +315,8 @@ Fonctions</h2></td></tr>
 <tr class="separator:ab3d4553c16132d2a442640369e608a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac8bebee8d2558a1f721c11c7336497d" id="r_aac8bebee8d2558a1f721c11c7336497d"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8bebee8d2558a1f721c11c7336497d">my_super_array</a> (char *str, char *sep)</td></tr>
 <tr class="separator:aac8bebee8d2558a1f721c11c7336497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1180cae2875b1fdcd58c9f9175a82c12" id="r_a1180cae2875b1fdcd58c9f9175a82c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1180cae2875b1fdcd58c9f9175a82c12">my_free_word_array</a> (char **array)</td></tr>
-<tr class="separator:a1180cae2875b1fdcd58c9f9175a82c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e552192501c66d109c9f9b1a7438fd" id="r_ab2e552192501c66d109c9f9b1a7438fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a> (void **array)</td></tr>
+<tr class="separator:ab2e552192501c66d109c9f9b1a7438fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d147fd97324c6c4099b8336fca245f9" id="r_a1d147fd97324c6c4099b8336fca245f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d147fd97324c6c4099b8336fca245f9">my_find_prime_inf</a> (int nb)</td></tr>
 <tr class="separator:a1d147fd97324c6c4099b8336fca245f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac30a461d1870c14b46d8dce09163d363" id="r_ac30a461d1870c14b46d8dce09163d363"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30a461d1870c14b46d8dce09163d363">my_strerror</a> (int error)</td></tr>
@@ -317,10 +325,14 @@ Fonctions</h2></td></tr>
 <tr class="separator:a5a925ceb861f47be17ef6be6adf59d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee4ef039b26e380c7251e7e0d87def55" id="r_aee4ef039b26e380c7251e7e0d87def55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee4ef039b26e380c7251e7e0d87def55">my_super_number</a> (char *number, <a class="el" href="#aed3ead406403a2bee1110d01dda52052">number_settings_t</a> settings)</td></tr>
 <tr class="separator:aee4ef039b26e380c7251e7e0d87def55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3f1695ec120de69a9f1312c5969dc7" id="r_a5b3f1695ec120de69a9f1312c5969dc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b3f1695ec120de69a9f1312c5969dc7">my_free_ptr</a> (void *ptr)</td></tr>
-<tr class="separator:a5b3f1695ec120de69a9f1312c5969dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee248793cda13367ba0ee61b4463228" id="r_a9ee248793cda13367ba0ee61b4463228"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ee248793cda13367ba0ee61b4463228">my_free_ptr</a> (void *ptr)</td></tr>
+<tr class="separator:a9ee248793cda13367ba0ee61b4463228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64740463978ffcb93171ce961e0c4a30" id="r_a64740463978ffcb93171ce961e0c4a30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64740463978ffcb93171ce961e0c4a30">my_str_contains</a> (char *str, char *char_list)</td></tr>
 <tr class="separator:a64740463978ffcb93171ce961e0c4a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e53a6293c679d1ca24d0ae19706ceb7" id="r_a3e53a6293c679d1ca24d0ae19706ceb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e53a6293c679d1ca24d0ae19706ceb7">my_char_is</a> (char c, const char *char_list)</td></tr>
+<tr class="separator:a3e53a6293c679d1ca24d0ae19706ceb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d764cc884eb9fcc9256ef5e9986e44a" id="r_a4d764cc884eb9fcc9256ef5e9986e44a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d764cc884eb9fcc9256ef5e9986e44a">my_str_is</a> (char *str, const char *char_list)</td></tr>
+<tr class="separator:a4d764cc884eb9fcc9256ef5e9986e44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02f9554e63d16713e789f4e4d0fae1a0" id="r_a02f9554e63d16713e789f4e4d0fae1a0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02f9554e63d16713e789f4e4d0fae1a0">my_str_nbr</a> (int nb)</td></tr>
 <tr class="separator:a02f9554e63d16713e789f4e4d0fae1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee8c006b67ff9427dda3ec808d0b186" id="r_a9ee8c006b67ff9427dda3ec808d0b186"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ee8c006b67ff9427dda3ec808d0b186">my_str_nbr_short</a> (short int nb)</td></tr>
@@ -353,7 +365,10 @@ Variables</h2></td></tr>
 <tr class="memitem:ac9a70045ab91a59a04050805ac52928b" id="r_ac9a70045ab91a59a04050805ac52928b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a70045ab91a59a04050805ac52928b">my_errno</a></td></tr>
 <tr class="separator:ac9a70045ab91a59a04050805ac52928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des macros</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>The header file of the libmy. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
 <a id="a322ccb036d02432a1496931e4585c4b0" name="a322ccb036d02432a1496931e4585c4b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a322ccb036d02432a1496931e4585c4b0">&#9670;&#160;</a></span>ABS</h2>
 
@@ -381,7 +396,24 @@ Variables</h2></td></tr>
           <td class="memname">#define FREE</td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="#a5b3f1695ec120de69a9f1312c5969dc7">my_free_ptr</a>(ptr)</td>
+          <td>&#160;&#160;&#160;ptr = <a class="el" href="#a9ee248793cda13367ba0ee61b4463228">my_free_ptr</a>(ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a197c22bcd714edc4c556629900a3e4f2" name="a197c22bcd714edc4c556629900a3e4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197c22bcd714edc4c556629900a3e4f2">&#9670;&#160;</a></span>FREE_WORD_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FREE_WORD_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((char **)ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -556,6 +588,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a58e95dc1eb9d6ce16f515e77beeadd58" name="a58e95dc1eb9d6ce16f515e77beeadd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e95dc1eb9d6ce16f515e77beeadd58">&#9670;&#160;</a></span>NB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NB&#160;&#160;&#160;<a class="el" href="#aed3ead406403a2bee1110d01dda52052">number_settings_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acbc0da8b2f86549f6907be8adb3ab919" name="acbc0da8b2f86549f6907be8adb3ab919"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbc0da8b2f86549f6907be8adb3ab919">&#9670;&#160;</a></span>STR2ARRAY</h2>
 
@@ -696,6 +742,27 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e53a6293c679d1ca24d0ae19706ceb7" name="a3e53a6293c679d1ca24d0ae19706ceb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e53a6293c679d1ca24d0ae19706ceb7">&#9670;&#160;</a></span>my_char_is()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_char_is </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>char_list</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1005,16 +1072,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b3f1695ec120de69a9f1312c5969dc7" name="a5b3f1695ec120de69a9f1312c5969dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b3f1695ec120de69a9f1312c5969dc7">&#9670;&#160;</a></span>my_free_ptr()</h2>
+<a id="ab2e552192501c66d109c9f9b1a7438fd" name="ab2e552192501c66d109c9f9b1a7438fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e552192501c66d109c9f9b1a7438fd">&#9670;&#160;</a></span>my_free_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void my_free_ptr </td>
+          <td class="memname">void my_free_array </td>
           <td>(</td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1022,16 +1089,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1180cae2875b1fdcd58c9f9175a82c12" name="a1180cae2875b1fdcd58c9f9175a82c12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1180cae2875b1fdcd58c9f9175a82c12">&#9670;&#160;</a></span>my_free_word_array()</h2>
+<a id="a9ee248793cda13367ba0ee61b4463228" name="a9ee248793cda13367ba0ee61b4463228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee248793cda13367ba0ee61b4463228">&#9670;&#160;</a></span>my_free_ptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void my_free_word_array </td>
+          <td class="memname">void * my_free_ptr </td>
           <td>(</td>
-          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1239,6 +1306,16 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Display a character. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>The character to display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>
@@ -1554,6 +1631,27 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>char_list</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d764cc884eb9fcc9256ef5e9986e44a" name="a4d764cc884eb9fcc9256ef5e9986e44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d764cc884eb9fcc9256ef5e9986e44a">&#9670;&#160;</a></span>my_str_is()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_str_is </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>char_list</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

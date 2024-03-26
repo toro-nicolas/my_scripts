@@ -4,6 +4,11 @@
 ** File description:
 ** The header file of the libmy
 */
+/**
+ * @file my.h
+ * @brief The header file of the libmy
+ * @author Nicolas TORO
+ */
 
 #include <stdlib.h>
 #include <stddef.h>
@@ -41,7 +46,8 @@
     #define    STR2ARRAY_SEP(str, sep) my_str_to_word_array_select(str, sep)
     #define    STR2ARRAY_STR(str, sep) my_str_to_word_array_string(str, sep)
 
-    #define    FREE(ptr) my_free_ptr(ptr)
+    #define    FREE(ptr) ptr = my_free_ptr(ptr)
+    #define    FREE_WORD_ARRAY(ptr) my_free_array((char **)ptr)
 
     #define    STR_CONTAINS(str, find) (my_strstr(str, find) != NULL) ? 1 : 0
 
@@ -66,7 +72,16 @@ typedef struct number_settings_s {
     my_bool_t overflow;
 } number_settings_t;
 
+    #define NB number_settings_t
+
 /* Basics libmy functions */
+
+/**
+ * @brief Display a character
+ * @param c The character to display
+ * @return void
+ * @author Nicolas TORO
+ */
 void my_putchar(char c);
 int my_isneg(int nb);
 int my_putnbr(int nb);
@@ -138,13 +153,15 @@ float my_strict_getnbr_float(char const *str);
 char **my_str_to_word_array_select(char const *str, char const *separator);
 char **my_str_to_word_array_string(char const *str, char const *separator);
 char **my_super_array(char *str, char *sep);
-void my_free_word_array(char **array);
+void my_free_array(void **array);
 int my_find_prime_inf(int nb);
 const char *my_strerror(int error);
 char **my_strdup_word_array(char **array);
 int my_super_number(char *number, number_settings_t settings);
-void my_free_ptr(void *ptr);
+void *my_free_ptr(void *ptr);
 int my_str_contains(char *str, char *char_list);
+int my_char_is(char c, const char *char_list);
+int my_str_is(char *str, const char *char_list);
 
 /* my_str_nbr functions */
 char *my_str_nbr(int nb);

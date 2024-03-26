@@ -4,6 +4,11 @@
 ** File description:
 ** The my_super_number.c
 */
+/**
+ * @file my_super_number.c
+ * @brief The file containing the my_super_number function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

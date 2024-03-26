@@ -4,6 +4,11 @@
 ** File description:
 ** Returns the strings convertion of a big unsigned number (nb)
 */
+/**
+ * @file my_str_nbr_size_t.c
+ * @brief The file containing the my_str_nbr_size_t function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

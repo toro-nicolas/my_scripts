@@ -4,6 +4,11 @@
 ** File description:
 ** Returns a info_params struct of the agrc (ac) and the argv (av)
 */
+/**
+ * @file my_params_to_array.c
+ * @brief The file containing the my_params_to_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

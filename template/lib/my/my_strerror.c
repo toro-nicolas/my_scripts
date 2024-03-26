@@ -4,6 +4,11 @@
 ** File description:
 ** The my_strerror.c
 */
+/**
+ * @file my_strerror.c
+ * @brief The file containing the my_strerror function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

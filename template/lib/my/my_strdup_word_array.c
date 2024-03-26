@@ -4,6 +4,11 @@
 ** File description:
 ** The my_strdup_word_array.c
 */
+/**
+ * @file my_strdup_word_array.c
+ * @brief The file containing the my_strdup_word_array function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

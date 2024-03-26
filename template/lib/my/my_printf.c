@@ -5,6 +5,11 @@
 ** Prints a string (format) with possible flags and format
 ** in stdout and returns the length the printed string
 */
+/**
+ * @file my_printf.c
+ * @brief The file containing the my_printf function
+ * @author Nicolas TORO
+ */
 
 #include "./my_printf/myformats.h"
 

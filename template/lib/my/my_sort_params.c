@@ -4,6 +4,11 @@
 ** File description:
 ** Sorts the arguments (argc and argv) passed to the program in ascending order
 */
+/**
+ * @file my_sort_params.c
+ * @brief The file containing the my_sort_params function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

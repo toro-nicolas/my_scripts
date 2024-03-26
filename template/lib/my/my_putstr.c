@@ -5,6 +5,11 @@
 ** Write a string (str) in stdout
 ** and returns the length of the printed string
 */
+/**
+ * @file my_putstr.c
+ * @brief The file containing the my_putstr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

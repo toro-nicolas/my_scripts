@@ -4,6 +4,11 @@
 ** File description:
 ** Reverses the characters in a string (str) and returns the string (str)
 */
+/**
+ * @file my_revstr.c
+ * @brief The file containing the my_revstr function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

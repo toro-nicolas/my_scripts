@@ -4,6 +4,11 @@
 ** File description:
 ** Returns 1 if the string (str) contains only alphabetical characters
 */
+/**
+ * @file my_str_isalpha.c
+ * @brief The file containing the my_str_isalpha function
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

@@ -5,7 +5,7 @@
 ## The main Makefile of our project
 ##
 
-NAME		=	a#[project-exec]
+NAME		=	[project-exec]
 
 BUILDDIR 	=	./build
 SRCDIR		=	./src

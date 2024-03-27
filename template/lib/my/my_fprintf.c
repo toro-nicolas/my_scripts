@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_fprintf
 ** File description:
-** Write a string (format) with possible flags and format
+** Writes a string (format) with possible flags and format
 ** in a file descriptor (fd) and returns the length the printed string
 */
 /**

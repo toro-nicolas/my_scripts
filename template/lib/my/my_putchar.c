@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_putchar
 ** File description:
-** Prints a char in the stdout
+** Prints a char (c) in the stdout
 */
 /**
  * @file my_putchar.c

@@ -100,15 +100,16 @@ $(function(){ initResizable(false); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:ad5a25b97c5271115abb0c0933e12190e" id="r_ad5a25b97c5271115abb0c0933e12190e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5a25b97c5271115abb0c0933e12190e">my_strict_getnbr</a> (char const *number)</td></tr>
-<tr class="separator:ad5a25b97c5271115abb0c0933e12190e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256710f18187abd591388e8280886a1e" id="r_a256710f18187abd591388e8280886a1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a256710f18187abd591388e8280886a1e">my_strict_getnbr</a> (char const *str)</td></tr>
+<tr class="memdesc:a256710f18187abd591388e8280886a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an int number starting from a string number (str)  <br /></td></tr>
+<tr class="separator:a256710f18187abd591388e8280886a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>The file containing the my_strict_getnbr function. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
-<a id="ad5a25b97c5271115abb0c0933e12190e" name="ad5a25b97c5271115abb0c0933e12190e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5a25b97c5271115abb0c0933e12190e">&#9670;&#160;</a></span>my_strict_getnbr()</h2>
+<a id="a256710f18187abd591388e8280886a1e" name="a256710f18187abd591388e8280886a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256710f18187abd591388e8280886a1e">&#9670;&#160;</a></span>my_strict_getnbr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,11 +117,24 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">int my_strict_getnbr </td>
           <td>(</td>
-          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>number</em></span></td><td>)</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns an int number starting from a string number (str) </p>
+<dl class="section note"><dt>Note</dt><dd>The function does not accept signes in the string and overflow </dd>
+<dd>
+Returns -1 if the string is invalid </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number found in the string </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

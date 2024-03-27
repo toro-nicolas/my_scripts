@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_base_unsigned_size_t
 ** File description:
-** Returns the strings conversion of
+** Returns the string conversion of
 ** an unsigned size_t number (nbr) in specific base (base)
 */
 /**

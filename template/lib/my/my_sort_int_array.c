@@ -2,8 +2,8 @@
 ** EPITECH PROJECT, 2023
 ** my_sort_int_array
 ** File description:
-** Sorts an array (array) with a defined size (size) of integers in ascending
-** order
+** Sorts an array (array) with a defined size (size)
+** of integers in ascending order
 */
 /**
  * @file my_sort_int_array.c

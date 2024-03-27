@@ -78,7 +78,7 @@ static void print_string_content(char const *str, int size,
     }
 }
 
-int my_showmem(char const *str, int size)
+void my_showmem(char const *str, int size)
 {
     int number_of_lines = size / 16;
     int error = 0;
@@ -89,5 +89,4 @@ int my_showmem(char const *str, int size)
         print_string_content(str, size, line, &error);
         my_putchar('\n');
     }
-    return 0;
 }

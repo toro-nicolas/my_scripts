@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_params_to_array
 ** File description:
-** Returns a info_params struct of the agrc (ac) and the argv (av)
+** Returns a info_params struct of the argc (ac) and the argv (av)
 */
 /**
  * @file my_params_to_array.c

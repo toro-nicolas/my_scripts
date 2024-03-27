@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_putstr_fd
 ** File description:
-** Write a string (str) in a file descriptor (fd)
+** Writes a string (str) in a file descriptor (fd)
 ** and returns the length of the printed string
 */
 /**

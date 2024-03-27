@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_unsigned_long
 ** File description:
-** Returns the strings convertion of a long unsigned number (nb)
+** Returns the string conversion of a long unsigned number (nb)
 */
 /**
  * @file my_str_nbr_unsigned_long.c

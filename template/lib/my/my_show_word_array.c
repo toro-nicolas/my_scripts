@@ -12,7 +12,7 @@
 
 #include "my.h"
 
-int my_show_word_array(char *const *tab)
+void my_show_word_array(char *const *tab)
 {
     int index_tab = 0;
 
@@ -21,5 +21,4 @@ int my_show_word_array(char *const *tab)
         my_putchar('\n');
         index_tab = index_tab + 1;
     }
-    return 0;
 }

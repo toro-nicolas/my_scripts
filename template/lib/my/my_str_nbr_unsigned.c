@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_unsigned
 ** File description:
-** Returns the strings convertion of an unsigned number (nb)
+** Returns the string conversion of an unsigned number (nb)
 */
 /**
  * @file my_str_nbr_unsigned.c

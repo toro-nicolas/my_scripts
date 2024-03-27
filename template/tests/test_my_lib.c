@@ -72,12 +72,14 @@ Test(my_getnbr, full_covr)
     cr_assert_eq(my_getnbr("-2147483648"), -2147483648);
     cr_assert_eq(my_getnbr("a54"), 0);
     cr_assert_eq(my_getnbr("00012345667"), 0);
+    cr_assert_eq(my_getnbr("42"), 42);
+    cr_assert_eq(my_getnbr("-+21"), 21);
 }
 
 Test(my_isneg, full_covr)
 {
-    cr_assert_eq(my_isneg(-10), 0);
-    cr_assert_eq(my_isneg(10), 0);
+    my_isneg(-10);
+    my_isneg(10);
 }
 
 Test(my_is_prime, full_covr)
@@ -98,7 +100,7 @@ Test(my_params_to_array, full_covr)
 
 Test(my_print_combn, full_covr)
 {
-    cr_assert_eq(my_print_combn(3), 0);
+    my_print_combn(3);
 }
 
 Test(my_print_params, full_covr, .init = cr_redirect_stdout)
@@ -185,14 +187,14 @@ Test(my_show_mem, full_covr)
 {
     char str[8] = "hel\n\blo\0";
  
-    cr_assert_eq(my_showmem(str, my_strlen(str)), 0);
+    my_showmem(str, my_strlen(str));
 }
 
 Test(my_show_str, full_covr)
 {
     char str[8] = "hel\nl\bo\0";
 
-    cr_assert_eq(my_showstr(str), 0);
+    my_showstr(str);
 }
 
 Test(my_sort_int_array, full_covr)

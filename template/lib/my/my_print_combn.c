@@ -53,7 +53,7 @@ static int check_printable(char *number, int figure, int *start)
     return 0;
 }
 
-int my_print_combn(int n)
+void my_print_combn(int n)
 {
     int stop = 0;
     int start = 1;
@@ -65,5 +65,4 @@ int my_print_combn(int n)
         }
         stop = 0;
     }
-    return 0;
 }

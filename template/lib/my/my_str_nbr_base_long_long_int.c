@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_base_long_long_int
 ** File description:
-** Returns the strings conversion of
+** Returns the string conversion of
 ** an unsigned number (nbr) in specific base (base)
 */
 /**

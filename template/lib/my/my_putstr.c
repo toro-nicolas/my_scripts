@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_putstr
 ** File description:
-** Write a string (str) in stdout
+** Writes a string (str) in stdout
 ** and returns the length of the printed string
 */
 /**

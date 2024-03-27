@@ -25,7 +25,7 @@ static void put_str_nb(int nb, int len_nb, char const *base, int base_len)
     my_putstr(nb_str);
 }
 
-int my_putnbr_base(int nbr, char const *base)
+void my_putnbr_base(int nbr, char const *base)
 {
     int len_nb = 1;
     int temp_nb = nbr;
@@ -43,5 +43,4 @@ int my_putnbr_base(int nbr, char const *base)
         temp_nb = temp_nb / base_len;
     }
     put_str_nb(nbr, len_nb, base, base_len);
-    return 0;
 }

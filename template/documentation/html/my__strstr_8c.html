@@ -101,6 +101,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:a61919d57c190026e8dd6fa1ea51b756a" id="r_a61919d57c190026e8dd6fa1ea51b756a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61919d57c190026e8dd6fa1ea51b756a">my_strstr</a> (char *str, char const *to_find)</td></tr>
+<tr class="memdesc:a61919d57c190026e8dd6fa1ea51b756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search a string (to_find) on another (str) and returns the address of the first occurrence.  <br /></td></tr>
 <tr class="separator:a61919d57c190026e8dd6fa1ea51b756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
@@ -125,6 +126,17 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Search a string (to_find) on another (str) and returns the address of the first occurrence. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to be scanned </td></tr>
+    <tr><td class="paramname">to_find</td><td>The string to search in </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>char*</b> The address of the <u>first occurrence</u> of the string to_find in the string str, <u>NULL</u> otherwise </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

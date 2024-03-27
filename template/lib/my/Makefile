@@ -91,6 +91,7 @@ SRCS		=	my_array_len.c		\
 			my_strncat.c			\
 			my_strncmp.c			\
 			my_strncpy.c			\
+			my_strndup.c			\
 			my_strstr.c			\
 			my_strupcase.c			\
 			my_super_array.c		\

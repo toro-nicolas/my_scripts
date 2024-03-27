@@ -25,14 +25,14 @@ static void put_str_nb(int nb, int len_nb)
     my_putstr(nb_str);
 }
 
-int my_putnbr(int nb)
+void my_putnbr(int nb)
 {
     int len_nb = 1;
     int temp_nb = nb;
 
     if (nb == -2147483648) {
         my_putstr("-2147483648");
-        return 0;
+        return;
     }
     if (nb < 0) {
         my_putchar('-');
@@ -43,5 +43,4 @@ int my_putnbr(int nb)
         temp_nb = temp_nb / 10;
     }
     put_str_nb(nb, len_nb);
-    return 0;
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr
 ** File description:
-** Returns the strings conversion of a number (nb)
+** Returns the string conversion of a number (nb)
 */
 /**
  * @file my_str_nbr.c

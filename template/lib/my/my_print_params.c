@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_print_params
 ** File description:
-** Prints all the arguments (argc and argv)
+** Prints all the parameters of the program
 */
 /**
  * @file my_print_params.c

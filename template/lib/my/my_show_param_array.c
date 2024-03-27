@@ -13,7 +13,7 @@
 
 #include "my.h"
 
-int my_show_param_array(struct info_param const *par)
+void my_show_param_array(struct info_param const *par)
 {
     int i = 0;
 
@@ -25,5 +25,4 @@ int my_show_param_array(struct info_param const *par)
         my_show_word_array(par[i].word_array);
         i++;
     }
-    return 0;
 }

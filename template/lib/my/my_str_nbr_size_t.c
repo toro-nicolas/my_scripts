@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_size_t
 ** File description:
-** Returns the strings convertion of a big unsigned number (nb)
+** Returns the string conversion of a big unsigned number (nb)
 */
 /**
  * @file my_str_nbr_size_t.c

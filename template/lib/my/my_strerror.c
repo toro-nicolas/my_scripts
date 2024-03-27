@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_strerror
 ** File description:
-** The my_strerror.c
+** Returns the error message of the error number (error)
 */
 /**
  * @file my_strerror.c

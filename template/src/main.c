@@ -14,6 +14,5 @@
 
 int main(int argc, char **argv)
 {
-    my_putchar('H');
     return 0;
 }

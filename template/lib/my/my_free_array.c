@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** my_free_array
 ** File description:
-** Free an array of words (array)
+** Free an array (array)
 */
 /**
  * @file my_free_array.c

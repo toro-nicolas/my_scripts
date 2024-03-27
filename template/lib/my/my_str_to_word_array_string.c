@@ -15,7 +15,7 @@
 
 static int my_char_is_not_a_separator(char const *str, char const *sep)
 {
-    if (my_strncmp(str, sep, my_strlen(sep) - 1) == 0)
+    if (my_strncmp(str, sep, my_strlen(sep)) == 0)
         return 0;
     return 1;
 }

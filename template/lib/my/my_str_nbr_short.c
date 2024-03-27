@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_str_nbr_short
 ** File description:
-** Returns the strings conversion of a short number (nb)
+** Returns the string conversion of a short number (nb)
 */
 /**
  * @file my_str_nbr_short.c

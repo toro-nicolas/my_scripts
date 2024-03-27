@@ -102,6 +102,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:aee4ef039b26e380c7251e7e0d87def55" id="r_aee4ef039b26e380c7251e7e0d87def55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee4ef039b26e380c7251e7e0d87def55">my_super_number</a> (char *number, <a class="el" href="include_2my_8h.html#aed3ead406403a2bee1110d01dda52052">number_settings_t</a> settings)</td></tr>
+<tr class="memdesc:aee4ef039b26e380c7251e7e0d87def55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an int number starting from a string number (number) and change my_errno if an error occurs depending on the settings (settings)  <br /></td></tr>
 <tr class="separator:aee4ef039b26e380c7251e7e0d87def55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -131,6 +132,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns an int number starting from a string number (number) and change my_errno if an error occurs depending on the settings (settings) </p>
+<dl class="section note"><dt>Note</dt><dd>The function will change <u>my_errno</u> by 1 if an error occurs depending on the settings you choose with the <b>settings</b> parameter </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>The string to convert </td></tr>
+    <tr><td class="paramname">settings</td><td>The settings of the function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number found in the string </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

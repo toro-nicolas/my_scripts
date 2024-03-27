@@ -100,15 +100,16 @@ $(function(){ initResizable(false); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a0fe22f247b89e4bb1a4a8407f09c8ec9" id="r_a0fe22f247b89e4bb1a4a8407f09c8ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe22f247b89e4bb1a4a8407f09c8ec9">my_strict_find_nbr</a> (char const *number)</td></tr>
-<tr class="separator:a0fe22f247b89e4bb1a4a8407f09c8ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70d2d78a58bf84bae1318c0cc88b89c" id="r_af70d2d78a58bf84bae1318c0cc88b89c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70d2d78a58bf84bae1318c0cc88b89c">my_strict_find_nbr</a> (char const *str)</td></tr>
+<tr class="memdesc:af70d2d78a58bf84bae1318c0cc88b89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the first number (number) found in a string.  <br /></td></tr>
+<tr class="separator:af70d2d78a58bf84bae1318c0cc88b89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>The file containing the my_strict_find_nbr function. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
-<a id="a0fe22f247b89e4bb1a4a8407f09c8ec9" name="a0fe22f247b89e4bb1a4a8407f09c8ec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe22f247b89e4bb1a4a8407f09c8ec9">&#9670;&#160;</a></span>my_strict_find_nbr()</h2>
+<a id="af70d2d78a58bf84bae1318c0cc88b89c" name="af70d2d78a58bf84bae1318c0cc88b89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70d2d78a58bf84bae1318c0cc88b89c">&#9670;&#160;</a></span>my_strict_find_nbr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,11 +117,24 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">int my_strict_find_nbr </td>
           <td>(</td>
-          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>number</em></span></td><td>)</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Find the first number (number) found in a string. </p>
+<dl class="section note"><dt>Note</dt><dd>The function does not accept signes in the string and overflow </dd>
+<dd>
+Returns -1 if the string does not contain a number </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number found in the string </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

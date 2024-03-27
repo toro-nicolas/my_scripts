@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_strupcase
 ** File description:
-** Replaces upcase by lowcase of a string (str) and returns them
+** Replaces lowcase by upcase of a string (str) and returns them
 */
 /**
  * @file my_strupcase.c

@@ -101,6 +101,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:ad749ee78508ed8874ab48faadaf3887a" id="r_ad749ee78508ed8874ab48faadaf3887a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad749ee78508ed8874ab48faadaf3887a">my_fprintf</a> (int fd, char const *format,...)</td></tr>
+<tr class="memdesc:ad749ee78508ed8874ab48faadaf3887a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a string (format) with possible flags and format in a file descriptor (fd) and returns the length the printed string.  <br /></td></tr>
 <tr class="separator:ad749ee78508ed8874ab48faadaf3887a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
@@ -130,6 +131,17 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Writes a string (format) with possible flags and format in a file descriptor (fd) and returns the length the printed string. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>The string to print </td></tr>
+    <tr><td class="paramname">...</td><td>The arguments to use with flags and format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number of printed characters </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO and Gianni TUERO </dd></dl>
 
 </div>
 </div>

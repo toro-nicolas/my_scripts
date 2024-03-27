@@ -14,6 +14,8 @@
 
 static int index_negative(char const *str, int index)
 {
+    if (index == 0)
+        return 1;
     if (str[index - 1] == '-')
         return -1;
     return 1;

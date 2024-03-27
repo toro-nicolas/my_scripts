@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2023
 ** my_strncpy
 ** File description:
-** Copy a string (src) and paste it on another string (dest)
+** Copies a string (src) and paste it on another string (dest)
 ** with a defined size (n)
 */
 /**

@@ -13,12 +13,10 @@
 
 #include "my.h"
 
-int my_isneg(int n)
+void my_isneg(int n)
 {
-    if (n < 0) {
+    if (n < 0)
         my_putchar('N');
-    } else {
+    else
         my_putchar('P');
-    }
-    return 0;
 }

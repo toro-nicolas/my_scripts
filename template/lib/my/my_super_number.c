@@ -1,8 +1,9 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_super_number
 ** File description:
-** The my_super_number.c
+** Returns an int number starting from a string number (number)
+** and change my_errno if an error occurs depending on the settings (settings)
 */
 /**
  * @file my_super_number.c

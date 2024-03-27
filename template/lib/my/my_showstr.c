@@ -19,7 +19,7 @@ static void check_zero_in_hexadecimal(char c)
         my_putchar('0');
 }
 
-int my_showstr(char const *str)
+void my_showstr(char const *str)
 {
     int len = my_strlen(str);
 
@@ -32,5 +32,4 @@ int my_showstr(char const *str)
             my_putnbr_base(str[i], "0123456789abcedf");
         }
     }
-    return 0;
 }

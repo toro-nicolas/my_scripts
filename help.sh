@@ -7,7 +7,7 @@ echo -e "\e[33;1mdo-op \e[33;4m[number]\e[0m \e[33;1;4m[operator]\e[0m \e[33;1;4
 echo -e "\e[33;1mfind_sh.sh:\e[0m Display all the .sh files"
 echo -e "\e[33;1mhelp.sh:\e[0m Display all the command of my_scripts"
 echo -e "\e[33;1minfo_file \e[33;4m[file]\e[0m\e[33;1m:\e[0m Display the file informations"
-echo -e "\e[33;1minstall_packages.sh \e[33;4m-h (--help)\e[0m\e[33;1m:\e[0m Install all the packages in the script"
+echo -e "\e[33;1minstall_packages.sh \e[33;4m-h (--help)\e[0m\e[33;1m:\e[0m Install packages for Linux (Fedora)"
 echo -e "\e[33;1mmake_that.sh:\e[0m Make .c files with gcc and run the output"
 echo -e "\e[33;1mmkproject.sh \e\e[33;4m[github-repo-link]\e[0m \e[33;1;4m[semester-number]\e[0m \e[33;1;4m[module-name]\e[0m \e[33;1;4m[project-folder-name]\e[0m \e[33;1;4m[executable-name]\e[0m \e[33;1;4m[library1 library2 ...]\e[0m\e[33;1m:\e[0m Create a C project structure"
 echo -e "\e[33;1mmr_clean.sh:\e[0m Delete all the temporary files"

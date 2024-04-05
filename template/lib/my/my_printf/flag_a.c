@@ -109,30 +109,6 @@ static void precise_zero(char *float_nb, int precision)
     }
 }
 
-static void my_round(char *float_nb, int precision,
-    char last_char, int i)
-{
-    if (last_char == '\0') {
-        for (; i < precision; i++)
-            my_strcat(float_nb, "0");
-        return;
-    }
-    if (float_nb[3 + i] == '.') {
-        float_nb[2] = float_nb[2] + 1;
-        return;
-    }
-    if (last_char > '7' && float_nb[3 + i] == '9') {
-        float_nb[3 + i] = 'a';
-        return;
-    }
-    if (last_char > '7' && float_nb[3 + i] == 'f')
-        float_nb[3 + i] = '0';
-    if (last_char > '7' && float_nb[3 + i] != '0')
-        float_nb[3 + i] = float_nb[3 + i] + 1;
-    if (float_nb[3 + i] == '0')
-        my_round(float_nb, precision, last_char, i - 1);
-}
-
 static void precise_it_a(char *float_nb, formating_t *formating,
     char *decimal_part, int detected)
 {
@@ -153,7 +129,7 @@ static void precise_it_a(char *float_nb, formating_t *formating,
             temp[0] = decimal_part[i];
             my_strcat(float_nb, temp);
         }
-        my_round(float_nb, formating->id_nb, decimal_part[i], i);
+        round_a(float_nb, formating->id_nb, decimal_part[i], i);
         return;
     }
 }

@@ -7,6 +7,8 @@
 
 NAME		=	[project-exec]
 
+CC		=	gcc
+
 BUILDDIR 	=	./build
 SRCDIR		=	./src
 
@@ -19,6 +21,8 @@ DEBUGFLAGS	=	-g3
 OPTIMIZEFLAGS	=	-O3
 
 LDFLAGS 	=	-L./lib/ -lmymemory -lmyhashtable -lmycsfml -lmylist -lmy
+
+.PHONY: all libs create-build debug clean fclean re unit_tests tests_run
 
 all: create-build libs $(BUILDDIR) $(NAME)
 	@echo -e "\033[1;33m$(NAME) compiled.\033[0m"
@@ -43,18 +47,18 @@ debug: all
 
 $(NAME): $(OBJS)
 	@$(CC) $(OBJS) $(CFLAGS) $(OPTIMIZEFLAGS) $(LDFLAGS) -o $(NAME)
-	@rm -rf ./lib/my/*.a
-	@rm -rf ./lib/mylist/*.a
-	@rm -rf ./lib/mycsfml/*.a
-	@rm -rf ./lib/myhashtable/*.a
-	@rm -rf ./lib/mymemory/*.a
+	@rm -rf ./lib/my/libmy.a
+	@rm -rf ./lib/mylist/libmylist.a
+	@rm -rf ./lib/mycsfml/libmycsfml.a
+	@rm -rf ./lib/myhashtable/libmyhashtable.a
+	@rm -rf ./lib/mymemory/libmymemory.a
 
 clean:
 	@rm -rf $(BUILDDIR)
 	@echo -e "\033[1;31mAll .o deleted.\033[0m"
 
 fclean: clean
-	@rm -rf ./lib/*.a
+	@rm -rf *.a
 	@rm -rf unit_tests*
 	@rm -rf tests/unit_tests*
 	@rm -rf vgcore*
@@ -70,4 +74,7 @@ unit_tests:
 
 tests_run:
 	@make tests_run --no-print-directory -C./tests/
-	@gcovr
+	@gcovr \
+	--exclude lib/my/my_printf/round_flag_a.c \
+	--exclude lib/mylist/my_list_to_array.c \
+	--exclude lib/mylist/my_show_list.c \

@@ -59,7 +59,7 @@
     // Free macros :
 
     #define    FREE(ptr) ptr = my_free_ptr(ptr)
-    #define    FREE_WORD_ARRAY(ptr) my_free_array((char **)ptr)
+    #define    FREE_WORD_ARRAY(ptr) my_free_array((void **)ptr)
 
 
 
@@ -492,6 +492,15 @@ char **my_strdup_word_array(char **array);
  * @author Nicolas TORO
  */
 const char *my_strerror(int error);
+
+/**
+ * @brief Counts the number of times a letter (c) is in a string (str)
+ * @param str The string to check
+ * @param c The letter to count
+ * @return <b>int</b> The number of times the letter is in the string
+ * @author Nicolas TORO
+ */
+int my_count_letter(char const *str, char c);
 
 
 

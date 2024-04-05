@@ -32,6 +32,7 @@ Test(my_printf, empty_format, .init = redirect_all_std)
     int len = my_printf("");
     cr_assert_stdout_eq_str("");
     cr_assert_eq(len, 0);
+    my_fprintf(2, "");
 }
 
 Test(my_printf, simple_format, .init = redirect_all_std)
@@ -39,6 +40,7 @@ Test(my_printf, simple_format, .init = redirect_all_std)
     int len = my_printf("hello world");
     cr_assert_stdout_eq_str("hello world");
     cr_assert_eq(len, 11);
+    my_fprintf(2, "hello world");
 }
 
 Test(my_printf, wrong_flag_1, .init = redirect_all_std)
@@ -46,6 +48,7 @@ Test(my_printf, wrong_flag_1, .init = redirect_all_std)
     int len = my_printf("hello %y");
     cr_assert_stdout_eq_str("hello %y");
     cr_assert_eq(len, 8);
+    my_fprintf(2, "hello %y");
 }
 
 Test(my_printf, wrong_flag_2, .init = redirect_all_std)
@@ -53,6 +56,7 @@ Test(my_printf, wrong_flag_2, .init = redirect_all_std)
     int len = my_printf("hello %+");
     cr_assert_stdout_eq_str("hello %+");
     cr_assert_eq(len, 8);
+    my_fprintf(2, "hello %+");
 }
 
 Test(my_printf, wrong_flag_3, .init = redirect_all_std)
@@ -60,6 +64,7 @@ Test(my_printf, wrong_flag_3, .init = redirect_all_std)
     int len = my_printf("hello %+y");
     cr_assert_stdout_eq_str("hello %+y");
     cr_assert_eq(len, 9);
+    my_fprintf(2, "hello %");
 }
 
 Test(my_printf, one_flag_percent, .init = redirect_all_std)
@@ -67,6 +72,7 @@ Test(my_printf, one_flag_percent, .init = redirect_all_std)
     int len = my_printf("hello %%");
     cr_assert_stdout_eq_str("hello %");
     cr_assert_eq(len, 7);
+    my_fprintf(2, "hello %%");
 }
 
 Test(my_printf, multiple_flag_percent_1, .init = redirect_all_std)
@@ -998,6 +1004,7 @@ Test(my_printf, one_flag_n, .init = redirect_all_std)
     int test = 0;
     cr_assert_eq(my_printf("We are%n in 2023", &test), 14);
     cr_assert_eq(test, 6);
+    my_fprintf(2, "We are in %n", &test);
 }
 
 Test(my_printf, specifier_flag_n_l, .init = redirect_all_std)

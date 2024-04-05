@@ -434,3 +434,237 @@ Test(my, full_covr_for_null_return)
     cr_assert(my_putstr_error(NULL));
     cr_assert_eq(my_putstr(NULL), 0);
 }
+
+Test(my_char_is, full_covr)
+{
+    cr_assert_eq(my_char_is('a', "abc"), 1);
+    cr_assert_eq(my_char_is('a', "bc"), 0);
+}
+
+Test(my_compute_power_rec_size_t, full_covr)
+{
+    cr_assert_eq(my_compute_power_rec_size_t(3, 2), 9);
+    cr_assert_eq(my_compute_power_rec_size_t(21, 0), 1);
+    cr_assert_eq(my_compute_power_rec_size_t(-4, -4), 0);
+}
+
+Test(my_convert_base_size_t, full_covr)
+{
+    cr_assert(my_convert_base_size_t("10", "0123456789", "01"));
+    cr_assert(my_convert_base_size_t("10a10", "0123456789", "01"));
+}
+
+Test(my_find_nbr, full_covr)
+{
+    cr_assert_eq(my_find_nbr("10"), 10);
+    my_find_nbr("a54");
+    my_find_nbr("");
+    my_find_nbr("abc");
+    my_find_nbr("0");
+}
+
+Test(my_find_prime_inf, full_covr)
+{
+    my_find_prime_inf(9);
+    my_find_prime_inf(0);
+    my_find_prime_inf(4);
+}
+
+Test(my_free_ptr, full_covr)
+{
+    cr_assert_eq(my_free_ptr(NULL), NULL);
+}
+
+Test(my_str_contains, full_covr)
+{
+    cr_assert_eq(my_str_contains("coucou", "c"), 1);
+    cr_assert_eq(my_str_contains("coucou", "a"), 0);
+}
+
+Test(my_strdup_word_array, full_covr)
+{
+    char *tab[5] = {"a", "b", "c", "d", NULL};
+
+    char **test = my_strdup_word_array(tab);
+    my_strdup_word_array(NULL);
+    my_free_array((void **)test);
+    my_free_array((void **)NULL);
+}
+
+Test(my_strerror, full_covr)
+{
+    cr_assert(my_strerror(0));
+    cr_assert(my_strerror(1));
+    my_strerror(-2);
+}
+
+Test(my_str_nbr_short, full_covr)
+{
+    cr_assert(my_str_nbr_short(12));
+    cr_assert(my_str_nbr_short(-12));
+    cr_assert(my_str_nbr_short(-32768));
+}
+
+Test(my_str_nbr_short_short, full_covr)
+{
+    cr_assert(my_str_nbr_short_short(12));
+    cr_assert(my_str_nbr_short_short(-12));
+    cr_assert(my_str_nbr_short_short(-128));
+}
+
+Test(my_str_nbr_base_unsigned_short, full_covr)
+{
+    cr_assert(my_str_nbr_base_unsigned_short(12, "0123456789"));
+}
+
+Test(my_str_nbr_base_unsigned_short_short, full_covr)
+{
+    cr_assert(my_str_nbr_base_unsigned_short_short(12, "0123456789"));
+}
+
+Test(my_str_nbr_base_unsigned_size_t, full_covr)
+{
+    cr_assert(my_str_nbr_base_unsigned_size_t(12, "0123456789"));
+}
+
+Test(my_str_nbr_base_unsigned_long, full_covr)
+{
+    cr_assert(my_str_nbr_base_unsigned_long(12, "0123456789"));
+}
+
+Test(my_getnbr_float, full_covr)
+{
+    my_getnbr_float("12.5");
+    my_getnbr_float("12.5a");
+    my_getnbr_float("a12.5");
+    my_getnbr_float("12.5a12.5");
+    my_getnbr_float("-12.5");
+    my_getnbr_float("-10");
+    my_getnbr_float("-2147483648");
+    my_getnbr_float("a54");
+    my_getnbr_float("00012345667");
+    my_getnbr_float("42");
+    my_getnbr_float("-+21");
+}
+
+Test(my_strict, full_covr)
+{
+    my_strict_getnbr("");
+    my_strict_getnbr("12.5");
+    my_strict_getnbr("12.5a");
+    my_strict_getnbr("a12.5");
+    my_strict_getnbr("12.5a12.5");
+    my_strict_getnbr("-12.5");
+    my_strict_getnbr("-10");
+    my_strict_getnbr("-2147483648");
+    my_strict_getnbr("a54");
+    my_strict_getnbr("00012345667");
+    my_strict_getnbr("42");
+    my_strict_getnbr("-+21");
+    my_strict_getnbr_float("");
+    my_strict_getnbr_float("12.5");
+    my_strict_getnbr_float("12.5a");
+    my_strict_getnbr_float("a12.5");
+    my_strict_getnbr_float("12.5a12.5");
+    my_strict_getnbr_float("-12.5");
+    my_strict_getnbr_float("-10");
+    my_strict_getnbr_float("-2147483648");
+    my_strict_getnbr_float("a54");
+    my_strict_getnbr_float("00012345667");
+    my_strict_getnbr_float("42");
+    my_strict_getnbr_float("-+21");
+    my_strict_find_nbr("");
+    my_strict_find_nbr("12.5");
+    my_strict_find_nbr("12.5a");
+    my_strict_find_nbr("a12.5");
+    my_strict_find_nbr("12.5a12.5");
+    my_strict_find_nbr("-12.5");
+    my_strict_find_nbr("-10");
+    my_strict_find_nbr("-2147483648");
+    my_strict_find_nbr("a54");
+    my_strict_find_nbr("00012345667");
+    my_strict_find_nbr("42");
+    my_strict_find_nbr("-+21");
+}
+
+Test(my_round_float_str, full_covr)
+{
+    char str[6] = "12.5\0";
+    char str2[6] = "12.4\0";
+    char str3[6] = "0.6\0";
+    char str4[6] = "9.9\0";
+    char str5[6] = "-9.9\0";
+    char str6[2] = "-\0";
+
+    my_round_float_str(str5, '-', 0, 1);
+    my_round_float_str(str5, '-', 4, 1);
+    my_round_float_str(str6, '-', 0, 0);
+    my_round_float_str(str, '5', 2, 1);
+    my_round_float_str(str2, '5', 2, 1);
+    my_round_float_str(str3, '8', 2, 1);
+    my_round_float_str(str4, '9', 1, 1);
+    my_round_float_str(str4, '9', 1, 1);
+    my_round_float_str(str4, '9', 2, 1);
+    my_round_float_str(str4, '9', 0, 1);
+}
+
+Test(my_str_to_word_array_select, full_covr, .init = cr_redirect_stdout)
+{
+    char *str = "----hello 9coucou.çava/oui";
+    char **test = my_str_to_word_array_select(str, " -");
+
+    my_show_word_array(test);
+}
+
+Test(my_str_to_word_array_string, full_covr, .init = cr_redirect_stdout)
+{
+    char *str = "  ----hello  9coucou.çava/oui";
+    char **test = my_str_to_word_array_string(str, " ");
+
+    my_show_word_array(test);
+}
+
+Test(my_super_array, full_covr)
+{
+    cr_assert(my_super_array("coucou", "c"));
+}
+
+Test(my_str_is, full_covr)
+{
+    cr_assert_eq(my_str_is("coucou", "coucou"), 1);
+    cr_assert_eq(my_str_is("coucou", "a"), 0);
+}
+
+Test(my_putstr_fd, full_covr)
+{
+    my_putstr_fd(NULL, 1);
+    my_putstr_fd_free(NULL, 1);
+}
+
+Test(my_strndup, full_covr)
+{
+    cr_assert(my_strndup("coucou", 3));
+    my_strndup(NULL, 0);
+}
+
+Test(my_super_number, full_covr)
+{
+    cr_assert(my_super_number("12", (NB){0, 0, 1, 0}));
+    cr_assert(my_super_number("12", (NB){0, 0, 1, 1}));
+    cr_assert(my_super_number("-12", (NB){0, 0, 1, 1}));
+    cr_assert(my_super_number("szz12", (NB){0, 1, 0, 0}));
+    my_super_number("szz12", (NB){0, 0, 0, 0});
+    cr_assert(my_super_number("12zxxz", (NB){0, 0, 1, 0}));
+    cr_assert(my_super_number("12zxxz", (NB){0, 0, 0, 0}));
+    cr_assert(my_super_number("-12", (NB){0, 0, 1, 1}));
+    my_super_number("+-+---12", (NB){0, 0, 1, 1});
+    cr_assert(my_super_number("+-+---12", (NB){1, 0, 1, 1}));
+    my_super_number("", (NB){0, 0, 0, 0});
+    my_super_number("-12+", (NB){0, 0, 0, 0});
+
+}
+
+Test(my_count_letter, full_covr)
+{
+    cr_assert_eq(my_count_letter("coucou", 'c'), 2);
+}

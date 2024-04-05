@@ -47,6 +47,10 @@ typedef struct user_s {
     int i;
 } user_t;
 
+/* Round functions */
+void round_a(char *float_nb, int precision, char last_char, int i);
+void round_biga(char *float_nb, int precision, char last_char, int i);
+
 /* Find functions */
 formating_t *find_first(user_t *user, int *i,
     formating_t *formating);

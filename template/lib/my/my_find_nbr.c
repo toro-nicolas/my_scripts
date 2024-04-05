@@ -28,7 +28,5 @@ int my_find_nbr(char const *number)
             return nb;
         nb = nb * 10 + (number[index] - 48);
     }
-    if (start == -1 && nb == -1)
-        return -1;
     return nb;
 }

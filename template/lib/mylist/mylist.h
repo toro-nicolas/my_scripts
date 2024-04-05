@@ -51,10 +51,12 @@ linked_list_t *my_find_node(linked_list_t const *begin,
     void const *data, int (*cmp) ());
 void my_concat_list(linked_list_t **begin1, linked_list_t *begin2);
 void my_sort_list(linked_list_t **begin, int (*cmp) ());
-void my_add_in_sorted_list(linked_list_t **begin,
-    void *data, int (*cmp) ());
 void my_merge_list(linked_list_t **begin1,
     linked_list_t *begin2, int (*cmp) ());
-linked_list_t *my_pop_list(linked_list_t **begin);
+linked_list_t *my_pop_front(linked_list_t **begin);
+linked_list_t *my_pop_back(linked_list_t **begin);
+linked_list_t *my_pop_node(linked_list_t **begin,
+    void const *data_ref, int (*cmp) ());
+void **my_list_to_array(linked_list_t *list);
 
 #endif

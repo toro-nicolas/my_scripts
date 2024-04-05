@@ -15,7 +15,8 @@ static void remove_node(linked_list_t **begin, linked_list_t *tmp)
         *begin = tmp->next;
     if (tmp->next != NULL)
         tmp->next->prev = tmp->prev;
-    FREE(tmp->data);
+    if (tmp->type != UNKNOWN)
+        FREE(tmp->data);
     FREE(tmp);
 }
 
@@ -27,7 +28,8 @@ int my_delete_nodes(linked_list_t **begin, void const *data_ref, int (*cmp) ())
 
     while (tmp != NULL) {
         next = tmp->next;
-        if (cmp(tmp->data, data_ref) == 0) {
+        if ((cmp == NULL && tmp->data == data_ref)
+        || (cmp != NULL && cmp(tmp->data, data_ref) == 0)) {
             remove_node(begin, tmp);
             nodes_deleted++;
         }

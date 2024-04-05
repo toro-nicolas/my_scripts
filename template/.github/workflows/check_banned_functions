@@ -1,5 +1,6 @@
 #!/bin/python3
 # Created by Dawoox
+# Edited by Nicolas TORO
 # https://github.com/Dawoox/efc/tree/main
 
 import shutil
@@ -60,6 +61,7 @@ def run_analysis(bin_path: str, bf_path: str) -> None:
     a_list = find_authorized_functions(f_list, bf_path)
     if len(a_list) == 0:
         print(f'{TEXT_GREEN}No banned functions found{TEXT_CLEAR}')
+        print("::notice title=Banned function:: No banned functions found")
         exit(0)
     else:
         print(f'{TEXT_RED}Found {len(a_list)} banned functions !{TEXT_CLEAR}')

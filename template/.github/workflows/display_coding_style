@@ -15,8 +15,8 @@ if __name__ == "__main__":
             if find:
                 exit(1)
             else:
-                print("No errors found")
+                print("::notice title=Coding Style::No errors found")
                 exit(0)
         else:
-            print("No errors found")
+            print("::notice title=Coding Style::No errors found")
             exit(0)

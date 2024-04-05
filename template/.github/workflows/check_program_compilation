@@ -12,6 +12,8 @@ if __name__ == "__main__":
             if not os.access(file, os.X_OK):
                 print("::error file=" + file + "::File is not executable")
                 exit(1)
+        print("::notice title=Program compilation::All programs was compiled successfully")
         exit(0)
     else:
+        print("::notice title=Program compilation::All programs was compiled successfully")
         exit(0)

@@ -40,6 +40,7 @@ SRCS		=	flag_c.c			\
 			sub_format_int.c		\
 			format_it_int.c			\
 			precise_it_int.c		\
+			round_flag_a.c			\
 			format_it_char.c		\
 			sub_format_char.c		\
 			format_it_str.c			\

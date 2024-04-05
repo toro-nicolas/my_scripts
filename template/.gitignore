@@ -38,3 +38,6 @@ foo.txt
 
 # Backup files
 *.old
+
+# Documentation files
+Doxyfile

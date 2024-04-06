@@ -4,14 +4,19 @@
 ** File description:
 ** Reverses a linked list
 */
+/**
+ * @file my_rev_list.c
+ * @brief The file containing the my_rev_list function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
-void my_rev_list(linked_list_t **begin)
+void my_rev_list(node_t **begin)
 {
-    linked_list_t *previous_list = NULL;
-    linked_list_t *current_list = *begin;
-    linked_list_t *next_list = NULL;
+    node_t *previous_list = NULL;
+    node_t *current_list = *begin;
+    node_t *next_list = NULL;
 
     while (current_list != NULL) {
         next_list = current_list->next;

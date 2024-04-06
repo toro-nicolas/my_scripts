@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text_5fs_0',['text_s',['../structtext__s.html',1,'']]]
+  ['user_5fs_0',['user_s',['../structuser__s.html',1,'']]]
 ];

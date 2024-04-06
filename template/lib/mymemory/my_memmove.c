@@ -2,8 +2,13 @@
 ** EPITECH PROJECT, 2024
 ** my_memmove
 ** File description:
-** The my_memmove.c
+** Move (size) bytes from memory area (source) to memory area (destination)
 */
+/**
+ * @file my_memmove.c
+ * @brief The file containing the my_memmove function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

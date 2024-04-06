@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_malloc_strdup_word_array
 ** File description:
-** The my_strdup_word_array.c
+** Returns a duplication of a word array (array) with my_malloc
 */
+/**
+ * @file my_malloc_strdup_word_array.c
+ * @brief The file containing the my_malloc_strdup_word_array function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

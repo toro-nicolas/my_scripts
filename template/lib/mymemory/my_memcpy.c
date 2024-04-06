@@ -2,8 +2,13 @@
 ** EPITECH PROJECT, 2024
 ** my_memchr
 ** File description:
-** The my_memchr.c
+** Copies (size) bytes from memory area (source) to memory area (destination)
 */
+/**
+ * @file my_memchr.c
+ * @brief The file containing the my_memchr function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

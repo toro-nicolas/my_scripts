@@ -2,8 +2,14 @@
 ** EPITECH PROJECT, 2024
 ** my_memset
 ** File description:
-** The my_memset.c
+** Fills the first (size) bytes of the memory area pointed to by (pointer)
+** with the constant byte (value)
 */
+/**
+ * @file my_memset.c
+ * @brief The file containing the my_memset function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

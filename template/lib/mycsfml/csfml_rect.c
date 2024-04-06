@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to rect in CSFML
 */
+/**
+ * @file csfml_rect.c
+ * @brief The file containing all the functions related to rect in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

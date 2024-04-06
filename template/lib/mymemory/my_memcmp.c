@@ -2,8 +2,14 @@
 ** EPITECH PROJECT, 2024
 ** my_memcmp
 ** File description:
-** The my_memcmp.c
+** Compares the first (size) bytes
+** of the memory areas (pointer1) and (pointer2)
 */
+/**
+ * @file my_memcmp.c
+ * @brief The file containing the my_memcmp function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

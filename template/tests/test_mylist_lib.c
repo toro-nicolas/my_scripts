@@ -16,9 +16,9 @@
 
 Test(my_concat_list, my_concat_list)
 {
-    linked_list_t *list1 = NULL;
-    linked_list_t *list2 = NULL;
-    linked_list_t *list3 = NULL;
+    node_t *list1 = NULL;
+    node_t *list2 = NULL;
+    node_t *list3 = NULL;
 
     my_push_back(&list1, "Hello", STRING);
     my_push_back(&list1, "World", STRING);
@@ -34,7 +34,7 @@ Test(my_concat_list, my_concat_list)
 
 Test(my_delete_nodes, my_delete_nodes)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     int nodes_deleted = 0;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
@@ -49,8 +49,8 @@ Test(my_delete_nodes, my_delete_nodes)
 
 Test(my_find_node, my_find_node)
 {
-    linked_list_t *list = NULL;
-    linked_list_t *node = NULL;
+    node_t *list = NULL;
+    node_t *node = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -64,7 +64,7 @@ Test(my_find_node, my_find_node)
 
 Test(my_list_size, my_list_size)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     int size = 0;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
@@ -78,7 +78,7 @@ Test(my_list_size, my_list_size)
 
 Test(my_list_to_array, my_list_to_array)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     char **array = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
@@ -93,9 +93,9 @@ Test(my_list_to_array, my_list_to_array)
 
 Test(my_merge_list, my_merge_list)
 {
-    linked_list_t *list1 = NULL;
-    linked_list_t *list2 = NULL;
-    linked_list_t *list3 = NULL;
+    node_t *list1 = NULL;
+    node_t *list2 = NULL;
+    node_t *list3 = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -113,7 +113,7 @@ Test(my_merge_list, my_merge_list)
 
 Test(my_params_to_list, my_params_to_list)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     char *av[] = {"Hello", "World", "Bonjour", "Monde"};
     int ac = 4;
 
@@ -123,9 +123,9 @@ Test(my_params_to_list, my_params_to_list)
 
 Test(my_pop_back, my_pop_back)
 {
-    linked_list_t *list = NULL;
-    linked_list_t *node = NULL;
-    linked_list_t *list2 = NULL;
+    node_t *list = NULL;
+    node_t *node = NULL;
+    node_t *list2 = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -142,8 +142,8 @@ Test(my_pop_back, my_pop_back)
 
 Test(my_pop_front, my_pop_front)
 {
-    linked_list_t *list = NULL;
-    linked_list_t *node = NULL;
+    node_t *list = NULL;
+    node_t *node = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -159,8 +159,8 @@ Test(my_pop_front, my_pop_front)
 
 Test(my_pop_node, my_pop_node)
 {
-    linked_list_t *list = NULL;
-    linked_list_t *node = NULL;
+    node_t *list = NULL;
+    node_t *node = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -177,7 +177,7 @@ Test(my_pop_node, my_pop_node)
 
 Test(my_rev_list, my_rev_list)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");
@@ -190,7 +190,7 @@ Test(my_rev_list, my_rev_list)
 
 Test(my_show_list, my_show_list)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     char c = 42;
     char *str = my_strdup("World");
     int nb1 = 42;
@@ -232,7 +232,7 @@ Test(my_show_list, my_show_list)
 
 Test(my_sort_list, my_sort_list)
 {
-    linked_list_t *list = NULL;
+    node_t *list = NULL;
     char *str1 = my_strdup("World");
     char *str2 = my_strdup("Hellow");
     char *str3 = my_strdup("World");

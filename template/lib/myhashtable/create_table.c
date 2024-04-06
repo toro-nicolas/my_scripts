@@ -1,10 +1,15 @@
 /*
 ** EPITECH PROJECT, 2024
-** new_hashtable
+** create_table
 ** File description:
 ** Create and return a new hashtable with the hash function (hash)
 ** and the length (len) given in parameters
 */
+/**
+ * @file create_table.c
+ * @brief The file containing the create_table function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_strdup
+** my_malloc_strdup
 ** File description:
-** Returns a duplication of a string (src)
+** Returns a duplication of a string (src) with my_malloc
 */
+/**
+ * @file my_malloc_strdup.c
+ * @brief The file containing the my_malloc_strdup function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

@@ -93,14 +93,21 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Référence du fichier my_calloc.c</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The file containing the my_calloc function.  
+<a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lib_2mymemory_2mymemory_8h_source.html">mymemory.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:aafc93caf9eb93ab3a5a8e54146e79156" id="r_aafc93caf9eb93ab3a5a8e54146e79156"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc93caf9eb93ab3a5a8e54146e79156">my_calloc</a> (size_t element_count, size_t element_size, int <a class="el" href="include_2mylist_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="memdesc:aafc93caf9eb93ab3a5a8e54146e79156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for an array of elements (element_count) of bytes (element_size) each and initializes the memory to zero.  <br /></td></tr>
 <tr class="separator:aafc93caf9eb93ab3a5a8e54146e79156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des fonctions</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>The file containing the my_calloc function. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
 <a id="aafc93caf9eb93ab3a5a8e54146e79156" name="aafc93caf9eb93ab3a5a8e54146e79156"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafc93caf9eb93ab3a5a8e54146e79156">&#9670;&#160;</a></span>my_calloc()</h2>
 
@@ -124,6 +131,21 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Allocates memory for an array of elements (element_count) of bytes (element_size) each and initializes the memory to zero. </p>
+<dl class="section note"><dt>Note</dt><dd><b>type</b> = 0: Free allocated memory with my_calloc </dd>
+<dd>
+<b>type</b> = 1: Allocate memory </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element_count</td><td>The number of elements </td></tr>
+    <tr><td class="paramname">element_size</td><td>The size of each element </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the usage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void *</b> A pointer to the allocated memory </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

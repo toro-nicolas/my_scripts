@@ -6,15 +6,15 @@
 */
 /**
  * @file my_pop_front.c
- * @brief The my_pop_front.c
+ * @brief The file containing the my_pop_front function
  * @author Nicolas TORO
  */
 
 #include "mylist.h"
 
-linked_list_t *my_pop_front(linked_list_t **begin)
+node_t *my_pop_front(node_t **begin)
 {
-    linked_list_t *tmp = *begin;
+    node_t *tmp = *begin;
 
     if (*begin == NULL)
         return NULL;

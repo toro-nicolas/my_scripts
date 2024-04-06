@@ -4,6 +4,11 @@
 ** File description:
 ** The header file of the libmyhashtable
 */
+/**
+ * @file myhashtable.h
+ * @brief The header file of the libmyhashtable
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 

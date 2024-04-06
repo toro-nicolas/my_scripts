@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** ht_search
+** search
 ** File description:
 ** Returns the value of the key (key) in the hashtable (ht)
 */
+/**
+ * @file search.c
+ * @brief The file containing the search function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

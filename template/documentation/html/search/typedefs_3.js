@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linked_5flist_5ft_0',['linked_list_t',['../include_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f',1,'linked_list_t:&#160;mylist.h'],['../lib_2mylist_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f',1,'linked_list_t:&#160;mylist.h'],['../lib_2mymemory_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f',1,'linked_list_t:&#160;mylist.h']]]
+  ['my_5fbool_5ft_0',['my_bool_t',['../include_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h'],['../lib_2my_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h'],['../lib_2mycsfml_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h'],['../lib_2myhashtable_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h'],['../lib_2mylist_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h'],['../lib_2mymemory_2my_8h.html#a39ffc14e260f6873a1d48b074650c014',1,'my_bool_t:&#160;my.h']]]
 ];

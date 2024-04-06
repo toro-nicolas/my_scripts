@@ -96,21 +96,24 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Référence du fichier mylist.h</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The header file of the libmylist.  
+<a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="include_2my_8h_source.html">my.h</a>&quot;</code><br />
 </div>
 <p><a href="include_2mylist_8h_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Structures de données</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinked__list.html">linked_list</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__s.html">node_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Définitions de type</h2></td></tr>
 <tr class="memitem:a9fdd743a0bdf2aa3250916cb5fc7e900" id="r_a9fdd743a0bdf2aa3250916cb5fc7e900"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a></td></tr>
 <tr class="separator:a9fdd743a0bdf2aa3250916cb5fc7e900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b66e4d3b6bddf6ccf18ee41b6374c9f" id="r_a4b66e4d3b6bddf6ccf18ee41b6374c9f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlinked__list.html">linked_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a></td></tr>
-<tr class="separator:a4b66e4d3b6bddf6ccf18ee41b6374c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b99e5345d46cf63926673aa2b9ff83" id="r_a33b99e5345d46cf63926673aa2b9ff83"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structnode__s.html">node_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a></td></tr>
+<tr class="separator:a33b99e5345d46cf63926673aa2b9ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Énumérations</h2></td></tr>
@@ -143,44 +146,67 @@ Définitions de type</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:aa24ae00eda53063f651cc810341e72cf" id="r_aa24ae00eda53063f651cc810341e72cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa24ae00eda53063f651cc810341e72cf">my_push_front</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin, void *data, <a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a> <a class="el" href="#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr class="separator:aa24ae00eda53063f651cc810341e72cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a233551399a6dd7dbf4f33ef59752946b" id="r_a233551399a6dd7dbf4f33ef59752946b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a233551399a6dd7dbf4f33ef59752946b">my_push_back</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin, void *data, <a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a> <a class="el" href="#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr class="separator:a233551399a6dd7dbf4f33ef59752946b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1305db4e821e7f186f651c70b41b4d68" id="r_a1305db4e821e7f186f651c70b41b4d68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1305db4e821e7f186f651c70b41b4d68">my_params_to_list</a> (int ac, char *const *av)</td></tr>
-<tr class="separator:a1305db4e821e7f186f651c70b41b4d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6d0b38141cb67fc7f1216459cd3b8b8" id="r_af6d0b38141cb67fc7f1216459cd3b8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6d0b38141cb67fc7f1216459cd3b8b8">my_show_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *list)</td></tr>
-<tr class="separator:af6d0b38141cb67fc7f1216459cd3b8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c6aa2fc4ff1bf37016a50021b2a5e9" id="r_a37c6aa2fc4ff1bf37016a50021b2a5e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c6aa2fc4ff1bf37016a50021b2a5e9">my_list_size</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *begin)</td></tr>
-<tr class="separator:a37c6aa2fc4ff1bf37016a50021b2a5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a61d525e0ce212974911cbfa72934e1" id="r_a9a61d525e0ce212974911cbfa72934e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a61d525e0ce212974911cbfa72934e1">my_delete_nodes</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin, void const *data_ref, int(*cmp)())</td></tr>
-<tr class="separator:a9a61d525e0ce212974911cbfa72934e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21ffa07559dc31d6ac8cbefaacf9ddd" id="r_aa21ffa07559dc31d6ac8cbefaacf9ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa21ffa07559dc31d6ac8cbefaacf9ddd">my_delete_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin)</td></tr>
-<tr class="separator:aa21ffa07559dc31d6ac8cbefaacf9ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af500f7aac4a51a3d77f31dae3df91277" id="r_af500f7aac4a51a3d77f31dae3df91277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af500f7aac4a51a3d77f31dae3df91277">my_rev_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin)</td></tr>
-<tr class="separator:af500f7aac4a51a3d77f31dae3df91277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65ab45e2986192ad663f5dc23c1a3a5" id="r_ac65ab45e2986192ad663f5dc23c1a3a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac65ab45e2986192ad663f5dc23c1a3a5">my_find_node</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *begin, void const *data, int(*cmp)())</td></tr>
-<tr class="separator:ac65ab45e2986192ad663f5dc23c1a3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac975de000093ac1c4654897aa17af36e" id="r_ac975de000093ac1c4654897aa17af36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac975de000093ac1c4654897aa17af36e">my_concat_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin1, <a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *begin2)</td></tr>
-<tr class="separator:ac975de000093ac1c4654897aa17af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1795e7c751f1fea953a5cd7740d20e26" id="r_a1795e7c751f1fea953a5cd7740d20e26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1795e7c751f1fea953a5cd7740d20e26">my_sort_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin, int(*cmp)())</td></tr>
-<tr class="separator:a1795e7c751f1fea953a5cd7740d20e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0bc477a660639ea931be78d3a04ecc" id="r_a4f0bc477a660639ea931be78d3a04ecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f0bc477a660639ea931be78d3a04ecc">my_add_in_sorted_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin, void *data, int(*cmp)())</td></tr>
-<tr class="separator:a4f0bc477a660639ea931be78d3a04ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53a7bb4261a6d1548e5d3c77f4233e9d" id="r_a53a7bb4261a6d1548e5d3c77f4233e9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a7bb4261a6d1548e5d3c77f4233e9d">my_merge_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin1, <a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *begin2, int(*cmp)())</td></tr>
-<tr class="separator:a53a7bb4261a6d1548e5d3c77f4233e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2f544a1dedf7c9fce578ba642a6889" id="r_a2c2f544a1dedf7c9fce578ba642a6889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c2f544a1dedf7c9fce578ba642a6889">my_pop_list</a> (<a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **begin)</td></tr>
-<tr class="separator:a2c2f544a1dedf7c9fce578ba642a6889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c30694bff3bc451dad973a49b12003" id="r_a54c30694bff3bc451dad973a49b12003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54c30694bff3bc451dad973a49b12003">my_push_front</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin, void *data, <a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a> <a class="el" href="#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="memdesc:a54c30694bff3bc451dad973a49b12003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a node at the beginning of the list.  <br /></td></tr>
+<tr class="separator:a54c30694bff3bc451dad973a49b12003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698c28c29556e0345aa10fde9ec4906c" id="r_a698c28c29556e0345aa10fde9ec4906c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a698c28c29556e0345aa10fde9ec4906c">my_push_back</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin, void *data, <a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a> <a class="el" href="#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="memdesc:a698c28c29556e0345aa10fde9ec4906c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a node at the end of the list.  <br /></td></tr>
+<tr class="separator:a698c28c29556e0345aa10fde9ec4906c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d1658679d29c52e51ecd3c43e69222" id="r_ad4d1658679d29c52e51ecd3c43e69222"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4d1658679d29c52e51ecd3c43e69222">my_delete_nodes</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin, void const *data_ref, int(*cmp)())</td></tr>
+<tr class="memdesc:ad4d1658679d29c52e51ecd3c43e69222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes nodes from a linked list.  <br /></td></tr>
+<tr class="separator:ad4d1658679d29c52e51ecd3c43e69222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26a557f20291dd5089b5535ff5b43cf" id="r_ae26a557f20291dd5089b5535ff5b43cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26a557f20291dd5089b5535ff5b43cf">my_delete_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin)</td></tr>
+<tr class="memdesc:ae26a557f20291dd5089b5535ff5b43cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the linked list.  <br /></td></tr>
+<tr class="separator:ae26a557f20291dd5089b5535ff5b43cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74baf279f18504055e5b77d6fde3219c" id="r_a74baf279f18504055e5b77d6fde3219c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74baf279f18504055e5b77d6fde3219c">my_pop_front</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin)</td></tr>
+<tr class="memdesc:a74baf279f18504055e5b77d6fde3219c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first node of the list.  <br /></td></tr>
+<tr class="separator:a74baf279f18504055e5b77d6fde3219c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91b4d21a4e0cbf44df1d89be3d806ea" id="r_ab91b4d21a4e0cbf44df1d89be3d806ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91b4d21a4e0cbf44df1d89be3d806ea">my_pop_back</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin)</td></tr>
+<tr class="memdesc:ab91b4d21a4e0cbf44df1d89be3d806ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last node of the list.  <br /></td></tr>
+<tr class="separator:ab91b4d21a4e0cbf44df1d89be3d806ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07c223309cae8da70382da20755856a" id="r_ac07c223309cae8da70382da20755856a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07c223309cae8da70382da20755856a">my_pop_node</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin, void const *data_ref, int(*cmp)())</td></tr>
+<tr class="memdesc:ac07c223309cae8da70382da20755856a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a node from the list.  <br /></td></tr>
+<tr class="separator:ac07c223309cae8da70382da20755856a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72ba929b91f331b713fcc9325f9aee9" id="r_ad72ba929b91f331b713fcc9325f9aee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72ba929b91f331b713fcc9325f9aee9">my_show_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *list)</td></tr>
+<tr class="memdesc:ad72ba929b91f331b713fcc9325f9aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the linked list.  <br /></td></tr>
+<tr class="separator:ad72ba929b91f331b713fcc9325f9aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edf6b23c31d584d1c5cdd6d1fa8c8ad" id="r_a5edf6b23c31d584d1c5cdd6d1fa8c8ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edf6b23c31d584d1c5cdd6d1fa8c8ad">my_list_size</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *begin)</td></tr>
+<tr class="memdesc:a5edf6b23c31d584d1c5cdd6d1fa8c8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the linked list.  <br /></td></tr>
+<tr class="separator:a5edf6b23c31d584d1c5cdd6d1fa8c8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe803d8ac01b542d20e76cd09fd1ff73" id="r_afe803d8ac01b542d20e76cd09fd1ff73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe803d8ac01b542d20e76cd09fd1ff73">my_rev_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin)</td></tr>
+<tr class="memdesc:afe803d8ac01b542d20e76cd09fd1ff73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the linked list.  <br /></td></tr>
+<tr class="separator:afe803d8ac01b542d20e76cd09fd1ff73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970009fbc55148e8b12e42dda45aad6f" id="r_a970009fbc55148e8b12e42dda45aad6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a970009fbc55148e8b12e42dda45aad6f">my_find_node</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *begin, void const *data, int(*cmp)())</td></tr>
+<tr class="memdesc:a970009fbc55148e8b12e42dda45aad6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a node in the linked list.  <br /></td></tr>
+<tr class="separator:a970009fbc55148e8b12e42dda45aad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb18c7f636358218d60e4f8fcbc40a83" id="r_abb18c7f636358218d60e4f8fcbc40a83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb18c7f636358218d60e4f8fcbc40a83">my_concat_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin1, <a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *begin2)</td></tr>
+<tr class="memdesc:abb18c7f636358218d60e4f8fcbc40a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenates two linked lists.  <br /></td></tr>
+<tr class="separator:abb18c7f636358218d60e4f8fcbc40a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5d70f592cd1efbbebf27a90c8023fd" id="r_adb5d70f592cd1efbbebf27a90c8023fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb5d70f592cd1efbbebf27a90c8023fd">my_sort_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin, int(*cmp)())</td></tr>
+<tr class="memdesc:adb5d70f592cd1efbbebf27a90c8023fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the linked list.  <br /></td></tr>
+<tr class="separator:adb5d70f592cd1efbbebf27a90c8023fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fa8b8611f82fbd1bad252b3dc3ae0d" id="r_af0fa8b8611f82fbd1bad252b3dc3ae0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0fa8b8611f82fbd1bad252b3dc3ae0d">my_merge_list</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **begin1, <a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *begin2, int(*cmp)())</td></tr>
+<tr class="memdesc:af0fa8b8611f82fbd1bad252b3dc3ae0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two linked lists.  <br /></td></tr>
+<tr class="separator:af0fa8b8611f82fbd1bad252b3dc3ae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ce37962913b7e3e47943e4ba0e3270" id="r_ac2ce37962913b7e3e47943e4ba0e3270"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2ce37962913b7e3e47943e4ba0e3270">my_list_to_array</a> (<a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *list)</td></tr>
+<tr class="memdesc:ac2ce37962913b7e3e47943e4ba0e3270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the linked list to an array.  <br /></td></tr>
+<tr class="separator:ac2ce37962913b7e3e47943e4ba0e3270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eaf83bd34d8f314442ea45b406e573" id="r_a96eaf83bd34d8f314442ea45b406e573"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eaf83bd34d8f314442ea45b406e573">my_params_to_list</a> (int ac, char *const *av)</td></tr>
+<tr class="memdesc:a96eaf83bd34d8f314442ea45b406e573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a linked list from the arguments (argc and argv)  <br /></td></tr>
+<tr class="separator:a96eaf83bd34d8f314442ea45b406e573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des définitions de type</h2>
-<a id="a4b66e4d3b6bddf6ccf18ee41b6374c9f" name="a4b66e4d3b6bddf6ccf18ee41b6374c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">&#9670;&#160;</a></span>linked_list_t</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>The header file of the libmylist. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+</div><h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="a33b99e5345d46cf63926673aa2b9ff83" name="a33b99e5345d46cf63926673aa2b9ff83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b99e5345d46cf63926673aa2b9ff83">&#9670;&#160;</a></span>node_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structlinked__list.html">linked_list</a> <a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a></td>
+          <td class="memname">typedef struct <a class="el" href="structnode__s.html">node_s</a> <a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -237,34 +263,8 @@ Fonctions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions</h2>
-<a id="a4f0bc477a660639ea931be78d3a04ecc" name="a4f0bc477a660639ea931be78d3a04ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f0bc477a660639ea931be78d3a04ecc">&#9670;&#160;</a></span>my_add_in_sorted_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void my_add_in_sorted_list </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int(*</td>          <td class="paramname"><span class="paramname"><em>cmp&#160;</em></span>)()&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac975de000093ac1c4654897aa17af36e" name="ac975de000093ac1c4654897aa17af36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac975de000093ac1c4654897aa17af36e">&#9670;&#160;</a></span>my_concat_list()</h2>
+<a id="abb18c7f636358218d60e4f8fcbc40a83" name="abb18c7f636358218d60e4f8fcbc40a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb18c7f636358218d60e4f8fcbc40a83">&#9670;&#160;</a></span>my_concat_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,20 +272,31 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void my_concat_list </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *</td>          <td class="paramname"><span class="paramname"><em>begin2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *</td>          <td class="paramname"><span class="paramname"><em>begin2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Concatenates two linked lists. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin1</td><td>The beginning of the first list </td></tr>
+    <tr><td class="paramname">begin2</td><td>The beginning of the second list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="aa21ffa07559dc31d6ac8cbefaacf9ddd" name="aa21ffa07559dc31d6ac8cbefaacf9ddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21ffa07559dc31d6ac8cbefaacf9ddd">&#9670;&#160;</a></span>my_delete_list()</h2>
+<a id="ae26a557f20291dd5089b5535ff5b43cf" name="ae26a557f20291dd5089b5535ff5b43cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26a557f20291dd5089b5535ff5b43cf">&#9670;&#160;</a></span>my_delete_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,16 +304,26 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void my_delete_list </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Deletes the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a9a61d525e0ce212974911cbfa72934e1" name="a9a61d525e0ce212974911cbfa72934e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a61d525e0ce212974911cbfa72934e1">&#9670;&#160;</a></span>my_delete_nodes()</h2>
+<a id="ad4d1658679d29c52e51ecd3c43e69222" name="ad4d1658679d29c52e51ecd3c43e69222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d1658679d29c52e51ecd3c43e69222">&#9670;&#160;</a></span>my_delete_nodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +331,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">int my_delete_nodes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -325,18 +346,30 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Deletes nodes from a linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data_ref</td><td>The data to delete </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number of nodes deleted from the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="ac65ab45e2986192ad663f5dc23c1a3a5" name="ac65ab45e2986192ad663f5dc23c1a3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac65ab45e2986192ad663f5dc23c1a3a5">&#9670;&#160;</a></span>my_find_node()</h2>
+<a id="a970009fbc55148e8b12e42dda45aad6f" name="a970009fbc55148e8b12e42dda45aad6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970009fbc55148e8b12e42dda45aad6f">&#9670;&#160;</a></span>my_find_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> * my_find_node </td>
+          <td class="memname"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_find_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -351,10 +384,22 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Finds a node in the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data</td><td>The data to find </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The node found in the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a37c6aa2fc4ff1bf37016a50021b2a5e9" name="a37c6aa2fc4ff1bf37016a50021b2a5e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c6aa2fc4ff1bf37016a50021b2a5e9">&#9670;&#160;</a></span>my_list_size()</h2>
+<a id="a5edf6b23c31d584d1c5cdd6d1fa8c8ad" name="a5edf6b23c31d584d1c5cdd6d1fa8c8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edf6b23c31d584d1c5cdd6d1fa8c8ad">&#9670;&#160;</a></span>my_list_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,16 +407,53 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">int my_list_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the size of the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The size of the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a53a7bb4261a6d1548e5d3c77f4233e9d" name="a53a7bb4261a6d1548e5d3c77f4233e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53a7bb4261a6d1548e5d3c77f4233e9d">&#9670;&#160;</a></span>my_merge_list()</h2>
+<a id="ac2ce37962913b7e3e47943e4ba0e3270" name="ac2ce37962913b7e3e47943e4ba0e3270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ce37962913b7e3e47943e4ba0e3270">&#9670;&#160;</a></span>my_list_to_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ** my_list_to_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the linked list to an array. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The linked list to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void **</b> The array created from the linked list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="af0fa8b8611f82fbd1bad252b3dc3ae0d" name="af0fa8b8611f82fbd1bad252b3dc3ae0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0fa8b8611f82fbd1bad252b3dc3ae0d">&#9670;&#160;</a></span>my_merge_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,12 +461,12 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void my_merge_list </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *</td>          <td class="paramname"><span class="paramname"><em>begin2</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *</td>          <td class="paramname"><span class="paramname"><em>begin2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -394,16 +476,28 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Merges two linked lists. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin1</td><td>The beginning of the first list </td></tr>
+    <tr><td class="paramname">begin2</td><td>The beginning of the second list </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a1305db4e821e7f186f651c70b41b4d68" name="a1305db4e821e7f186f651c70b41b4d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1305db4e821e7f186f651c70b41b4d68">&#9670;&#160;</a></span>my_params_to_list()</h2>
+<a id="a96eaf83bd34d8f314442ea45b406e573" name="a96eaf83bd34d8f314442ea45b406e573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eaf83bd34d8f314442ea45b406e573">&#9670;&#160;</a></span>my_params_to_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> * my_params_to_list </td>
+          <td class="memname"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_params_to_list </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ac</em></span>, </td>
         </tr>
@@ -415,121 +509,88 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a linked list from the arguments (argc and argv) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ac</td><td>The number of arguments </td></tr>
+    <tr><td class="paramname">av</td><td>The array of arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The linked list created from the array of strings </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a2c2f544a1dedf7c9fce578ba642a6889" name="a2c2f544a1dedf7c9fce578ba642a6889"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c2f544a1dedf7c9fce578ba642a6889">&#9670;&#160;</a></span>my_pop_list()</h2>
+<a id="ab91b4d21a4e0cbf44df1d89be3d806ea" name="ab91b4d21a4e0cbf44df1d89be3d806ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91b4d21a4e0cbf44df1d89be3d806ea">&#9670;&#160;</a></span>my_pop_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> * my_pop_list </td>
+          <td class="memname"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_pop_back </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Removes the last node of the list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The last node of the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
 </div>
 </div>
-<a id="a233551399a6dd7dbf4f33ef59752946b" name="a233551399a6dd7dbf4f33ef59752946b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a233551399a6dd7dbf4f33ef59752946b">&#9670;&#160;</a></span>my_push_back()</h2>
+<a id="a74baf279f18504055e5b77d6fde3219c" name="a74baf279f18504055e5b77d6fde3219c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74baf279f18504055e5b77d6fde3219c">&#9670;&#160;</a></span>my_pop_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void my_push_back </td>
+          <td class="memname"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_pop_front </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the first node of the list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The first node of the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="ac07c223309cae8da70382da20755856a" name="ac07c223309cae8da70382da20755856a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07c223309cae8da70382da20755856a">&#9670;&#160;</a></span>my_pop_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_pop_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa24ae00eda53063f651cc810341e72cf" name="aa24ae00eda53063f651cc810341e72cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24ae00eda53063f651cc810341e72cf">&#9670;&#160;</a></span>my_push_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void my_push_front </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af500f7aac4a51a3d77f31dae3df91277" name="af500f7aac4a51a3d77f31dae3df91277"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af500f7aac4a51a3d77f31dae3df91277">&#9670;&#160;</a></span>my_rev_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void my_rev_list </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af6d0b38141cb67fc7f1216459cd3b8b8" name="af6d0b38141cb67fc7f1216459cd3b8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6d0b38141cb67fc7f1216459cd3b8b8">&#9670;&#160;</a></span>my_show_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void my_show_list </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1795e7c751f1fea953a5cd7740d20e26" name="a1795e7c751f1fea953a5cd7740d20e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1795e7c751f1fea953a5cd7740d20e26">&#9670;&#160;</a></span>my_sort_list()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void my_sort_list </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype">void const *</td>          <td class="paramname"><span class="paramname"><em>data_ref</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -538,6 +599,180 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Removes a node from the list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data_ref</td><td>The data to remove </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The node removed from the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="a698c28c29556e0345aa10fde9ec4906c" name="a698c28c29556e0345aa10fde9ec4906c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698c28c29556e0345aa10fde9ec4906c">&#9670;&#160;</a></span>my_push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_push_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a node at the end of the list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data</td><td>The data to add </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="a54c30694bff3bc451dad973a49b12003" name="a54c30694bff3bc451dad973a49b12003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c30694bff3bc451dad973a49b12003">&#9670;&#160;</a></span>my_push_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_push_front </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a9fdd743a0bdf2aa3250916cb5fc7e900">type_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a node at the beginning of the list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data</td><td>The data to add </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="afe803d8ac01b542d20e76cd09fd1ff73" name="afe803d8ac01b542d20e76cd09fd1ff73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe803d8ac01b542d20e76cd09fd1ff73">&#9670;&#160;</a></span>my_rev_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_rev_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverses the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="ad72ba929b91f331b713fcc9325f9aee9" name="ad72ba929b91f331b713fcc9325f9aee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72ba929b91f331b713fcc9325f9aee9">&#9670;&#160;</a></span>my_show_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_show_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The linked list to display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="adb5d70f592cd1efbbebf27a90c8023fd" name="adb5d70f592cd1efbbebf27a90c8023fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5d70f592cd1efbbebf27a90c8023fd">&#9670;&#160;</a></span>my_sort_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void my_sort_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> **</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*</td>          <td class="paramname"><span class="paramname"><em>cmp&#160;</em></span>)()&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sorts the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>void</b> </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

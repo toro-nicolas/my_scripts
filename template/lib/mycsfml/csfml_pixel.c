@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to pixels in CSFML
 */
+/**
+ * @file csfml_pixel.c
+ * @brief The file containing all the functions related to pixels in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

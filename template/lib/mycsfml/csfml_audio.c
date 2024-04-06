@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to audio in CSFML
 */
+/**
+ * @file csfml_audio.c
+ * @brief The file containing all the functions related to audio in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** Delete a hashtable (ht)
 */
+/**
+ * @file destroy_table.c
+ * @brief The file containing the delete_hashtable function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

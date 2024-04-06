@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** ht_delete
+** delete
 ** File description:
 ** Delete an entry in the hashtable (ht) in function of the key (key)
 */
+/**
+ * @file delete.c
+ * @brief The file containing the delete function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

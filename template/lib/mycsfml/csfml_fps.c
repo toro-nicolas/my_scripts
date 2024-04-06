@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to fps in CSFML
 */
+/**
+ * @file csfml_fps.c
+ * @brief The file containing all the functions related to fps in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

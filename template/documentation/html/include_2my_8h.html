@@ -163,7 +163,7 @@ Macros</h2></td></tr>
 <tr class="separator:abd468abd581c991be80f86dfa3c18abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105949c59c998e38aad80266afac92bf" id="r_a105949c59c998e38aad80266afac92bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a105949c59c998e38aad80266afac92bf">FREE</a>(ptr)&#160;&#160;&#160;ptr = <a class="el" href="#a9ee248793cda13367ba0ee61b4463228">my_free_ptr</a>(ptr)</td></tr>
 <tr class="separator:a105949c59c998e38aad80266afac92bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197c22bcd714edc4c556629900a3e4f2" id="r_a197c22bcd714edc4c556629900a3e4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197c22bcd714edc4c556629900a3e4f2">FREE_WORD_ARRAY</a>(ptr)&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((char **)ptr)</td></tr>
+<tr class="memitem:a197c22bcd714edc4c556629900a3e4f2" id="r_a197c22bcd714edc4c556629900a3e4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197c22bcd714edc4c556629900a3e4f2">FREE_WORD_ARRAY</a>(ptr)&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((void **)ptr)</td></tr>
 <tr class="separator:a197c22bcd714edc4c556629900a3e4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -311,6 +311,9 @@ Fonctions</h2></td></tr>
 <tr class="memitem:ac30a461d1870c14b46d8dce09163d363" id="r_ac30a461d1870c14b46d8dce09163d363"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30a461d1870c14b46d8dce09163d363">my_strerror</a> (int error)</td></tr>
 <tr class="memdesc:ac30a461d1870c14b46d8dce09163d363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error message of the error number (error)  <br /></td></tr>
 <tr class="separator:ac30a461d1870c14b46d8dce09163d363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638b9666ad46a6ce4d77b50387c9989d" id="r_a638b9666ad46a6ce4d77b50387c9989d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a638b9666ad46a6ce4d77b50387c9989d">my_count_letter</a> (char const *str, char c)</td></tr>
+<tr class="memdesc:a638b9666ad46a6ce4d77b50387c9989d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of times a letter (c) is in a string (str)  <br /></td></tr>
+<tr class="separator:a638b9666ad46a6ce4d77b50387c9989d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af78a3a537dc6765804efd3483da0842a" id="r_af78a3a537dc6765804efd3483da0842a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af78a3a537dc6765804efd3483da0842a">my_nbrlen</a> (int nb)</td></tr>
 <tr class="memdesc:af78a3a537dc6765804efd3483da0842a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of a number (nb)  <br /></td></tr>
 <tr class="separator:af78a3a537dc6765804efd3483da0842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,7 +509,7 @@ Variables</h2></td></tr>
           <td class="memname">#define FREE_WORD_ARRAY</td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((char **)ptr)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="#ab2e552192501c66d109c9f9b1a7438fd">my_free_array</a>((void **)ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1226,6 +1229,38 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd><b>char*</b> The converted number in the new base </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+
+</div>
+</div>
+<a id="a638b9666ad46a6ce4d77b50387c9989d" name="a638b9666ad46a6ce4d77b50387c9989d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638b9666ad46a6ce4d77b50387c9989d">&#9670;&#160;</a></span>my_count_letter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int my_count_letter </td>
+          <td>(</td>
+          <td class="paramtype">char const *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts the number of times a letter (c) is in a string (str) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to check </td></tr>
+    <tr><td class="paramname">c</td><td>The letter to count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>int</b> The number of times the letter is in the string </dd></dl>
 <dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>

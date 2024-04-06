@@ -2,8 +2,14 @@
 ** EPITECH PROJECT, 2024
 ** my_memchr
 ** File description:
-** The my_memchr.c
+** Searches for the first occurrence of the character (c)
+** in the first (n) bytes of the string (s)
 */
+/**
+ * @file my_memchr.c
+ * @brief The file containing the my_memchr function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

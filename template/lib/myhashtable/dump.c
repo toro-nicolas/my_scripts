@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** ht_dump
+** dump
 ** File description:
 ** Display the content of a hashtable (ht)
 */
+/**
+ * @file dump.c
+ * @brief The file containing the dump function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

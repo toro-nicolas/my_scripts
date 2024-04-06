@@ -4,10 +4,15 @@
 ** File description:
 ** Return the last node of a linked list and remove it from the list
 */
+/**
+ * @file my_pop_node.c
+ * @brief The file containing the my_pop_node function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
-static void change_list(linked_list_t **begin, linked_list_t *tmp)
+static void change_list(node_t **begin, node_t *tmp)
 {
     if (tmp->prev != NULL)
         tmp->prev->next = tmp->next;
@@ -17,11 +22,10 @@ static void change_list(linked_list_t **begin, linked_list_t *tmp)
         tmp->next->prev = tmp->prev;
 }
 
-linked_list_t *my_pop_node(linked_list_t **begin,
-    void const *data_ref, int (*cmp) ())
+node_t *my_pop_node(node_t **begin, void const *data_ref, int (*cmp)())
 {
-    linked_list_t *tmp = *begin;
-    linked_list_t *next = NULL;
+    node_t *tmp = *begin;
+    node_t *next = NULL;
 
     while (tmp != NULL) {
         next = tmp->next;

@@ -93,29 +93,36 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Référence du fichier my_find_node.c</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The file containing the my_find_node function.  
+<a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lib_2mylist_2mylist_8h_source.html">mylist.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:adb8de0a5d712b216f9710b31a8982324" id="r_adb8de0a5d712b216f9710b31a8982324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="include_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8de0a5d712b216f9710b31a8982324">my_find_node</a> (<a class="el" href="include_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *begin, void const *data_ref, int(*cmp)())</td></tr>
-<tr class="separator:adb8de0a5d712b216f9710b31a8982324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3bd214995b20d522178304c26f4a0b" id="r_a5c3bd214995b20d522178304c26f4a0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="include_2mylist_8h.html#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c3bd214995b20d522178304c26f4a0b">my_find_node</a> (<a class="el" href="include_2mylist_8h.html#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *begin, void const *data_ref, int(*cmp)())</td></tr>
+<tr class="memdesc:a5c3bd214995b20d522178304c26f4a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a node in the linked list.  <br /></td></tr>
+<tr class="separator:a5c3bd214995b20d522178304c26f4a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des fonctions</h2>
-<a id="adb8de0a5d712b216f9710b31a8982324" name="adb8de0a5d712b216f9710b31a8982324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb8de0a5d712b216f9710b31a8982324">&#9670;&#160;</a></span>my_find_node()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>The file containing the my_find_node function. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a5c3bd214995b20d522178304c26f4a0b" name="a5c3bd214995b20d522178304c26f4a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3bd214995b20d522178304c26f4a0b">&#9670;&#160;</a></span>my_find_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="include_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> * my_find_node </td>
+          <td class="memname"><a class="el" href="include_2mylist_8h.html#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> * my_find_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="include_2mylist_8h.html#a4b66e4d3b6bddf6ccf18ee41b6374c9f">linked_list_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="include_2mylist_8h.html#a33b99e5345d46cf63926673aa2b9ff83">node_t</a> const *</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void const *</td>          <td class="paramname"><span class="paramname"><em>data_ref</em></span>, </td>
+          <td class="paramtype">void const *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -124,6 +131,18 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Finds a node in the linked list. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>The beginning of the list </td></tr>
+    <tr><td class="paramname">data</td><td>The data to find </td></tr>
+    <tr><td class="paramname">cmp</td><td>The comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><b>node_t *</b> The node found in the list </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Nicolas TORO </dd></dl>
 
 </div>
 </div>

@@ -4,12 +4,17 @@
 ** File description:
 ** Concatenates two linked lists
 */
+/**
+ * @file my_concat_list.c
+ * @brief The file containing the my_concat_list function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
-void my_concat_list(linked_list_t **begin1, linked_list_t *begin2)
+void my_concat_list(node_t **begin1, node_t *begin2)
 {
-    linked_list_t *tmp = *begin1;
+    node_t *tmp = *begin1;
 
     if (*begin1 == NULL) {
         *begin1 = begin2;

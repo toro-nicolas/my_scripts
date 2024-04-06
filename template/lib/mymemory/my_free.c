@@ -2,8 +2,14 @@
 ** EPITECH PROJECT, 2024
 ** my_free
 ** File description:
-** The my_free.c
+** Free all the memory allocated by
+** the my_malloc, my_calloc and my_realloc functions
 */
+/**
+ * @file my_free.c
+ * @brief The file containing the my_free function
+ * @author Nicolas TORO
+ */
 
 #include "mymemory.h"
 

@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to images in CSFML
 */
+/**
+ * @file csfml_image.c
+ * @brief The file containing all the functions related to images in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

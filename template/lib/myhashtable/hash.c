@@ -4,6 +4,11 @@
 ** File description:
 ** The functions for hash a word (key) with the len of the hashtable (len)
 */
+/**
+ * @file hash.c
+ * @brief The file containing the hash functions
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

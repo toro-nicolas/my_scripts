@@ -1,9 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** ht_insert
+** insert
 ** File description:
 ** Insert a key (key) and a vlue (value) pair in the hashtable (ht)
 */
+/**
+ * @file insert.c
+ * @brief The file containing the insert function
+ * @author Nicolas TORO
+ */
 
 #include "myhashtable.h"
 

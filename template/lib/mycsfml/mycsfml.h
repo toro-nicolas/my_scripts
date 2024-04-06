@@ -2,8 +2,13 @@
 ** EPITECH PROJECT, 2023
 ** Libmycsfml
 ** File description:
-** The header of the csfml functions
+** The header file of the libmycsfml
 */
+/**
+ * @file mycsfml.h
+ * @brief The header file of the libmycsfml
+ * @author Nicolas TORO
+ */
 
 #include <SFML/Graphics.h>
 #include <SFML/Audio.h>

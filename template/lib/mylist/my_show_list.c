@@ -4,6 +4,11 @@
 ** File description:
 ** Shows a linked list
 */
+/**
+ * @file my_show_list.c
+ * @brief The file containing the my_show_list function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
@@ -69,10 +74,10 @@ static int select_print(void *data, type_t type)
         return PRINT_FUNCTIONS[2](data, type);
 }
 
-void my_show_list(linked_list_t *list)
+void my_show_list(node_t *list)
 {
     my_printf("List:\nPrevious | Current | Next\n");
-    for (linked_list_t *tmp = list; tmp != NULL; tmp = tmp->next) {
+    for (node_t *tmp = list; tmp != NULL; tmp = tmp->next) {
         if (tmp->prev == NULL)
             my_printf("NULL");
         else

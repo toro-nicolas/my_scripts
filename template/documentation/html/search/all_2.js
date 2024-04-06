@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_0',['data',['../structlinked__list.html#ac5c5967f62e5c3601479be651a8ed76c',1,'linked_list']]],
+  ['data_0',['data',['../structnode__s.html#ac5c5967f62e5c3601479be651a8ed76c',1,'node_s']]],
   ['decale_5fsave_1',['decale_save',['../my__super__array_8c.html#a0c3e57ab9f19cd6eca3cbb74f86faf69',1,'my_super_array.c']]],
   ['delete_2ec_2',['delete.c',['../delete_8c.html',1,'']]],
   ['delete_5fhashtable_3',['delete_hashtable',['../include_2myhashtable_8h.html#ae531445fd4e9cd39ef5a2460a8a936ae',1,'delete_hashtable(hashtable_t *ht):&#160;destroy_table.c'],['../destroy__table_8c.html#ae531445fd4e9cd39ef5a2460a8a936ae',1,'delete_hashtable(hashtable_t *ht):&#160;destroy_table.c'],['../lib_2myhashtable_2myhashtable_8h.html#ae531445fd4e9cd39ef5a2460a8a936ae',1,'delete_hashtable(hashtable_t *ht):&#160;destroy_table.c']]],

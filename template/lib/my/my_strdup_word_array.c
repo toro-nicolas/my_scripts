@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** template
+** my_strdup_word_array
 ** File description:
-** The my_strdup_word_array.c
+** Returns a duplication of a word array (array)
 */
 /**
  * @file my_strdup_word_array.c

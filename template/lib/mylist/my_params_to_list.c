@@ -4,12 +4,17 @@
 ** File description:
 ** Creates a linked list from the arguments (argc and argv)
 */
+/**
+ * @file my_params_to_list.c
+ * @brief The file containing the my_params_to_list function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
-linked_list_t *my_params_to_list(int ac, char *const *av)
+node_t *my_params_to_list(int ac, char *const *av)
 {
-    linked_list_t *list = malloc(sizeof(linked_list_t));
+    node_t *list = malloc(sizeof(node_t));
 
     list->prev = NULL;
     list->data = my_strdup(av[0]);

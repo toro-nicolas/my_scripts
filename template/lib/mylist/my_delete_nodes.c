@@ -4,10 +4,15 @@
 ** File description:
 ** Deletes nodes from a linked list
 */
+/**
+ * @file my_delete_nodes.c
+ * @brief The file containing the my_delete_nodes function
+ * @author Nicolas TORO
+ */
 
 #include "mylist.h"
 
-static void remove_node(linked_list_t **begin, linked_list_t *tmp)
+static void remove_node(node_t **begin, node_t *tmp)
 {
     if (tmp->prev != NULL)
         tmp->prev->next = tmp->next;
@@ -20,10 +25,10 @@ static void remove_node(linked_list_t **begin, linked_list_t *tmp)
     FREE(tmp);
 }
 
-int my_delete_nodes(linked_list_t **begin, void const *data_ref, int (*cmp) ())
+int my_delete_nodes(node_t **begin, void const *data_ref, int (*cmp)())
 {
-    linked_list_t *tmp = *begin;
-    linked_list_t *next = NULL;
+    node_t *tmp = *begin;
+    node_t *next = NULL;
     int nodes_deleted = 0;
 
     while (tmp != NULL) {

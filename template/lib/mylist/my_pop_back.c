@@ -6,15 +6,15 @@
 */
 /**
  * @file my_pop_back.c
- * @brief The my_pop_back.c
+ * @brief The file containing the my_pop_back function
  * @author Nicolas TORO
  */
 
 #include "mylist.h"
 
-linked_list_t *my_pop_back(linked_list_t **begin)
+node_t *my_pop_back(node_t **begin)
 {
-    linked_list_t *tmp = *begin;
+    node_t *tmp = *begin;
 
     if (*begin == NULL)
         return NULL;

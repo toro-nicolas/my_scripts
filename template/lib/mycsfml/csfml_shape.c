@@ -4,6 +4,11 @@
 ** File description:
 ** All the functions related to shape in CSFML
 */
+/**
+ * @file csfml_shape.c
+ * @brief The file containing all the functions related to shape in CSFML
+ * @author Nicolas TORO
+ */
 
 #include "mycsfml.h"
 

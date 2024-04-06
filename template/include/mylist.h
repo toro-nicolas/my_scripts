@@ -4,11 +4,18 @@
 ** File description:
 ** The header file of the libmylist
 */
+/**
+ * @file mylist.h
+ * @brief The header file of the libmylist
+ * @author Nicolas TORO
+ */
 
 #include "my.h"
 
 #ifndef MYLIST_H
     #define MYLIST_H
+
+// TYPEDEFS :
 
 typedef enum type {
     SHORT_SHORT,
@@ -29,34 +36,166 @@ typedef enum type {
     ARRAY_OF_STRING,
     VOID,
     UNKNOWN
-} type_t;
+} type_t; /* Enum for the type of the data */
 
-typedef struct linked_list {
-    struct linked_list *prev;
-    void *data;
-    type_t type;
-    struct linked_list *next;
-} linked_list_t;
+typedef struct node_s {
+    struct node_s *prev; /* Pointer to the previous node */
+    void *data; /* Pointer to the data */
+    type_t type; /* Type of the data */
+    struct node_s *next; /* Pointer to the next node */
+} node_t; /* Node of the linked list */
 
-void my_push_front(linked_list_t **begin, void *data, type_t type);
-void my_push_back(linked_list_t **begin, void *data, type_t type);
-linked_list_t *my_params_to_list(int ac, char *const *av);
-void my_show_list(linked_list_t *list);
-int my_list_size(linked_list_t const *begin);
-int my_delete_nodes(linked_list_t **begin,
-    void const *data_ref, int (*cmp) ());
-void my_delete_list(linked_list_t **begin);
-void my_rev_list(linked_list_t **begin);
-linked_list_t *my_find_node(linked_list_t const *begin,
-    void const *data, int (*cmp) ());
-void my_concat_list(linked_list_t **begin1, linked_list_t *begin2);
-void my_sort_list(linked_list_t **begin, int (*cmp) ());
-void my_merge_list(linked_list_t **begin1,
-    linked_list_t *begin2, int (*cmp) ());
-linked_list_t *my_pop_front(linked_list_t **begin);
-linked_list_t *my_pop_back(linked_list_t **begin);
-linked_list_t *my_pop_node(linked_list_t **begin,
-    void const *data_ref, int (*cmp) ());
-void **my_list_to_array(linked_list_t *list);
+
+
+// FUNCTIONS PROTOTYPES :
+
+    // Add functions :
+
+/**
+ * @brief Adds a node at the beginning of the list
+ * @param begin The beginning of the list
+ * @param data The data to add
+ * @param type The type of the data
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_push_front(node_t **begin, void *data, type_t type);
+
+/**
+ * @brief Adds a node at the end of the list
+ * @param begin The beginning of the list
+ * @param data The data to add
+ * @param type The type of the data
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_push_back(node_t **begin, void *data, type_t type);
+
+    // Remove functions :
+
+/**
+ * @brief Deletes nodes from a linked list
+ * @param begin The beginning of the list
+ * @param data_ref The data to delete
+ * @param cmp The comparison function
+ * @return <b>int</b> The number of nodes deleted from the list
+ * @author Nicolas TORO
+ */
+int my_delete_nodes(node_t **begin, void const *data_ref, int (*cmp)());
+
+/**
+ * @brief Deletes the linked list
+ * @param begin The beginning of the list
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_delete_list(node_t **begin);
+
+/**
+ * @brief Removes the first node of the list
+ * @param begin The beginning of the list
+ * @return <b>node_t *</b> The first node of the list
+ * @author Nicolas TORO
+ */
+node_t *my_pop_front(node_t **begin);
+
+/**
+ * @brief Removes the last node of the list
+ * @param begin The beginning of the list
+ * @return <b>node_t *</b> The last node of the list
+ * @author Nicolas TORO
+ */
+node_t *my_pop_back(node_t **begin);
+
+/**
+ * @brief Removes a node from the list
+ * @param begin The beginning of the list
+ * @param data_ref The data to remove
+ * @param cmp The comparison function
+ * @return <b>node_t *</b> The node removed from the list
+ * @author Nicolas TORO
+ */
+node_t *my_pop_node(node_t **begin, void const *data_ref, int (*cmp)());
+
+    // Other functions :
+
+/**
+ * @brief Displays the linked list
+ * @param list The linked list to display
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_show_list(node_t *list);
+
+/**
+ * @brief Returns the size of the linked list
+ * @param begin The beginning of the list
+ * @return <b>int</b> The size of the list
+ * @author Nicolas TORO
+ */
+int my_list_size(node_t const *begin);
+
+/**
+ * @brief Reverses the linked list
+ * @param begin The beginning of the list
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_rev_list(node_t **begin);
+
+/**
+ * @brief Finds a node in the linked list
+ * @param begin The beginning of the list
+ * @param data The data to find
+ * @param cmp The comparison function
+ * @return <b>node_t *</b> The node found in the list
+ * @author Nicolas TORO
+ */
+node_t *my_find_node(node_t const *begin, void const *data, int (*cmp)());
+
+/**
+ * @brief Concatenates two linked lists
+ * @param begin1 The beginning of the first list
+ * @param begin2 The beginning of the second list
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_concat_list(node_t **begin1, node_t *begin2);
+
+/**
+ * @brief Sorts the linked list
+ * @param begin The beginning of the list
+ * @param cmp The comparison function
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_sort_list(node_t **begin, int (*cmp)());
+
+/**
+ * @brief Merges two linked lists
+ * @param begin1 The beginning of the first list
+ * @param begin2 The beginning of the second list
+ * @param cmp The comparison function
+ * @return <b>void</b>
+ * @author Nicolas TORO
+ */
+void my_merge_list(node_t **begin1, node_t *begin2, int (*cmp)());
+
+/**
+ * @brief Converts the linked list to an array
+ * @param list The linked list to convert
+ * @return <b>void **</b> The array created from the linked list
+ * @author Nicolas TORO
+ */
+void **my_list_to_array(node_t *list);
+
+/**
+ * @brief Creates a linked list from the arguments (argc and argv)
+ * @param ac The number of arguments
+ * @param av The array of arguments
+ * @return <b>node_t *</b> The linked list created from the array of strings
+ * @author Nicolas TORO
+ */
+node_t *my_params_to_list(int ac, char *const *av);
 
 #endif

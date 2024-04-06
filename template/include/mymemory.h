@@ -113,7 +113,7 @@ int my_memcmp(const void *pointer1, const void *pointer2, size_t size);
 /**
  * @brief Moves bytes (size) from memory area (source)
  * to memory area (destination)
- * @note Did the same as my_memcpys
+ * @note Did the same as my_memcpy
  * @param destination The destination memory area
  * @param source The source memory area
  * @param size The number of bytes to copy

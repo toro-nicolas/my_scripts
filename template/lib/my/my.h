@@ -632,7 +632,7 @@ char **my_super_array(char *str, char *sep);
  * @brief Frees an array (array)
  * @param array The array to free
  * @return <b>void</b>
- * @author Nicolas TORO
+ * @author Gianni TUERO
  */
 void my_free_array(void **array);
 

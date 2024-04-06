@@ -57,5 +57,6 @@ linked_list_t *my_pop_front(linked_list_t **begin);
 linked_list_t *my_pop_back(linked_list_t **begin);
 linked_list_t *my_pop_node(linked_list_t **begin,
     void const *data_ref, int (*cmp) ());
+void **my_list_to_array(linked_list_t *list);
 
 #endif

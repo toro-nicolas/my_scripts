@@ -7,8 +7,50 @@
 
 NAME    	=	libmy.a
 
+CC		=	gcc
+
 BUILDDIR 	=	../../build
 
+SRCS		=	my_printf/find_format.c
+SRCS		+=	my_printf/flag_a.c
+SRCS		+=	my_printf/flag_b.c
+SRCS		+=	my_printf/flag_biga.c
+SRCS		+=	my_printf/flag_bigd.c
+SRCS		+=	my_printf/flag_bige.c
+SRCS		+=	my_printf/flag_bigf.c
+SRCS		+=	my_printf/flag_bigg.c
+SRCS		+=	my_printf/flag_bigs.c
+SRCS		+=	my_printf/flag_bigx.c
+SRCS		+=	my_printf/flag_c.c
+SRCS		+=	my_printf/flag_d.c
+SRCS		+=	my_printf/flag_e.c
+SRCS		+=	my_printf/flag_f.c
+SRCS		+=	my_printf/flag_g.c
+SRCS		+=	my_printf/flag_i.c
+SRCS		+=	my_printf/flag_m.c
+SRCS		+=	my_printf/flag_n.c
+SRCS		+=	my_printf/flag_o.c
+SRCS		+=	my_printf/flag_p.c
+SRCS		+=	my_printf/flag_percent.c
+SRCS		+=	my_printf/flag_s.c
+SRCS		+=	my_printf/flag_u.c
+SRCS		+=	my_printf/flag_x.c
+SRCS		+=	my_printf/flags.c
+SRCS		+=	my_printf/format_it_char.c
+SRCS		+=	my_printf/format_it_double.c
+SRCS		+=	my_printf/format_it_int.c
+SRCS		+=	my_printf/format_it_str.c
+SRCS		+=	my_printf/get_format.c
+SRCS		+=	my_printf/my_show_formating.c
+SRCS		+=	my_printf/precise_it_double.c
+SRCS		+=	my_printf/precise_it_int.c
+SRCS		+=	my_printf/round_flag_a.c
+SRCS		+=	my_printf/specifier_base.c
+SRCS		+=	my_printf/specifier_int.c
+SRCS		+=	my_printf/sub_format_char.c
+SRCS		+=	my_printf/sub_format_double.c
+SRCS		+=	my_printf/sub_format_int.c
+SRCS		+=	my_printf/sub_format_str.c
 SRCS		+=	my_array_len.c
 SRCS		+=	my_char_is.c
 SRCS		+=	my_char_is_alpha.c
@@ -102,24 +144,33 @@ SRCS		+=	my_super_number.c
 SRCS		+=	my_swap.c
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
-OBJS		+=	$(wildcard ../../build/*.o)
 
 HEADER		=	my.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -g3
+CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -Wno-unused
+CFLAGS		+=	-Wno-strict-aliasing -Wno-alloc-size-larger-than
+DEBUGFLAGS	=	-g3
+OPTIMIZEFLAGS	=	-O3
 
-all:	my-printf create-build $(BUILDDIR) $(NAME) copy
+.PHONY: all create-build debug clean fclean re copy
+
+all: create-build $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmy compiled.\033[0m"
-
-my-printf:
-	@make --no-print-directory -C ./my_printf/
 
 create-build:
 	@mkdir -p $(BUILDDIR)
 
+$(BUILDDIR)/%.o: my_printf/%.c
+	@mkdir -p $(BUILDDIR)
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+
+debug: CFLAGS += $(DEBUGFLAGS)
+debug: OPTIMIZEFLAGS =
+debug: all
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
@@ -132,7 +183,7 @@ fclean:	clean
 	@rm -rf $(NAME)
 	@echo -e "\033[1;31mLibmy cleaned.\033[0m"
 
-re: 	fclean all
+re: fclean all
 
 copy:
 	@cp $(NAME) ../$(NAME)

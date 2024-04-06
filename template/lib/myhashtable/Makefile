@@ -7,21 +7,27 @@
 
 NAME    	=	libmyhashtable.a
 
+CC		=	gcc
+
 BUILDDIR 	=	../../build
 
-SRCS		=	hash.c			\
-			create_table.c		\
-			destroy_table.c		\
-			insert.c		\
-			delete.c		\
-			search.c		\
-			dump.c			\
+SRCS		=	create_table.c
+SRCS		+=	delete.c
+SRCS		+=	destroy_table.c
+SRCS		+=	dump.c
+SRCS		+=	hash.c
+SRCS		+=	insert.c
+SRCS		+=	search.c
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	myhashtable.h
 
 CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include
+DEBUGFLAGS	=	-g3
+OPTIMIZEFLAGS	=	-O3
+
+.PHONY: all my debug clean fclean re copy
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmyhashtable compiled.\033[0m"
@@ -32,7 +38,11 @@ my:
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+
+debug: CFLAGS += $(DEBUGFLAGS)
+debug: OPTIMIZEFLAGS =
+debug: all
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)

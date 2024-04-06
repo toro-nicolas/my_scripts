@@ -8,6 +8,7 @@
 NAME		=	[project-exec]
 
 CC		=	gcc
+DEBUG_MODE	=
 
 BUILDDIR 	=	./build
 SRCDIR		=	./src
@@ -28,11 +29,11 @@ all: create-build libs $(BUILDDIR) $(NAME)
 	@echo -e "\033[1;33m$(NAME) compiled.\033[0m"
 
 libs:
-	@make --no-print-directory -C ./lib/my/
-	@make --no-print-directory -C ./lib/mylist/
-	@make --no-print-directory -C ./lib/mycsfml/
-	@make --no-print-directory -C ./lib/myhashtable/
-	@make --no-print-directory -C ./lib/mymemory/
+	@make --no-print-directory -C ./lib/my/ $(DEBUG_MODE)
+	@make --no-print-directory -C ./lib/mylist/ $(DEBUG_MODE)
+	@make --no-print-directory -C ./lib/mycsfml/ $(DEBUG_MODE)
+	@make --no-print-directory -C ./lib/myhashtable/ $(DEBUG_MODE)
+	@make --no-print-directory -C ./lib/mymemory/ $(DEBUG_MODE)
 	@echo -e "\033[1;33mLibs made.\033[0m"
 
 create-build:
@@ -43,22 +44,18 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.c
 
 debug: CFLAGS += $(DEBUGFLAGS)
 debug: OPTIMIZEFLAGS =
+debug: DEBUG_MODE = debug
 debug: all
 
 $(NAME): $(OBJS)
 	@$(CC) $(OBJS) $(CFLAGS) $(OPTIMIZEFLAGS) $(LDFLAGS) -o $(NAME)
-	@rm -rf ./lib/my/libmy.a
-	@rm -rf ./lib/mylist/libmylist.a
-	@rm -rf ./lib/mycsfml/libmycsfml.a
-	@rm -rf ./lib/myhashtable/libmyhashtable.a
-	@rm -rf ./lib/mymemory/libmymemory.a
 
 clean:
 	@rm -rf $(BUILDDIR)
 	@echo -e "\033[1;31mAll .o deleted.\033[0m"
 
 fclean: clean
-	@rm -rf *.a
+	@find -type f -name "*.a" -exec rm -f {} \;
 	@rm -rf unit_tests*
 	@rm -rf tests/unit_tests*
 	@rm -rf vgcore*

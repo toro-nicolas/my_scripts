@@ -7,19 +7,21 @@
 
 NAME    	=	libmymemory.a
 
+CC		=	gcc
+
 BUILDDIR 	=	../../build
 
-SRCS		=	my_calloc.c		\
-			my_free.c		\
-			my_malloc.c		\
-			my_malloc_strdup.c		\
-			my_malloc_strdup_word_array.c	\
-			my_memchr.c		\
-			my_memcpy.c		\
-			my_memcmp.c		\
-			my_memmove.c		\
-			my_memset.c		\
-			my_realloc.c		\
+SRCS		=	my_calloc.c
+SRCS		+=	my_free.c
+SRCS		+=	my_malloc.c
+SRCS		+=	my_malloc_strdup.c
+SRCS		+=	my_malloc_strdup_word_array.c
+SRCS		+=	my_memchr.c
+SRCS		+=	my_memcpy.c
+SRCS		+=	my_memcmp.c
+SRCS		+=	my_memmove.c
+SRCS		+=	my_memset.c
+SRCS		+=	my_realloc.c
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
@@ -27,6 +29,10 @@ HEADER		=	mymemory.h
 
 CFLAGS		=	-Werror -Wextra -Wpedantic -g3
 CFLAGS		+=	-L./ -lmylist -lmy -I../../include
+DEBUGFLAGS	=	-g3
+OPTIMIZEFLAGS	=	-O3
+
+.PHONY: all my debug clean fclean re copy
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmymemory compiled.\033[0m"
@@ -39,7 +45,11 @@ my:
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+
+debug: CFLAGS += $(DEBUGFLAGS)
+debug: OPTIMIZEFLAGS =
+debug: all
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)

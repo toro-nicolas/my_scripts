@@ -7,30 +7,36 @@
 
 NAME    	=	libmylist.a
 
+CC		=	gcc
+
 BUILDDIR 	=	../../build
 
-SRCS		=	my_push_front.c			\
-				my_push_back.c			\
-				my_params_to_list.c		\
-				my_show_list.c			\
-				my_list_size.c			\
-				my_delete_nodes.c		\
-				my_delete_list.c		\
-				my_rev_list.c			\
-				my_find_node.c 			\
-				my_concat_list.c		\
-				my_sort_list.c			\
-				my_merge_list.c			\
-				my_pop_back.c			\
-				my_pop_front.c			\
-				my_pop_node.c			\
-				my_list_to_array.c		\
+SRCS		=	my_concat_list.c
+SRCS		+=	my_delete_list.c
+SRCS		+=	my_delete_nodes.c
+SRCS		+=	my_find_node.c
+SRCS		+=	my_list_size.c
+SRCS		+=	my_list_to_array.c
+SRCS		+=	my_merge_list.c
+SRCS		+=	my_params_to_list.c
+SRCS		+=	my_pop_back.c
+SRCS		+=	my_pop_front.c
+SRCS		+=	my_pop_node.c
+SRCS		+=	my_push_back.c
+SRCS		+=	my_push_front.c
+SRCS		+=	my_rev_list.c
+SRCS		+=	my_show_list.c
+SRCS		+=	my_sort_list.c
 
 OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mylist.h
 
 CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include
+DEBUGFLAGS	=	-g3
+OPTIMIZEFLAGS	=	-O3
+
+.PHONY: all my debug clean fclean re copy
 
 all:	my $(BUILDDIR) $(NAME) copy
 	@echo -e "\033[1;33mLibmylist compiled.\033[0m"
@@ -39,9 +45,13 @@ my:
 	@cp ../my/libmy.a libmy.a
 	@cp ../my/my.h my.h
 
+debug: CFLAGS += $(DEBUGFLAGS)
+debug: OPTIMIZEFLAGS =
+debug: all
+
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)

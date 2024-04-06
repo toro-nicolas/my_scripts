@@ -17,9 +17,8 @@ char *my_concat_params(int argc, char **argv)
     char *result;
     int len_result = 0;
 
-    for (int i = 0; i < argc; i++) {
+    for (int i = 0; i < argc; i++)
         len_result = len_result + my_strlen(argv[i]);
-    }
     result = malloc(sizeof(char) * (len_result + argc));
     for (int j = 0; j < argc; j++) {
         result = my_strcat(result, argv[j]);

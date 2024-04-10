@@ -18,6 +18,7 @@ static char *my_get_str_float(double nb, formating_t *formating)
     double partie_d = ABS(nb - partie_entiere);
     char *str_finale = malloc(sizeof(char) * 1000000);
 
+    str_finale[0] = '\0';
     if (nb < 0) {
         my_strcat(str_finale, "-");
     }

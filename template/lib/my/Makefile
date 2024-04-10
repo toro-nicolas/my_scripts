@@ -150,7 +150,7 @@ HEADER		=	my.h
 CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -Wno-unused
 CFLAGS		+=	-Wno-strict-aliasing -Wno-alloc-size-larger-than
 DEBUGFLAGS	=	-g3
-OPTIMIZEFLAGS	=	-O3
+OPTIMIZEFLAGS	=
 
 .PHONY: all create-build debug clean fclean re copy
 

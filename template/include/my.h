@@ -65,26 +65,29 @@
 
 // TYPEDEFS :
 
+/* A reproduction of the boolean */
 typedef enum my_bool {
     FALSE = 0, //**< FALSE */
     TRUE = 1 //**< TRUE */
-} my_bool_t; /* A reproduction of the boolean */
+} my_bool_t;
 
 extern int my_errno; /* The error number */
 
+/* The information of the my_params_to_array */
 struct info_param {
-    int length; //**< The length of the string */
-    char *str; //**< The string */
-    char *copy; //**< The copy of the string */
-    char **word_array; //**< The array of words */
-}; /* The information of the my_params_to_array */
+    int length; /* The length of the string */
+    char *str; /* The string */
+    char *copy; /* The copy of the string */
+    char **word_array; /* The array of words */
+};
 
+/* The settings of the my_super_number */
 typedef struct number_settings_s {
-    my_bool_t multiple_signe; //**< Allow multiples signes in the string */
-    my_bool_t letter_before; //**< Allow letters before the number */
-    my_bool_t letter_after; //**< Allow letters after the number */
-    my_bool_t overflow; //**< Allow overflow in the number */
-} number_settings_t; /* The settings of the my_super_number */
+    my_bool_t multiple_signe; /* Allow multiples signes in the string */
+    my_bool_t letter_before; /* Allow letters before the number */
+    my_bool_t letter_after; /* Allow letters after the number */
+    my_bool_t overflow; /* Allow overflow in the number */
+} number_settings_t;
 
 
 

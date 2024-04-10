@@ -65,26 +65,29 @@
 
 // TYPEDEFS :
 
+/* A reproduction of the boolean */
 typedef enum my_bool {
     FALSE = 0, //**< FALSE */
     TRUE = 1 //**< TRUE */
-} my_bool_t; /* A reproduction of the boolean */
+} my_bool_t;
 
 extern int my_errno; /* The error number */
 
+/* The information of the my_params_to_array */
 struct info_param {
-    int length; //**< The length of the string */
-    char *str; //**< The string */
-    char *copy; //**< The copy of the string */
-    char **word_array; //**< The array of words */
-}; /* The information of the my_params_to_array */
+    int length; /* The length of the string */
+    char *str; /* The string */
+    char *copy; /* The copy of the string */
+    char **word_array; /* The array of words */
+};
 
+/* The settings of the my_super_number */
 typedef struct number_settings_s {
-    my_bool_t multiple_signe; //**< Allow multiples signes in the string */
-    my_bool_t letter_before; //**< Allow letters before the number */
-    my_bool_t letter_after; //**< Allow letters after the number */
-    my_bool_t overflow; //**< Allow overflow in the number */
-} number_settings_t; /* The settings of the my_super_number */
+    my_bool_t multiple_signe; /* Allow multiples signes in the string */
+    my_bool_t letter_before; /* Allow letters before the number */
+    my_bool_t letter_after; /* Allow letters after the number */
+    my_bool_t overflow; /* Allow overflow in the number */
+} number_settings_t;
 
 
 
@@ -624,7 +627,7 @@ char **my_str_to_word_array_string(char const *str, char const *separator);
  * @param str The string to convert
  * @param sep The separator to use
  * @return <b>char**</b> The array of words
- * @author Nicolas TORO
+ * @author Gianni TUERO
  */
 char **my_super_array(char *str, char *sep);
 
@@ -632,7 +635,7 @@ char **my_super_array(char *str, char *sep);
  * @brief Frees an array (array)
  * @param array The array to free
  * @return <b>void</b>
- * @author Gianni TUERO
+ * @author Nicolas TORO
  */
 void my_free_array(void **array);
 

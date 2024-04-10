@@ -17,6 +17,7 @@
 
 // TYPEDEFS :
 
+/* Enum for the type of the data */
 typedef enum type {
     SHORT_SHORT,
     SHORT,
@@ -36,14 +37,15 @@ typedef enum type {
     ARRAY_OF_STRING,
     VOID,
     UNKNOWN
-} type_t; /* Enum for the type of the data */
+} type_t;
 
+/* Node of the linked list */
 typedef struct node_s {
     struct node_s *prev; /* Pointer to the previous node */
     void *data; /* Pointer to the data */
     type_t type; /* Type of the data */
     struct node_s *next; /* Pointer to the next node */
-} node_t; /* Node of the linked list */
+} node_t;
 
 
 

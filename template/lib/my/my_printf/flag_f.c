@@ -19,9 +19,8 @@ static char *my_get_str_float(double nb, formating_t *formating)
     char *str_finale = malloc(sizeof(char) * 1000000);
 
     str_finale[0] = '\0';
-    if (nb < 0) {
+    if (nb < 0)
         my_strcat(str_finale, "-");
-    }
     my_strcat(str_finale, my_str_nbr_long_long(partie_entiere));
     precise_it_double(str_finale, formating, partie_d);
     format_it_double(str_finale, formating, nb);

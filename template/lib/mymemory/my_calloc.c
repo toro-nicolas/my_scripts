@@ -23,7 +23,7 @@ void *my_calloc(size_t element_count, size_t element_size, int type)
         if (ptr == NULL)
             return NULL;
         my_push_front(&list, ptr, VOID);
-        my_memset(ptr, 0, element_count);
+        my_memset(ptr, 0, element_count * element_size);
         return ptr;
     }
     if (type == 0)

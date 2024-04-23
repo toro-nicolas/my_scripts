@@ -21,8 +21,8 @@ char *my_strcat(char *dest, char const *src)
 
     if (dest == NULL || src == NULL)
         return NULL;
-    for (i = 0; i <= len_src; i++)
+    for (i = 0; i < len_src; i++)
         dest[len_dest + i] = src[i];
-    dest[len_dest + i + 1] = '\0';
+    dest[len_dest + i] = '\0';
     return dest;
 }

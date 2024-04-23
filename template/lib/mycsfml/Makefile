@@ -39,7 +39,7 @@ my:
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
 
 debug: CFLAGS += $(DEBUGFLAGS)
 debug: OPTIMIZEFLAGS =

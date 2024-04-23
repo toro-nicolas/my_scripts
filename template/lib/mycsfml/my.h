@@ -24,6 +24,7 @@
 #include <time.h>
 #include <dirent.h>
 #include <signal.h>
+#include <glob.h>
 
 #ifndef MY_H_
     #define    MY_H_
@@ -67,15 +68,15 @@
 
 /* A reproduction of the boolean */
 typedef enum my_bool {
-    FALSE = 0, //**< FALSE */
-    TRUE = 1 //**< TRUE */
+    FALSE = 0, /* FALSE */
+    TRUE = 1 /* TRUE */
 } my_bool_t;
 
 extern int my_errno; /* The error number */
 
 /* The information of the my_params_to_array */
 struct info_param {
-    int length; /* The length of the string */
+    int length; /*The length of the string */
     char *str; /* The string */
     char *copy; /* The copy of the string */
     char **word_array; /* The array of words */
@@ -88,6 +89,8 @@ typedef struct number_settings_s {
     my_bool_t letter_after; /* Allow letters after the number */
     my_bool_t overflow; /* Allow overflow in the number */
 } number_settings_t;
+
+    #define NB number_settings_t
 
 
 
@@ -277,6 +280,24 @@ int my_char_is_printable(char const c);
  * @author Nicolas TORO
  */
 int my_char_is(char c, const char *char_list);
+
+/**
+ * @brief Adds a char (chr) at the end of a string (str)
+ * @note The string must be allocated and have enough space
+ * @param str The string to modify
+ * @param chr The char to add
+ * @return <b>char *</b> The modified string
+ * @author Nicolas TORO
+ */
+char *my_add_chr(char *str, char chr);
+
+/**
+ * @brief Returns the last char of a string (str)
+ * @param str The string to check
+ * @return <b>char</b> The last char of the string
+ * @author Nicolas TORO
+ */
+char my_get_last_char(char *str);
 
 
 
@@ -505,6 +526,25 @@ const char *my_strerror(int error);
  */
 int my_count_letter(char const *str, char c);
 
+/**
+ * @brief Get the index of a char in a str according to its occurrence
+ * @param str The string to check
+ * @param c The letter to find
+ * @param occurrence The occurrence of the letter to find
+ * @return <b>int</b> <u>-1</u> if the letter is not found, otherwise
+ * the index of the letter in the string
+ */
+int my_get_char_index(char *str, char c, int occurrence);
+
+/**
+ * @brief Replace a char in a string by another char
+ * @param str The string to modify
+ * @param to_replace The char to replace
+ * @param replace_by The char to replace by
+ * @return <b>void</b>
+ */
+void my_replace_char(char *str, char to_replace, char replace_by);
+
 
 
     // Int functions :
@@ -627,7 +667,7 @@ char **my_str_to_word_array_string(char const *str, char const *separator);
  * @param str The string to convert
  * @param sep The separator to use
  * @return <b>char**</b> The array of words
- * @author Nicolas TORO
+ * @author Gianni TUERO
  */
 char **my_super_array(char *str, char *sep);
 
@@ -635,7 +675,7 @@ char **my_super_array(char *str, char *sep);
  * @brief Frees an array (array)
  * @param array The array to free
  * @return <b>void</b>
- * @author Gianni TUERO
+ * @author Nicolas TORO
  */
 void my_free_array(void **array);
 

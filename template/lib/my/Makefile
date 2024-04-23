@@ -51,6 +51,7 @@ SRCS		+=	my_printf/sub_format_char.c
 SRCS		+=	my_printf/sub_format_double.c
 SRCS		+=	my_printf/sub_format_int.c
 SRCS		+=	my_printf/sub_format_str.c
+SRCS		+=	my_printf/my_add_chr.c
 SRCS		+=	my_array_len.c
 SRCS		+=	my_char_is.c
 SRCS		+=	my_char_is_alpha.c
@@ -71,6 +72,8 @@ SRCS		+=	my_find_prime_inf.c
 SRCS		+=	my_fprintf.c
 SRCS		+=	my_free_array.c
 SRCS		+=	my_free_ptr.c
+SRCS		+=	my_get_char_index.c
+SRCS		+=	my_get_last_char.c
 SRCS		+=	my_getnbr.c
 SRCS		+=	my_getnbr_base.c
 SRCS		+=	my_getnbr_float.c
@@ -89,6 +92,7 @@ SRCS		+=	my_putstr_error.c
 SRCS		+=	my_putstr_fd.c
 SRCS		+=	my_putstr_fd_free.c
 SRCS		+=	my_putstr_sized.c
+SRCS		+=	my_replace_char.c
 SRCS		+=	my_rev_params.c
 SRCS		+=	my_revstr.c
 SRCS		+=	my_round_float_str.c
@@ -162,11 +166,11 @@ create-build:
 
 $(BUILDDIR)/%.o: my_printf/%.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
 
 debug: CFLAGS += $(DEBUGFLAGS)
 debug: OPTIMIZEFLAGS =

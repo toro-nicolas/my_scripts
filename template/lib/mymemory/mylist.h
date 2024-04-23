@@ -119,6 +119,40 @@ node_t *my_pop_back(node_t **begin);
  */
 node_t *my_pop_node(node_t **begin, void const *data_ref, int (*cmp)());
 
+    // Circular list functions :
+
+/**
+* @brief Adds a node at the beginning of the circular linked list
+* @param begin The beginning of the list
+* @param data The data to add
+* @param type The type of the data
+* @return <b>void</b>
+*/
+void my_push_back_circled(node_t **begin, void *data, type_t type);
+
+/**
+ * @brief Adds a node at the end of the circular linked list
+ * @param begin The beginning of the list
+ * @param data The data to add
+ * @param type The type of the data
+ * @return <b>void</b>
+ */
+int my_list_size_circled(node_t const *begin);
+
+/**
+ * @brief Converts the circular linked list to an array
+ * @param list The circular linked list to convert
+ * @return <b>void **</b> The array created from the circular linked list
+ */
+void **my_list_to_array_circled(node_t **list);
+
+/**
+ * @brief Deletes a circular linked list
+ * @param begin The beginning of the list
+ * @return <b>void</b>
+ */
+void my_delete_circle_list(node_t **begin);
+
     // Other functions :
 
 /**
@@ -199,5 +233,15 @@ void **my_list_to_array(node_t *list);
  * @author Nicolas TORO
  */
 node_t *my_params_to_list(int ac, char *const *av);
+
+/**
+ * @brief Skip a node in a linked list and
+ * change the previous node to the next node
+ * @param head The beginning of the list
+ * @param to_delete The node to skip
+ * @return <b>node_t *</b> The to_delete node
+ * @author Gianni TUERO
+ */
+node_t *my_previous_to_next(node_t **head, node_t *to_delete);
 
 #endif

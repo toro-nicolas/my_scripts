@@ -65,6 +65,12 @@ fclean: clean
 
 re:	fclean all
 
+re_debug: fclean debug
+
+valgrind: fclean debug
+	@echo -e "\033[0;36mExecuting valgrind...\033[0m"
+	@valgrind $(VALGRINDFLAGS) ./$(NAME) 2> $(OUTPUT)
+
 # Unit tests Makefile
 unit_tests:
 	@make unit_tests --no-print-directory -C./tests/
@@ -75,3 +81,15 @@ tests_run:
 	--exclude lib/my/my_printf/round_flag_a.c \
 	--exclude lib/mylist/my_list_to_array.c \
 	--exclude lib/mylist/my_show_list.c \
+
+# Documentation
+doc: tests_run
+	@doxygen Doxyfile
+	@gcovr \
+    --exclude lib/my/my_printf/round_flag_a.c \
+    --exclude lib/mylist/my_list_to_array.c \
+    --exclude lib/mylist/my_show_list.c \
+	--branch --html-details documentation/tests/test.html
+	@echo -e "\033[1;33mDocumentation generated.\033[0m"
+	@google-chrome documentation/html/index.html
+	@google-chrome documentation/tests/test.html

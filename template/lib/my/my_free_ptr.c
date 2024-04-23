@@ -14,7 +14,7 @@
 
 void *my_free_ptr(void *ptr)
 {
-    if (ptr == NULL)
+    if (ptr == NULL || !ptr)
         return NULL;
     free(ptr);
     ptr = NULL;

@@ -12,17 +12,22 @@ CC		=	gcc
 BUILDDIR 	=	../../build
 
 SRCS		=	my_concat_list.c
+SRCS		+=	my_delete_circled_list.c
 SRCS		+=	my_delete_list.c
 SRCS		+=	my_delete_nodes.c
 SRCS		+=	my_find_node.c
 SRCS		+=	my_list_size.c
+SRCS		+=	my_list_size_circled.c
 SRCS		+=	my_list_to_array.c
+SRCS		+=	my_list_to_array_circled.c
 SRCS		+=	my_merge_list.c
 SRCS		+=	my_params_to_list.c
 SRCS		+=	my_pop_back.c
 SRCS		+=	my_pop_front.c
 SRCS		+=	my_pop_node.c
+SRCS		+=	my_previous_to_next.c
 SRCS		+=	my_push_back.c
+SRCS		+=	my_push_back_circled.c
 SRCS		+=	my_push_front.c
 SRCS		+=	my_rev_list.c
 SRCS		+=	my_show_list.c
@@ -51,7 +56,7 @@ debug: all
 
 $(BUILDDIR)/%.o: %.c
 	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(OPTIMIZEFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)

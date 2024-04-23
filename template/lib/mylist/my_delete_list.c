@@ -19,9 +19,10 @@ void my_delete_list(node_t **begin)
 
     while (tmp != NULL) {
         next = tmp->next;
-        if (tmp->data != NULL && tmp->type != UNKNOWN)
+        if (tmp->data && tmp->data != NULL && tmp->type != UNKNOWN)
             FREE(tmp->data);
-        FREE(tmp);
+        if (tmp)
+            FREE(tmp);
         tmp = next;
     }
     *begin = NULL;

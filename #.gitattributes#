@@ -1,0 +1,3 @@
+template/docs/html/* linguist-vendored
+template/docs/tests/* linguist-detectable=false
+

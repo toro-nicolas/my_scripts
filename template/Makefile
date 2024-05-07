@@ -89,7 +89,7 @@ doc: tests_run
     --exclude lib/my/my_printf/round_flag_a.c \
     --exclude lib/mylist/my_list_to_array.c \
     --exclude lib/mylist/my_show_list.c \
-	--branch --html-details documentation/tests/test.html
+	--branch --html-details docs/tests/test.html
 	@echo -e "\033[1;33mDocumentation generated.\033[0m"
-	@google-chrome documentation/html/index.html
-	@google-chrome documentation/tests/test.html
+	@google-chrome docs/html/index.html
+	@google-chrome docs/tests/test.html

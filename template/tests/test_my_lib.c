@@ -179,6 +179,7 @@ Test(my_show_word_array, full_covr, .init = cr_redirect_stdout)
 {
     char *test[] = {"unit_tests", "coucou"};
 
+    my_show_word_array(NULL);
     my_show_word_array(test);
     cr_assert_stdout_eq_str("unit_tests\ncoucou\n");
 }
@@ -397,6 +398,8 @@ Test(my_strstr, full_covr)
     char str[7] = "cbbcbb\0";
     char src[4] = "cbb\0";
 
+    cr_assert_eq(my_strstr(NULL, src), 0);
+    cr_assert_eq(my_strstr(str, NULL), 0);
     cr_assert(my_strstr(str, src));
     cr_assert(my_strstr(str, ""));
     cr_assert_eq(my_strstr(str, "la"), 0);
@@ -477,6 +480,8 @@ Test(my_free_ptr, full_covr)
 
 Test(my_str_contains, full_covr)
 {
+    cr_assert_eq(my_str_contains(NULL, "a"), 0);
+    cr_assert_eq(my_str_contains("coucou", NULL), 0);
     cr_assert_eq(my_str_contains("coucou", "c"), 1);
     cr_assert_eq(my_str_contains("coucou", "a"), 0);
 }

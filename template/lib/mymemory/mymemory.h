@@ -77,6 +77,16 @@ char *my_malloc_strdup(char const *src);
 char **my_malloc_strdup_word_array(char **array);
 
 /**
+ * @brief Duplicates a string with a defined size with my_malloc
+ * @note The duplicated string must be free only with my_free
+ * @param src The string to duplicate
+ * @param n The size of the string
+ * @return <b>char*</b> A pointer to the duplicated string
+ * @author Nicolas TORO
+ */
+char *my_malloc_strndup(char const *src, int n);
+
+/**
  * @brief Copies bytes (size) from memory area (source)
  * to memory area (destination)
  * @param destination The destination memory area

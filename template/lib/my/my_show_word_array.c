@@ -16,6 +16,8 @@ void my_show_word_array(char *const *tab)
 {
     int index_tab = 0;
 
+    if (tab == NULL)
+        return;
     while (tab[index_tab] != NULL) {
         my_putstr(tab[index_tab]);
         my_putchar('\n');

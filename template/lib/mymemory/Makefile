@@ -16,6 +16,7 @@ SRCS		+=	my_free.c
 SRCS		+=	my_malloc.c
 SRCS		+=	my_malloc_strdup.c
 SRCS		+=	my_malloc_strdup_word_array.c
+SRCS		+=	my_malloc_strndup.c
 SRCS		+=	my_memchr.c
 SRCS		+=	my_memcpy.c
 SRCS		+=	my_memcmp.c

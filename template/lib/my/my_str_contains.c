@@ -24,6 +24,8 @@ static int check_char_list(char *str, char *char_list, int i)
 
 int my_str_contains(char *str, char *char_list)
 {
+    if (str == NULL || char_list == NULL)
+        return 0;
     for (int i = 0; str[i] != '\0'; i++) {
         if (check_char_list(str, char_list, i))
             return 1;

@@ -1,0 +1,8 @@
+# Default ignore patterns for epi-style
+# You can use wildcards like *
+
+.git/*
+.gitignore
+tests/*
+bonus/*
+coding-style-reports.log
